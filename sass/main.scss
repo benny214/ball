@@ -68,7 +68,7 @@ html.js .loader {
   background: url('../img/body-bg.jpg');
   background-position: -900px 0;
   background-size: 4424px 560px;
-  animation: ground 8s linear 5s 1;
+  animation: ground 8s linear 5300ms 1;
 
 }
 
@@ -79,7 +79,7 @@ html.js .loader {
   border: 1px solid #222;
   position: relative;
   background: url('../img/screen.png');
-  animation: screen 8s linear 5s 1;
+  animation: screen 8s linear 5300ms 1;
   
 }
 
@@ -156,8 +156,8 @@ html.js .loader {
    9% { transform: translate(169+169+100+150px,560-53-45+73px); }//from tube down
    10% { transform: translate(169+169+100+150+70px,560-200-53-45+73px); }//croos river up
    11% { transform: translate(169+169+100+150+250px,560-53-45+73px); }//cross river down
-   12% { transform: translate(169+169+100+150+150+80px,560-200-53-45+73+145px); }//
-   13% { transform: translate(169+169+100+150+150+80px,560-200-53-45+73+145px); }//
+   12% {transform: translate(169+169+100+150+150+80px,560-200-53-45+73+145px); }//
+   13% {transform: translate(169+169+100+150+150+80px,560-200-53-45+73+145px); }//
   14% { transform: translate(169+169+100+150+150+80px,560-200-53-45+73+145px); }
   15% { transform: translate(169+169+100+150+150+80px,560-200-53-45+73+145px); }
   16% { transform: translate(169+169+100+150+150+80px,560-200-53-45+73+145px); }

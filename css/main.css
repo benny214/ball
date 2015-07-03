@@ -54,8 +54,8 @@ html.js .loader {
   background: url("../img/body-bg.jpg");
   background-position: -900px 0;
   background-size: 4424px 560px;
-  -webkit-animation: ground 8s linear 5s 1;
-          animation: ground 8s linear 5s 1; }
+  -webkit-animation: ground 8s linear 5300ms 1;
+          animation: ground 8s linear 5300ms 1; }
 
 .screen {
   height: 560px;
@@ -64,8 +64,8 @@ html.js .loader {
   border: 1px solid #222;
   position: relative;
   background: url("../img/screen.png");
-  -webkit-animation: screen 8s linear 5s 1;
-          animation: screen 8s linear 5s 1; }
+  -webkit-animation: screen 8s linear 5300ms 1;
+          animation: screen 8s linear 5300ms 1; }
 
 @-webkit-keyframes screen {
   0% {
