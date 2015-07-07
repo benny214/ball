@@ -54,10 +54,34 @@ html.js .loader {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background: url("../img/1x/background.jpg") repeat-x;
+  background: #E4F3F6;
   z-index: -1;
   -webkit-animation: screen 30s linear 4s 1;
           animation: screen 30s linear 4s 1; }
+
+.sky {
+  background: url("../img/1x/sky.png") repeat-x;
+  width: 4000px;
+  height: 261px;
+  position: absolute;
+  left: -300px; }
+
+.year {
+  background: url("../img/1x/year.png");
+  height: 214px;
+  width: 555px;
+  position: absolute;
+  top: 210px;
+  left: 264px;
+  z-index: -1; }
+
+.mount {
+  background: url("../img/1x/mount.png") repeat-x;
+  height: 223px;
+  width: 4000px;
+  position: absolute;
+  bottom: 40px;
+  left: -300px; }
 
 .center {
   background: #222;
@@ -90,9 +114,8 @@ html.js .loader {
   top: -73px;
   left: 0px;
   z-index: 20;
-  -webkit-transform: translate(160px, 306px);
-      -ms-transform: translate(160px, 306px);
-          transform: translate(160px, 306px); }
+  -webkit-animation: bounce 10s 2s linear infinite;
+          animation: bounce 10s 2s linear infinite; }
 
 @-webkit-keyframes bounce {
   0% {
@@ -148,13 +171,10 @@ html.js .loader {
   width: 100%;
   height: 71px;
   position: absolute;
-  background: url("../img/1x/ground.jpg");
+  background: url("../img/1x/ground.png");
   bottom: 0;
   z-index: 2;
-  background-position: -1210px;
-  -webkit-transform: translateX(-20px);
-      -ms-transform: translateX(-20px);
-          transform: translateX(-20px); }
+  background-position: -900px; }
 
 @-webkit-keyframes groundLeft {
   0% {
@@ -172,33 +192,41 @@ html.js .loader {
     -webkit-transform: translateX(-10px);
             transform: translateX(-10px); } }
 
-.bush {
+[class*='bush'] {
   background: url("../img/1x/bush.png");
   height: 68px;
   width: 205px;
-  position: absolute;
-  bottom: 53px;
-  left: -205px;
-  z-index: 10; }
+  z-index: 10;
+  bottom: 47px;
+  position: absolute; }
+
+.bush_1 {
+  left: -205px; }
+
+.bush_2 {
+  left: 1111px; }
+
+.bush_3 {
+  left: 1588px; }
 
 .tube {
   background: url("../img/1x/tube_top.png");
   width: 100px;
   height: 76px;
   position: absolute;
-  bottom: 53px;
+  bottom: 47px;
   left: 323px;
   z-index: 10; }
 
-.bubble_java {
-  background: url("../img/1x/bubble_java.png");
+[class*='bubble'] {
   width: 74px;
   height: 74px;
-  position: absolute;
-  bottom: 53px;
-  left: 336px;
-  -webkit-animation: javaBubble 3s ease infinite;
-          animation: javaBubble 3s ease infinite; }
+  position: absolute; }
+
+.bubble_java {
+  background: url("../img/1x/bubble-java.png");
+  bottom: 47px;
+  left: 336px; }
 
 @-webkit-keyframes javaBubble {
   0%, 1% {
@@ -276,17 +304,23 @@ html.js .loader {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); } }
 
+.bubble_sql {
+  background: url("../img/1x/bubble-sql.png");
+  left: 1730px;
+  bottom: 47px;
+  z-index: 11; }
+
 .bonus {
   background: url("../img/1x/bonus.jpg");
   width: 46px;
-  height: 46px;
+  height: 46px; }
+
+.rd {
   position: absolute;
   left: 907px;
-  bottom: 220px;
-  -webkit-animation: bonus 3s ease 1;
-          animation: bonus 3s ease 1;
-  -webkit-animation: bonusLeft 3s linear 1;
-          animation: bonusLeft 3s linear 1; }
+  bottom: 155px;
+  -webkit-animation: bonus 2s 5s ease infinite;
+          animation: bonus 2s 5s ease infinite; }
 
 @-webkit-keyframes bonus {
   0%, 1% {
@@ -348,17 +382,17 @@ html.js .loader {
   0%, 1% {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
-  5% {
-    -webkit-transform: translateX();
-            transform: translateX(); } }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px); } }
 
 @keyframes bonusLeft {
   0%, 1% {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
-  5% {
-    -webkit-transform: translateX();
-            transform: translateX(); } }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px); } }
 
 .brick {
   background: url("../img/1x/pat_brick.jpg") repeat-x;
@@ -366,13 +400,25 @@ html.js .loader {
   width: 372px;
   position: absolute;
   left: 953px;
-  bottom: 220px; }
+  bottom: 155px; }
 
-.bush_2 {
-  background: url("../img/1x/bush.png");
-  height: 68px;
-  width: 205px;
+.top_ground {
+  background: url("../img/1x/ground-top.png");
+  width: 129px;
+  height: 52px;
   position: absolute;
-  bottom: 54px;
-  left: 1111px;
-  z-index: 10; }
+  left: 1389px;
+  bottom: 219px; }
+
+.data {
+  position: absolute;
+  bottom: 359px;
+  left: 1430px; }
+
+.teleport {
+  background: url("../img/1x/teleport.png");
+  width: 150px;
+  height: 123px;
+  position: absolute;
+  left: 2100px;
+  bottom: 47px; }
