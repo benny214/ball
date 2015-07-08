@@ -49,39 +49,84 @@ html.js .loader {
   float: left; }
 
 /*=== Movie styles ====*/
-.screen {
+/*== Main styles ==*/
+.stage_2 {
+  display: none; }
+
+.stage_3 {
+  display: none; }
+
+.stage_4 {
+  display: none; }
+
+.stage_5 {
+  display: none; }
+
+.stage_6 {
+  display: none; }
+
+[class*='stage'] {
   height: 560px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  top: 0;
   background: #E4F3F6;
   z-index: -1;
   -webkit-animation: screen 30s linear 4s 1;
           animation: screen 30s linear 4s 1; }
 
-.sky {
+[class*='ground'] {
+  width: 100%;
+  height: 71px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2; }
+
+[class*='bush'] {
+  background: url("../img/1x/bush.png");
+  height: 68px;
+  width: 205px;
+  z-index: 10;
+  bottom: 47px;
+  position: absolute; }
+
+[class*='sky'] {
   background: url("../img/1x/sky.png") repeat-x;
   width: 4000px;
   height: 261px;
   position: absolute;
   left: -300px; }
 
-.year {
-  background: url("../img/1x/year.png");
-  height: 214px;
-  width: 555px;
+[class*='ball'] {
+  background: url("../img/1x/ball.png");
+  height: 46px;
+  width: 46px;
   position: absolute;
-  top: 210px;
-  left: 264px;
-  z-index: -1; }
+  z-index: 20; }
 
-.mount {
-  background: url("../img/1x/mount.png") repeat-x;
-  height: 223px;
-  width: 4000px;
+[class*='tube'] {
+  background: url("../img/1x/tube_top.png");
+  width: 100px;
+  height: 76px;
   position: absolute;
-  bottom: 40px;
-  left: -300px; }
+  bottom: 47px;
+  z-index: 10; }
+
+[class*='bubble'] {
+  width: 74px;
+  height: 74px;
+  position: absolute; }
+
+[class*='bonus'] {
+  background: url("../img/1x/bonus.jpg");
+  width: 46px;
+  height: 46px; }
+
+[class*='brick'] {
+  background: url("../img/1x/pat_brick.jpg") repeat-x;
+  height: 46px;
+  position: absolute; }
 
 .center {
   background: #222;
@@ -106,14 +151,47 @@ html.js .loader {
   top: -294px;
   z-index: -1; }
 
-.ball {
-  background: url("../img/1x/ball.png") no-repeat;
-  height: 46px;
-  width: 46px;
+/*== 2000 ==*/
+.ground--00 {
+  background: url("../img/1x/ground-00.png");
+  background-position: -900px; }
+
+@-webkit-keyframes groundLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px); } }
+
+@keyframes groundLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px); } }
+
+.mount {
+  background: url("../img/1x/mount.png") repeat-x;
+  height: 223px;
+  width: 4000px;
   position: absolute;
+  bottom: 40px;
+  left: -300px; }
+
+.year__2000 {
+  background: url("../img/1x/year.png");
+  height: 214px;
+  width: 555px;
+  position: absolute;
+  top: 210px;
+  left: 264px;
+  z-index: -1; }
+
+.ball--00 {
   top: -73px;
   left: 0px;
-  z-index: 20;
   -webkit-animation: bounce 10s 2s linear infinite;
           animation: bounce 10s 2s linear infinite; }
 
@@ -167,66 +245,26 @@ html.js .loader {
   45% { }
   100% { } }
 
-.ground {
-  width: 100%;
-  height: 71px;
-  position: absolute;
-  background: url("../img/1x/ground.png");
-  bottom: 0;
-  z-index: 2;
-  background-position: -900px; }
-
-@-webkit-keyframes groundLeft {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  100% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px); } }
-
-@keyframes groundLeft {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
-  100% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px); } }
-
-[class*='bush'] {
-  background: url("../img/1x/bush.png");
-  height: 68px;
-  width: 205px;
-  z-index: 10;
-  bottom: 47px;
-  position: absolute; }
-
-.bush_1 {
+.bush__1--00 {
   left: -205px; }
 
-.bush_2 {
+.bush__2--00 {
   left: 1111px; }
 
-.bush_3 {
+.bush__3--00 {
   left: 1588px; }
 
-.tube {
-  background: url("../img/1x/tube_top.png");
-  width: 100px;
-  height: 76px;
-  position: absolute;
-  bottom: 47px;
-  left: 323px;
-  z-index: 10; }
+.tube--00 {
+  left: 323px; }
 
-[class*='bubble'] {
-  width: 74px;
-  height: 74px;
-  position: absolute; }
-
-.bubble_java {
+.bubble__java {
   background: url("../img/1x/bubble-java.png");
   bottom: 47px;
-  left: 336px; }
+  left: 336px;
+  -webkit-animation: javaBubble 3s ease;
+          animation: javaBubble 3s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
 
 @-webkit-keyframes javaBubble {
   0%, 1% {
@@ -260,11 +298,11 @@ html.js .loader {
     -webkit-transform: translateY(-76px);
             transform: translateY(-76px); }
   90% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); }
+    -webkit-transform: translateY(-76px);
+            transform: translateY(-76px); }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
+    -webkit-transform: translateY(-76px);
+            transform: translateY(-76px); } }
 
 @keyframes javaBubble {
   0%, 1% {
@@ -298,11 +336,11 @@ html.js .loader {
     -webkit-transform: translateY(-76px);
             transform: translateY(-76px); }
   90% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); }
+    -webkit-transform: translateY(-76px);
+            transform: translateY(-76px); }
   100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
+    -webkit-transform: translateY(-76px);
+            transform: translateY(-76px); } }
 
 .bubble_sql {
   background: url("../img/1x/bubble-sql.png");
@@ -310,12 +348,7 @@ html.js .loader {
   bottom: 47px;
   z-index: 11; }
 
-.bonus {
-  background: url("../img/1x/bonus.jpg");
-  width: 46px;
-  height: 46px; }
-
-.rd {
+.bonus__rd {
   position: absolute;
   left: 907px;
   bottom: 155px;
@@ -394,15 +427,20 @@ html.js .loader {
     -webkit-transform: translateX(-100px);
             transform: translateX(-100px); } }
 
-.brick {
-  background: url("../img/1x/pat_brick.jpg") repeat-x;
-  height: 46px;
+.brick--00 {
   width: 372px;
-  position: absolute;
   left: 953px;
   bottom: 155px; }
 
-.top_ground {
+.logo__rd {
+  background: url("../img/1x/2000_Soft.png");
+  width: 73px;
+  height: 49px;
+  position: absolute;
+  left: 895px;
+  bottom: 215px; }
+
+.top-ground {
   background: url("../img/1x/ground-top.png");
   width: 129px;
   height: 52px;
@@ -410,15 +448,19 @@ html.js .loader {
   left: 1389px;
   bottom: 219px; }
 
-.data {
+.bonus__data {
   position: absolute;
   bottom: 359px;
   left: 1430px; }
 
-.teleport {
-  background: url("../img/1x/teleport.png");
-  width: 150px;
-  height: 123px;
+.logo__data {
+  background: url("../img/1x/2000_dataart.png");
+  width: 73px;
+  height: 18px;
   position: absolute;
+  bottom: 414px;
+  left: 1415px; }
+
+.teleport--00 {
   left: 2100px;
   bottom: 47px; }

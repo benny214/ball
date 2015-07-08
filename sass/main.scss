@@ -63,42 +63,91 @@ html.js .loader {
 
 /*=== Movie styles ====*/
 
+/*== Main styles ==*/
 
-.screen {
+// .stage_1{
+//   display: none;
+// }
+.stage_2{
+  display: none;
+}
+.stage_3{
+  display: none;
+}
+.stage_4{
+  display: none;
+}
+.stage_5{
+  display: none;
+}
+.stage_6{
+  display: none;
+}
+
+[class*='stage'] {
   height: 560px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  top:0;
   background: #E4F3F6;
   z-index: -1;
   animation: screen 30s linear 4s 1;
 }
-.sky{
+[class*='ground']{
+  width: 100%;
+  height: 71px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+[class*='bush']{
+    background: url('../img/1x/bush.png');
+  height: 68px;
+  width: 205px;
+    z-index: 10;
+      bottom:47px;
+        position: absolute;
+}
+[class*='sky']{
   background: url('../img/1x/sky.png') repeat-x;
   width: 4000px;
   height: 261px;
   position: absolute;
   left: -300px;
 }
-.year{
-  background: url('../img/1x/year.png');
-  height: 214px;
-  width: 555px;
-  position: absolute;
-  top: 210px;
-  left: 264px;
-  z-index: -1;
 
-}
-.mount{
-  background: url('../img/1x/mount.png') repeat-x;
-  height: 223px;
-  width: 4000px;
+[class*='ball']{
+  background: url('../img/1x/ball.png');
+  height:46px;
+  width: 46px;
   position: absolute;
-  bottom: 40px;
-  left: -300px;
-
+  z-index:20;
 }
+[class*='tube']{
+  background: url('../img/1x/tube_top.png');
+  width: 100px;
+  height: 76px;
+  position: absolute;
+  bottom:47px;
+  z-index: 10;
+}
+[class*='bubble']{
+  width: 74px;
+  height: 74px;
+  position: absolute;
+}
+[class*='bonus']{
+  background: url('../img/1x/bonus.jpg');
+  width: 46px;
+  height: 46px;
+}
+[class*='brick']{
+  background: url('../img/1x/pat_brick.jpg') repeat-x;
+  height: 46px;
+  position: absolute;
+}
+
 .center{
   background: #222;
   width: 1px;
@@ -106,7 +155,6 @@ html.js .loader {
   position: absolute;
   left: 741px;
 }
-
 .game-wrap{
   width: 1084px;
   height:560px;
@@ -124,14 +172,44 @@ html.js .loader {
   z-index: -1;
 }
 
-.ball{
-  background: url('../img/1x/ball.png') no-repeat;
-  height:46px;
-  width: 46px;
+/*== 2000 ==*/
+
+.ground--00{
+  background: url('../img/1x/ground-00.png');
+  background-position: -900px;
+  // transform: translateX(-20px);
+  // animation: groundLeft 1s linear infinite;
+}
+@keyframes groundLeft{
+   0%{ transform: translateX(0); }
+ 100%{ transform: translateX(-10px); }
+}
+.mount{
+  background: url('../img/1x/mount.png') repeat-x;
+  height: 223px;
+  width: 4000px;
   position: absolute;
+  bottom: 40px;
+  left: -300px;
+}
+
+// .sky-00{
+  
+// }
+
+.year__2000{
+  background: url('../img/1x/year.png');
+  height: 214px;
+  width: 555px;
+  position: absolute;
+  top: 210px;
+  left: 264px;
+  z-index: -1;
+}
+
+.ball--00{
   top: -73px;//top: -73px;
   left: 0px;//left:0;
-  z-index:20;
    //transform: translate(160px, 306px);
   animation: bounce 10s 2s linear infinite;
 }
@@ -148,60 +226,26 @@ html.js .loader {
  100%{  }
  }
 
-.ground{
-  width: 100%;
-  height: 71px;
-  position: absolute;
-  background: url('../img/1x/ground.png');
-  bottom: 0;
-  z-index: 2;
-  background-position: -900px;
-  // transform: translateX(-20px);
-  // animation: groundLeft 1s linear infinite;
-}
-@keyframes groundLeft{
-   0%{ transform: translateX(0); }
- 100%{ transform: translateX(-10px); }
-}
-[class*='bush']{
-    background: url('../img/1x/bush.png');
-  height: 68px;
-  width: 205px;
-    z-index: 10;
-      bottom:47px;
-        position: absolute;
-}
-.bush_1{
+.bush__1--00{
   left: -205px;
 }
-.bush_2{
+.bush__2--00{
   left: 1111px;
 }
-.bush_3{
+.bush__3--00{
 left: 1588px;
 }
 
-.tube{
-  background: url('../img/1x/tube_top.png');
-  width: 100px;
-  height: 76px;
-  position: absolute;
-  bottom:47px;
+.tube--00{
   left: 323px;
-  z-index: 10;
-}
-[class*='bubble']{
-  width: 74px;
-  height: 74px;
-  position: absolute;
 }
 
-.bubble_java{
+.bubble__java{
   background: url('../img/1x/bubble-java.png');
   bottom: 47px;
   left: 336px;
-  // animation: javaBubble 3s ease;
-  // animation-fill-mode: both;
+  animation: javaBubble 3s ease;
+  animation-fill-mode: both;
 }
 @keyframes javaBubble{
   0%,1%{ transform: translateY(0px); }
@@ -214,8 +258,8 @@ left: 1588px;
   60% { transform: translateY(-76px); }
   70% { transform: translateY(-76px); }
   80% { transform: translateY(-76px); }
-  90% { transform: translateY(0px); }
- 100% { transform: translateY(0px); }
+  90% { transform: translateY(-76px); }
+ 100% { transform: translateY(-76px); }
 }
 .bubble_sql{
   background: url('../img/1x/bubble-sql.png');
@@ -223,14 +267,9 @@ left: 1588px;
   bottom: 47px;
   z-index: 11;
 }
-.bonus{
-    background: url('../img/1x/bonus.jpg');
-  width: 46px;
-  height: 46px;
 
-}
-.rd{
-    position: absolute;
+.bonus__rd{
+  position: absolute;
   left: 907px;
   bottom: 155px;
   animation: bonus 2s 5s ease infinite;
@@ -254,16 +293,21 @@ left: 1588px;
   0%,1%{ transform: translateX(0); }
   100% { transform: translateX(-100px); }
 }
-.brick{
-  background: url('../img/1x/pat_brick.jpg') repeat-x;
-  height: 46px;
+.brick--00{
   width:372px;
-  position: absolute;
   left: 907+46px;
   bottom: 155px;
 }
+.logo__rd{
+  background: url('../img/1x/2000_Soft.png');
+  width: 73px;
+  height: 49px;
+  position: absolute;
+  left: 895px;
+  bottom: 155+60px;
+}
 
-.top_ground{
+.top-ground{
   background: url('../img/1x/ground-top.png');
   width: 129px;
   height: 52px;
@@ -271,123 +315,24 @@ left: 1588px;
   left: 1389px;
   bottom: 219px;
 }
-.data{
+.bonus__data{
   position: absolute;
   bottom: 359px;
   left: 1430px;
 }
-.teleport{
-  background: url('../img/1x/teleport.png');
-  width: 150px;
-  height: 123px;
+.logo__data{
+  background: url('../img/1x/2000_dataart.png');
+  width: 73px;
+  height: 18px;
   position: absolute;
+  bottom: 359+55px;
+  left: 1415px;
+}
+.teleport--00{
   left: 2100px;
   bottom: 47px;
 }
 
 
-// // translate(x,y)
-// @keyframes bounce {
-//   0% { transform: translate(0px,0px); }
-//   1% { transform: translate(0px,560-53-45+73px); }//fall  
-//   2% { transform: translate(169px,560-200-53-45+73px); }//up
-//   3% { transform: translate(169+169px,560-53-45+73-76px); }//on tube
-//   4% { transform: translate(169+169px,560-53-45+73-76px); }//on tube
-//   5% { transform: translate(169+169px,560-53-45+73-76px); }//on tube
-//   6% { transform: translate(169+169px,560-53-45+73-76px); }//on tube
-//   7% { transform: translate(169+169px,560-53-45+73-76px); }//on tube
-//   8% { transform: translate(169+169+100px,560-200-53-45+73px); }//from tube up
-//   9% { transform: translate(169+169+100+150px,560-53-45+73px); }//from tube down
-//   10% { transform: translate(169+169+100+150+70px,560-200-53-45+73px); }//croos river up
-//   11% { transform: translate(169+169+100+150+250px,560-53-45+73px); }//cross river down
-//   12% { transform: translate(818px, 480px); }
-//   13% {transform: translate(898px, 535px); }
-//   14% {transform: translate(898+80px, 480px); }
-//   15% {transform: translate(898+80px, 480px); }
-//   16% {transform: translate(898+80px, 480px); }
-//   17% {transform: translate(898+80px, 480px); }
-//   18% {transform: translate(898+80px, 480px); }
-//   19% {transform: translate(898+80px, 480px); }
-//   20% {transform: translate(898+80px, 480px); }
-//   21% {transform: translate(898+80px, 480px); }
-//   22% {transform: translate(898+80px, 480px); }
-//   23% {transform: translate(898+80px, 480px); }
-//   24% {transform: translate(898+80px, 480px); }
-//   25% {transform: translate(898+80px, 480px); }
-//   26% {transform: translate(898+80px, 480px); }
-//   27% {transform: translate(898+80px, 480px); }
-//   28% {transform: translate(898+80px, 480px); }
-//   29% {transform: translate(898+80px, 480px); }
-//   30% {transform: translate(898+80px, 480px); }
-//   31% {transform: translate(898+80px, 480px); }
-//   32% {transform: translate(898+80px, 480px); }
-//   33% {  }
-//   34% {  }
-//   35% {  }
-//   36% {  }
-//   37% {  }
-//   38% {  }
-//   39% {  }
-//   40% {  }
-//   41% {  }
-//   42% {  }
-//   43% {  }
-//   44% {  }
-//   45% {  }
-//   46% {  }
-//   47% {  }
-//   48% {  }
-//   49% {  }
-//   50% {  }
-//   51% {  }
-//   52% {  }
-//   53% {  }
-//   54% {  }
-//   55% {  }
-//   56% {  }
-//   57% {  }
-//   58% {  }
-//   59% {  }
-//   60% {  }
-//   61% {  }
-//   62% {  }
-//   63% {  }
-//   64% {  }
-//   65% {  }
-//   66% {  }
-//   67% {  }
-//   68% {  }
-//   69% {  }
-//   70% {  }
-//   71% {  }
-//   72% {  }
-//   73% {  }
-//   74% {  }
-//   75% {  }
-//   76% {  }
-//   77% {  }
-//   78% {  }
-//   79% {  }
-//   80% {  }
-//   81% {  }
-//   82% {  }
-//   83% {  }
-//   84% {  }
-//   85% {  }
-//   86% {  }
-//   87% {  }
-//   88% {  }
-//   89% {  }
-//   90% {  }
-//   91% {  }
-//   92% {  }
-//   93% {  }
-//   94% {  }
-//   95% {  }
-//   96% {  }
-//   97% {  }
-//   98% {  }
-//   99% {  }
-//   100 {  }
-// }
+
 
