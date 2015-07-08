@@ -96,18 +96,18 @@ html.js .loader {
 }
 [class*='ground']{
   width: 100%;
-  height: 71px;
+  height: 78px;
   position: absolute;
   bottom: 0;
   z-index: 2;
 }
 [class*='bush']{
-    background: url('../img/1x/bush.png');
+  background: url('../img/1x/bush.png');
   height: 68px;
   width: 205px;
-    z-index: 10;
-      bottom:47px;
-        position: absolute;
+  z-index: 10;
+  bottom:47px;
+  position: absolute;
 }
 [class*='sky']{
   background: url('../img/1x/sky.png') repeat-x;
@@ -141,10 +141,21 @@ html.js .loader {
   background: url('../img/1x/bonus.jpg');
   width: 46px;
   height: 46px;
+  position: absolute;
 }
 [class*='brick']{
   background: url('../img/1x/pat_brick.jpg') repeat-x;
   height: 46px;
+  position: absolute;
+}
+[class*='brick-steel']{
+  background: url('../img/1x/brick_steel.png') repeat-x;
+  height: 46px;
+  position: absolute;
+}
+[class*='top-ground']{
+  background: url('../img/1x/top-ground.png') repeat-x;
+  height: 83px;
   position: absolute;
 }
 
@@ -187,10 +198,9 @@ html.js .loader {
 .mount{
   background: url('../img/1x/mount.png') repeat-x;
   height: 223px;
-  width: 4000px;
+  width: 100%;
   position: absolute;
   bottom: 40px;
-  left: -300px;
 }
 
 // .sky-00{
@@ -261,7 +271,7 @@ left: 1588px;
   90% { transform: translateY(-76px); }
  100% { transform: translateY(-76px); }
 }
-.bubble_sql{
+.bubble__sql{
   background: url('../img/1x/bubble-sql.png');
   left: 1730px;
   bottom: 47px;
@@ -269,7 +279,6 @@ left: 1588px;
 }
 
 .bonus__rd{
-  position: absolute;
   left: 907px;
   bottom: 155px;
   animation: bonus 2s 5s ease infinite;
@@ -307,16 +316,12 @@ left: 1588px;
   bottom: 155+60px;
 }
 
-.top-ground{
-  background: url('../img/1x/ground-top.png');
+.top-ground--00{
   width: 129px;
-  height: 52px;
-  position: absolute;
   left: 1389px;
   bottom: 219px;
 }
 .bonus__data{
-  position: absolute;
   bottom: 359px;
   left: 1430px;
 }
@@ -334,5 +339,214 @@ left: 1588px;
 }
 
 
+/*== 2004 ==*/
+
+.ground__04{
+  background: url('../img/1x/ground-04.png');
+}
+.city{
+  background: url('../img/1x/city.png') repeat-x;
+  height: 162px;
+  width: 100%;
+  position: absolute;
+  bottom: 47px;
+}
+.year__2004{
+  background: url('../img/1x/2004.png');
+  height: 214px;
+  width: 598px;
+  position: absolute;
+  top: 210px;
+  left: 264px;
+  z-index: -1;
+}
+.bush__1--04{
+  left: 148px
+}
+.bush__2--04{
+  left: 709px;
+}
+.bush__3--04{
+  left: 1178px;
+}
+.bush__4--04{
+  left: 1178+546px;
+}
+.bonus__sync{
+  left: 416px;
+  bottom: 155px;
+}
+.logo__sync{
+  background: url('../img/1x/2004_syncr.png');
+  width: 95px;
+  height: 25px;
+  position: absolute;
+  left: 416-35px;
+  bottom: 213px;
+}
+.brick-steel--04{
+
+  width: 460px;
+  left:416+46px;
+  bottom: 155px;
+}
+.brick__1--04{
+  width:91px;
+  left: 1232px;
+  bottom: 155px;
+}
+.bonus__imag{
+  left: 1232+91px;
+  bottom: 155px;
+}
+.brick__2--04{
+  width: 92px;
+  left: 1232+91+46px;
+  bottom: 155px;
+}
+.top-ground--04{
+  width: 284px;
+  bottom: 306px;
+  left: 849px;
+}
+.bubble__net{
+  background: url('../img/1x/bubble-net.png');
+  bottom: 359px;
+  left: 955px;
+  z-index: 5;
+}
+
+/*== 2008 ==*/
+
+.ground__08{
+  background: url('../img/1x/ground-08.png');
+  background-position: -810px;
+}
+.year__2008{
+  background: url('../img/1x/2008.png');
+  width: 591px;
+  height: 214px;
+  position: absolute;
+  top: 210px;
+  left: 264px;
+  z-index: -1;
+}
+.bush__1--08{
+  left: 148px;
+}
+.bush__2--08{
+left: 708px;
+}
+.bush__3--08{
+left: 1353px;
+}
+.bush__4--08{
+  left: 1727px;
+}
+.bubble__share{
+  background: url('../img/1x/bubble-share.png');
+  left: 467px;
+  bottom:52px;
+  z-index: 5;
+}
+.bonus__fei{
+  left: 680px;
+  bottom:157px;
+}
+.logo__fei{
+  background: url('../img/1x/2008_fei.png');
+  width: 75px;
+  height: 33px;
+  position: absolute;
+  left: 662px;
+  bottom: 157+46px;
+}
+.brick-steel__1--08{
+  width: 46px;
+  left: 912px;
+  bottom:157px;
+}
+.brick__1--08{
+  width: 352px;
+  left:912+46px;
+  bottom: 157px;
+}
+.brick-steel__2--08{
+  width: 46px;
+  left: 912+46+352px;
+  bottom: 157px;
+}
+.bubble__crm{
+  background: url('../img/1x/bubble-crm.png');
+  left: 1014px;
+  bottom: 203px;
+}
+.bonus__conti{
+  left: 912+46+352+46+295px;
+  bottom: 157px;
+}
+.logo__conti{
+  background: url('../img/1x/Conti.png');
+  width: 154px;
+  height: 25px;
+  position: absolute;
+  left: 912+352+46+295px;
+  bottom: 157+46px;
+}
+.brick__2--08{
+  width: 141px;
+  bottom: 157px;
+  left: 912+46+352+46+295+46px;
+}
+.brick-steel__2--08{
+  bottom:157px;
+}
+.brick-steel__3--08{
+  width: 46px;
+  bottom:157px;
+  left: 912+46+352+46+295+46+141px;
+}
+.bonus__nv{
+  bottom: 306px;
+  left: 1160px;
+}
+.logo__nv{
+  background: url('../img/1x/2008_night.png');
+  width: 59px;
+  height: 38px;
+  position: absolute;
+  left: 1153px;
+  bottom: 359px;
+}
+.brick__3--08{
+  width: 174px;
+  left: 1160+46px;
+  bottom: 306px;
+}
+.top-ground--08{
+  width: 285px;
+  left: 1160+46+174px;
+  bottom:306px;
+}
+.bubble__prize{
+  background: url('../img/1x/bubble-prize.png');
+  left:1160+46+174+211px;
+  bottom: 354px;
+  z-index: 5;
+}
+.bubble__ccc{
+  background: url('../img/1x/bubble-ccc.png');
+  left: 1353+50px;
+  bottom: 45px;
+  z-index: 10;
+}
+.bubble__qt{
+  background: url('../img/1x/bubble-qt.png');
+  left: 912+46+352+46+295+30+141px;
+  bottom: 157+46px;
+}
+
+/*== 2010 ==*/
 
 
+/*== 2013 ==*/
