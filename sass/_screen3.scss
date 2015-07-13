@@ -1,0 +1,377 @@
+/*== 2008 ==*/
+
+
+$dur08: 15000ms;
+$bounce08: translate(515px, 400+60-60+60-240+90-90+90-90+90-210+35-60+60-60+60px);
+$screenMove08: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120-120-120-90px);
+$groundMove08: -810-60-60-120-120-120-140-60+60+60-60-60-120-120-120-90px;
+
+
+.ball--08{
+  //transform: $bounce08;
+  animation-name: bounce-08;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-duration: $dur08;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear ;
+}
+@keyframes bounce-08{
+ 0%  { transform: translate(0px, 460px);opacity: 0; }
+ 2%  { transform: translate(0px, 460px);opacity: 1; }
+ 4%  { transform: translate(120px, 340px); }
+ 6%  { transform: translate(240px, 460px); }
+ 8%  { transform: translate(360px, 340px); }
+ 10% { transform: translate(480px, 460px); }//share
+ 12% { transform: translate(515px, 400px); }//move on
+ 14% { transform: translate(515px, 400+60px); }
+ 16% { transform: translate(515px, 400+60-60px); }//fei
+ 18% { transform: translate(515px, 400+60-60+60px); }
+ 20% { transform: translate(515px, 400+60-60+60-240px); }
+ 22% { transform: translate(515px, 400+60-60+60-240+90px); }//crm
+ 24% { transform: translate(515px, 400+60-60+60-240+90-90px); }//nv
+ 26% { transform: translate(515px, 400+60-60+60-240+90-90+90px); }
+ 28% { transform: translate(515px, 400+60-60+60-240+90-90+90-90px); }
+ 30% { transform: translate(515px, 400+60-60+60-240+90-90+90-90+90px); }
+ 32% { transform: translate(515px, 400+60-60+60-240+90-90+90-90+90-210px); }
+ 34% { transform: translate(515px, 400+60-60+60-240+90-90+90-90+90-210+35px); }
+ 36% { transform: translate(515px, 400+60-60+60-240+90-90+90-90+90-210+35-60px); }
+ 38% { transform: translate(515px, 400+60-60+60-240+90-90+90-90+90-210+35-60+60px); }
+ 40% { transform: translate(515px, 400+60-60+60-240+90-90+90-90+90-210+35-60+60-60px); }
+ 42% { transform: translate(515px, 400+60-60+60-240+90-90+90-90+90-210+35-60+60-60+60px); }//prize
+ 44% { transform: translate(0px, 460px); }
+ 46% { transform: translate(0px, 460px); }
+ 48% { transform: translate(0px, 460px); }
+ 50% { transform: translate(0px, 460px); }
+ 52% { transform: translate(0px, 460px); }
+ 54% { transform: translate(0px, 460px); }//bonus rd
+ 56% { transform: translate(0px, 460px); }
+ 58% { transform: translate(0px, 460px); }
+ 60% { transform: translate(0px, 460px); }
+ 62% { transform: translate(0px, 460px); }
+ 64% { transform: translate(0px, 460px); }
+ 66% { transform: translate(0px, 460px); }
+ 68% { transform: translate(0px, 460px); }
+ 70% { transform: translate(0px, 460px); }
+ 72% { transform: translate(0px, 460px); }
+ 74% { transform: translate(0px, 460px); }
+ 76% { transform: translate(0px, 460px); }
+ 78% { transform: translate(0px, 460px); }
+ 80% { transform: translate(0px, 460px); }
+ 82% { transform: translate(0px, 460px); }
+ 84% { transform: translate(0px, 460px); }//bonus data
+ 86% { transform: translate(0px, 460px); }
+ 88% { transform: translate(0px, 460px); }
+ 90% { transform: translate(0px, 460px); }
+ 92% { transform: translate(0px, 460px); }
+ 94% { transform: translate(0px, 460px); }
+ 96% { transform: translate(0px, 460px); }
+ 98% { transform: translate(0px, 460px); }
+ 100%{ transform: translate(0px, 460px); }
+}
+@keyframes groundMove08{
+0%  { background-position: -810px; }
+2%  { background-position: -810px; }
+4%  { background-position: -810px; }
+6%  { background-position: -810px; }
+8%  { background-position: -810px; }
+10% { background-position: -810px; }
+12% { background-position: -810px; }// move on
+14% { background-position: -810-60px; }
+16% { background-position: -810-60-60px; }
+18% { background-position: -810-60-60-120px; }
+20% { background-position: -810-60-60-120-120px; }
+22% { background-position: -810-60-60-120-120-120px; }
+24% { background-position: -810-60-60-120-120-120-140px; }
+26% { background-position: -810-60-60-120-120-120-140-60px; }
+28% { background-position: -810-60-60-120-120-120-140-60+60px; }
+30% { background-position: -810-60-60-120-120-120-140-60+60+60px; }
+32% { background-position: -810-60-60-120-120-120-140-60+60+60-60px; }
+34% { background-position: -810-60-60-120-120-120-140-60+60+60-60-60px; }
+36% { background-position: -810-60-60-120-120-120-140-60+60+60-60-60-120px; }
+38% { background-position: -810-60-60-120-120-120-140-60+60+60-60-60-120-120px; }
+40% { background-position: -810-60-60-120-120-120-140-60+60+60-60-60-120-120-120px; }
+42% { background-position: -810-60-60-120-120-120-140-60+60+60-60-60-120-120-120-90px; }
+44% { background-position: -810px; }
+46% { background-position: -810px; }
+48% { background-position: -810px; }
+50% { background-position: -810px; }
+52% { background-position: -810px; }
+54% { background-position: -810px; }
+56% { background-position: -810px; }
+58% { background-position: -810px; }
+60% { background-position: -810px; }
+62% { background-position: -810px; }
+64% { background-position: -810px; }
+66% { background-position: -810px; }
+68% { background-position: -810px; }
+70% { background-position: -810px; }
+72% { background-position: -810px; }
+74% { background-position: -810px; }
+76% { background-position: -810px; }
+78% { background-position: -810px; }
+80% { background-position: -810px; }
+82% { background-position: -810px; }
+84% { background-position: -810px; }//bonus data
+86% { background-position: -810px; }
+88% { background-position: -810px;}
+90% { background-position: -810px; }
+92% { background-position: -810px; }
+94% { background-position: -810px; }
+96% { background-position: -810px; }
+98% { background-position: -810px; }
+100%{ background-position: -810px; }
+}
+@keyframes screenMove08{
+0%  { transform: translateX(0px); }
+2%  { transform: translateX(0px); }
+4%  { transform: translateX(0px); }
+6%  { transform: translateX(0px); }
+8%  { transform: translateX(0px); }
+10% { transform: translateX(0px); }
+12% { transform: translateX(0px); }
+14% { transform: translateX(0-60px); }
+16% { transform: translateX(0-60-60px); }
+18% { transform: translateX(0-60-60-120px); }
+20% { transform: translateX(0-60-60-120-120px); }
+22% { transform: translateX(0-60-60-120-120-120px); }
+24% { transform: translateX(0-60-60-120-120-120-140px); }
+26% { transform: translateX(0-60-60-120-120-120-140-60px); }
+28% { transform: translateX(0-60-60-120-120-120-140-60+60px); }
+30% { transform: translateX(0-60-60-120-120-120-140-60+60+60px); }
+32% { transform: translateX(0-60-60-120-120-120-140-60+60+60-60px); }
+34% { transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60px); }
+36% { transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120px); }
+38% { transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120-120px); }
+40% { transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120-120-120px); }
+42% { transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120-120-120-90px); }
+44% { transform: translateX(0px); }
+46% { transform: translateX(0px); }
+48% { transform: translateX(0px); }
+50% { transform: translateX(0px); }
+52% { transform: translateX(0px); }
+54% { transform: translateX(0px); }//bonus rd
+56% { transform: translateX(0px); }
+58% { transform: translateX(0px); }
+60% { transform: translateX(0px); }
+62% { transform: translateX(0px); }
+64% { transform: translateX(0px); }
+66% { transform: translateX(0px); }
+68% { transform: translateX(0px); }
+70% { transform: translateX(0px); }
+72% { transform: translateX(0px); }
+74% { transform: translateX(0px); }
+76% { transform: translateX(0px); }
+78% { transform: translateX(0px); }
+80% { transform: translateX(0px); }
+82% { transform: translateX(0px); }
+84% { transform: translateX(0px); }//bonus data
+86% { transform: translateX(0px); }
+88% { transform: translateX(0px); }
+90% { transform: translateX(0px); }
+92% { transform: translateX(0px); }
+94% { transform: translateX(0px); }
+96% { transform: translateX(0px); }
+98% { transform: translateX(0px); }
+100%{ transform: translateX(0px); }
+}
+.ground__08{
+  background: url('../img/1x/ground-08.png');
+  //background-position: $groundMove08;
+  animation: groundMove08 $dur08 linear forwards;
+}
+.year__2008{
+  background: url('../img/1x/2008.png');
+  width: 591px;
+  height: 214px;
+  position: absolute;
+  top: 210px;
+  left: 264px;
+  z-index: -1;
+}
+.bush__1--08{
+  left: 148px;
+//transform: $screenMove08;
+  animation: screenMove08 $dur08  linear forwards;
+}
+.bush__2--08{
+left: 708px;
+//transform: $screenMove08;
+animation: screenMove08 $dur08  linear forwards;
+}
+.bush__3--08{
+left: 1353px;
+//transform: $screenMove08;
+animation: screenMove08 $dur08  linear forwards;
+}
+.bush__4--08{
+  left: 1727px;
+//transform: $screenMove08;
+  animation: screenMove08 $dur08  linear forwards;
+}
+.move-wrap__1--08{
+  left: 467px;
+  bottom:125px;
+//transform: $screenMove08;
+  animation: screenMove08 $dur08  linear forwards;
+}
+.move-wrap__2--08{
+  left: 912px;
+  bottom:125px;
+//transform: $screenMove08;
+  animation: screenMove08 $dur08  linear forwards;
+}
+.move-wrap__3--08{
+left: 253+1357px;
+bottom:125px;
+//transform: $screenMove08;
+animation: screenMove08 $dur08  linear forwards;
+}
+.move-wrap__4--08{
+  left: 1160px;
+  bottom: 306px;
+//transform: $screenMove08;
+  animation: screenMove08 $dur08  linear forwards;
+}
+.move-wrap__5--08{
+left: 1353+50px;
+bottom: 125px;
+//transform: $screenMove08;
+animation: screenMove08 $dur08  linear forwards;
+}
+.teleport__1--08{
+   opacity: 1;
+  bottom: 47px;
+  left: -45px;
+  animation: teleport 2s ease forwards;
+  animation-delay: $dur08*1/100;
+}
+.bubble__share{
+  background: url('../img/1x/bubble-share.png');
+  left: 0px;
+  z-index: 5;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*10/100;
+}
+.bonus__fei{
+  left: 146px;
+  bottom:27px;
+  animation: bonus 2s ease forwards;
+  animation-delay: $dur08*18/100;
+}
+.logo__fei{
+  background: url('../img/1x/2008_fei.png');
+  width: 75px;
+  height: 33px;
+  position: absolute;
+  left: 130px;
+  bottom: 27+50px;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*18/100;
+}
+.bubble__crm{
+  background: url('../img/1x/bubble-crm.png');
+  left: 101px;
+  bottom: 27+46px;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*25/100;
+}
+.brick-steel__1--08{
+  width: 46px;
+  left: 0px;
+  bottom:27px;
+}
+.brick__1--08{
+  width: 352px;
+  left:46px;
+  bottom: 27px;
+}
+.brick-steel__2--08{
+  width: 46px;
+  left: 47+352px;
+  bottom: 27px;
+}
+
+.bonus__conti{
+  left: 0px;
+  bottom: 27px;
+  animation: bonus 2s ease forwards;
+  animation-delay: $dur08*50/100;
+
+}
+.logo__conti{
+  background: url('../img/1x/Conti.png');
+  width: 154px;
+  height: 25px;
+  position: absolute;
+  left: -50px;
+  bottom: 27+50px;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*50/100;
+}
+.brick__2--08{
+  width: 141px;
+  bottom: 27px;
+  left: 46px;
+}
+.brick-steel__3--08{
+  width: 46px;
+  bottom:27px;
+  left: 46+141px;
+}
+.bubble__qt{
+  background: url('../img/1x/bubble-qt.png');
+  left: 27+141px;
+  bottom: 27+46px;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*57/100;
+}
+
+.bonus__nv{
+  bottom: 27px;
+  left: 0px;
+  animation: bonus 2s ease forwards;
+  animation-delay: $dur08*28/100;
+}
+.logo__nv{
+  background: url('../img/1x/2008_night.png');
+  width: 59px;
+  height: 38px;
+  position: absolute;
+  left: -10px;
+  bottom: 27+50px;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*28/100;
+}
+.brick__3--08{
+  width: 174px;
+  left: 46px;
+  bottom: 27px;
+}
+.top-ground--08{
+  width: 285px;
+  left: 46+174px;
+  bottom:27px;
+}
+.bubble__prize{
+  background: url('../img/1x/bubble-prize.png');
+  left:46+174+211px;
+  bottom: 27+50px;
+  z-index: 15;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*41/100;
+}
+.bubble__ccc{
+  background: url('../img/1x/bubble-ccc.png');
+  left: 0px;
+  z-index: 10;
+  animation: bonusAnim 2s ease forwards;
+  animation-delay: $dur08*47/100;
+}
+.teleport__2--08{
+  left: 533px;
+  bottom: -77px;
+  opacity: 0;
+  animation: teleport 2s ease forwards;
+  animation-delay: $dur08*63/100;
+}
