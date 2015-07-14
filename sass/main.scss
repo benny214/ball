@@ -88,12 +88,12 @@ html.js .loader {
 .c__stage_4{
   display: none;
 }
-// .c__stage_5{
-//   display: none;
-// }
-.c__stage_6{
+.c__stage_5{
   display: none;
 }
+// .c__stage_6{
+//   display: none;
+// }
 .c__stage_7{
   display: none;
 }
@@ -186,7 +186,7 @@ html.js .loader {
   width: 150px;
   height: 123px;
   z-index: 99999;
-   animation: teleport 2s ease forwards;
+   // animation: teleport 2s ease forwards;
 }
 
 [class*='c__tube-bott']{
@@ -205,6 +205,12 @@ html.js .loader {
   position: absolute;
   height: 214px;
   z-index: -3;
+}
+[class*='c__bridge']{
+  background: url('../img/1x/bridje.png');
+  width: 123px;
+  height: 26px;
+  position: absolute;
 }
 
 .c__center{
@@ -283,12 +289,6 @@ html.js .loader {
 @import "_screen5.scss";
 @import "_screen6.scss";
 
-
-
-/*== 2010 ==*/
-
-
-/*== 2013 ==*/
 
 // 0%  {  }
 // 1%  {  }
