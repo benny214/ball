@@ -1,6 +1,7 @@
 /*=== 2010 ===*/
 
 $dur10: 15000ms;
+$delay: 2000ms;
 
 @keyframes bounce-10{
 0%  { transform: translate(0px, 460px);opacity: 0; }
@@ -165,26 +166,29 @@ $dur10: 15000ms;
 
 .c__ball--10{
 	animation-name: bounce-10;
-	animation-delay: 0s;
+	opacity: 0;
+	animation-delay: $delay;
 	animation-direction: normal;
 	animation-duration: $dur10;
 	animation-fill-mode: forwards;
 	animation-timing-function: linear ;
 }
 .c__ground--10{
-	background: url('../img/1x/ground-04.png');
+	background: url('../img/ground-04.png');
 	animation: groundMove10 $dur10 linear forwards;
+	animation-delay: $delay;
 }
 .c__move-wrap--10{
 	bottom: 47px;
 	left: 148px;
 	animation: screenMove10 $dur10  linear forwards;
+	animation-delay: $delay;
 }
 
 
 
 .c__year__2010{
-	background: url('../img/1x/2010.png');
+	background: url('../img/2010.png');
 	width: 574px;
 	left: 60*4px;
 	top: 60*4px;
@@ -192,12 +196,12 @@ $dur10: 15000ms;
 .c__teleport__1--10{
 	bottom: 4px;
 	left: -200px;
-	animation-delay: $dur10*1/100;
+	animation-delay: $delay+$dur10*1/100;
 }
 .c__teleport__2--10{
 	bottom: 4px;
 	left:1153+205+188+16+170+75+170px;
-	animation-delay: $dur10*90/100;
+	animation-delay: $delay+$dur10*90/100;
 }
 .c__bush__1--10{
 	left: 0;
@@ -218,15 +222,15 @@ $dur10: 15000ms;
 .c__bonus__thomson{
 	left: 231px;
 	bottom: 104+4px;
-	animation-delay: $dur10*8/100;
+	animation-delay: $delay+$dur10*8/100;
 }
 .c__logo__thomson{
-	background: url('../img/1x/2010_thomson.png');
+	background: url('../img/2010_thomson.png');
 	width:109px;
 	height: 25px;
 	left: 198px;
 	bottom: 104+4+50px;
-	animation-delay: $dur10*8/100;
+	animation-delay: $delay+$dur10*8/100;
 }
 .c__brick__1--10{
 	left: 231+46px;
@@ -243,28 +247,28 @@ $dur10: 15000ms;
 	bottom: 4px;
 }
 .c__bubble__php{
-	background: url('../img/1x/bubble-php.png');
+	background: url('../img/bubble-php.png');
 	bottom: 4px;
 	left: 236px;
-	animation-delay: $dur10*9/100;
+	animation-delay: $delay+$dur10*9/100;
 }
 .c__bubble__partner{
-	background: url('../img/1x/bubble-partner.png');
+	background: url('../img/bubble-partner.png');
 	bottom: 204-50px;
 	left: 309+236+50px;
-	animation-delay: $dur10*26/100;
+	animation-delay: $delay+$dur10*26/100;
 }
 .c__bubble__ruby{
-	background: url('../img/1x/bubble-ruby.png');
+	background: url('../img/bubble-ruby.png');
 	left: 453px;
 	bottom: 224px;
-	animation-delay: $dur10*22/100;
+	animation-delay: $delay+$dur10*22/100;
 }
 .c__bubble__gold{
-	background: url('../img/1x/bubble-gold.png');
+	background: url('../img/bubble-gold.png');
 	bottom: 4px;
 	left: 236+309+511px;
-	animation-delay: $dur10*46/100;
+	animation-delay: $delay+$dur10*46/100;
 }
 .c__top-ground__1--10{
 	left: 700px;
@@ -279,15 +283,15 @@ $dur10: 15000ms;
 .c__bonus__it{
 	bottom: 90+210+47px;
 	left: 773+46px;
-	animation-delay: $dur10*36/100;
+	animation-delay: $delay+$dur10*36/100;
 }
 .c__logo__it{
-	background: url('../img/1x/2010_ayti.png');
+	background: url('../img/2010_ayti.png');
 	width: 59px;
 	height:17px;
 	bottom: 90+210+47+53px;
 	left: 773+46px;
-	animation-delay: $dur10*36/100;
+	animation-delay: $delay+$dur10*36/100;
 
 }
 .c__brick__3--10{
@@ -312,21 +316,21 @@ $dur10: 15000ms;
 .c__bonus__pfrf{
 	left: 1273px;
 	bottom: 90+104+4+47+29+60px;
-	animation-delay: $dur10*56/100;
+	animation-delay: $delay+$dur10*56/100;
 }
 .c__logo__pfrf{
-	background: url('../img/1x/2010_pfrf.png');
+	background: url('../img/2010_pfrf.png');
 	width: 134px;
 	height: 25px;
 	left: 1260px;
 	bottom: 90+104+4+47+29+60+60px;
-	animation-delay: $dur10*56/100;
+	animation-delay: $delay+$dur10*56/100;
 }
 .c__bubble__ios{
-	background: url('../img/1x/bubble-ios.png');
+	background: url('../img/bubble-ios.png');
 	left:1153+205px;
 	bottom: 104+4+47px;
-	animation-delay: $dur10*62/100;
+	animation-delay: $delay+$dur10*62/100;
 }
 .c__top-ground__3--10{
 	width: 285px;
@@ -334,19 +338,19 @@ $dur10: 15000ms;
 	bottom: 210+4px;
 }
 .c__bubble__android{
-	background: url('../img/1x/bubble-android.png');
+	background: url('../img/bubble-android.png');
 	left:1153+205+188+16px;
 	bottom: 210+4+47px;
-	animation-delay: $dur10*66/100;
+	animation-delay: $delay+$dur10*66/100;
 }
 .c__bubble__nvidia{
-	background: url('../img/1x/bubble-nvidia.png');
+	background: url('../img/bubble-nvidia.png');
 	left:1153+205+188+16+105px;
 	bottom: 210+4+47px;
 }
 .c__bubble__bd{
-	background: url('../img/1x/bubble-bd.png');
+	background: url('../img/bubble-bd.png');
 	left:1153+205+188+16+170px;
 	bottom: 4px;
-	animation-delay: $dur10*82/100;
+	animation-delay: $delay+$dur10*82/100;
 }

@@ -2,9 +2,6 @@
 
 $browser-context: 16;
 
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -28,9 +25,9 @@ html.js .loader {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: #fff;
-    height: 60px;
-    width: 60px;
+    // background-color: #fff;
+    height: 160px;
+    width: 160px;
     margin-top: -30px;
     margin-left: -30px;
     left: 50%;
@@ -76,24 +73,24 @@ html.js .loader {
 }
 
 
-.c__stage_1{
-  display: none;
-}
-.c__stage_2{
-  display: none;
-}
-.c__stage_3{
-  display: none;
-}
-.c__stage_4{
-  display: none;
-}
-.c__stage_5{
-  display: none;
-}
-// .c__stage_6{
+// .c__stage_1{
 //   display: none;
 // }
+// .c__stage_2{
+//   display: none;
+// }
+// .c__stage_3{
+//   display: none;
+// }
+// .c__stage_4{
+//   display: none;
+// }
+// .c__stage_5{
+//   display: none;
+// }
+// // .c__stage_6{
+// //   display: none;
+// // }
 .c__stage_7{
   display: none;
 }
@@ -103,6 +100,7 @@ html.js .loader {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
   top:0;
   background: #E4F3F6;
   z-index: -1;
@@ -116,7 +114,7 @@ html.js .loader {
   z-index: 2;
 }
 [class*='c__bush']{
-  background: url('../img/1x/bush.png');
+  background: url('../img/bush.png');
   height: 68px;
   width: 205px;
   z-index: 10;
@@ -124,7 +122,7 @@ html.js .loader {
   position: absolute;
 }
 [class*='c__sky']{
-  background: url('../img/1x/sky.png') repeat-x;
+  background: url('../img/sky.png') repeat-x;
   width: 100%;
   height: 261px;
   position: absolute;
@@ -132,14 +130,14 @@ html.js .loader {
 }
 
 [class*='c__ball']{
-  background: url('../img/1x/ball.png');
+  background: url('../img/ball.png');
   height:46px;
   width: 46px;
   position: absolute;
   z-index:20;
 }
 [class*='c__tube']{
-  background: url('../img/1x/tube_top.png');
+  background: url('../img/tube_top.png');
   width: 100px;
   height: 76px;
   position: absolute;
@@ -151,27 +149,27 @@ html.js .loader {
   height: 74px;
   position: absolute;
   z-index: 25;
- // animation: bonusAnim 2s ease forwards;
+ animation: bonusAnim 2s ease forwards;
 }
 [class*='c__bonus']{
-  background: url('../img/1x/bonus.jpg');
+  background: url('../img/bonus.jpg');
   width: 46px;
   height: 46px;
   position: absolute;
    animation: bonus 2s ease forwards;
 }
 [class*='c__brick']{
-  background: url('../img/1x/pat_brick.jpg') repeat-x;
+  background: url('../img/pat_brick.jpg') repeat-x;
   height: 46px;
   position: absolute;
 }
 [class*='c__brick-steel']{
-  background: url('../img/1x/brick_steel.png') repeat-x;
+  background: url('../img/brick_steel.png') repeat-x;
   height: 46px;
   position: absolute;
 }
 [class*='c__top-ground']{
-  background: url('../img/1x/top-ground.png') repeat-x;
+  background: url('../img/top-ground.png') repeat-x;
   height: 83px;
   position: absolute;
 }
@@ -182,24 +180,24 @@ html.js .loader {
 
 [class*='c__teleport']{
   position: absolute;
-  background: url('../img/1x/teleport.png');
+  background: url('../img/teleport.png');
   width: 150px;
   height: 123px;
   z-index: 99999;
-   // animation: teleport 2s ease forwards;
+ animation: teleport 2s ease forwards;
 }
 
 [class*='c__tube-bott']{
   position: absolute;
-  background: url('../img/1x/tube_bott-.png') repeat-y;
+  background: url('../img/tube_bott-.png') repeat-y;
   width: 88px;
   height: 11px;
   z-index: 10;
 }
 [class*='c__logo']{
   position: absolute;
-  // opacity: 0;
-   // animation: bonusAnim 2s ease forwards;
+opacity: 0;
+ animation: bonusAnim 2s ease forwards;
 }
 [class*='c__year']{
   position: absolute;
@@ -207,7 +205,7 @@ html.js .loader {
   z-index: -3;
 }
 [class*='c__bridge']{
-  background: url('../img/1x/bridje.png');
+  background: url('../img/bridje.png');
   width: 123px;
   height: 26px;
   position: absolute;
@@ -229,7 +227,7 @@ html.js .loader {
   border-right: 1px solid #222;
 }
 .c__sun{
-  background: url('../img/1x/sun.png');
+  background: url('../img/sun.png');
   width:589px ;
   height: 589px;
   position: absolute;
@@ -238,18 +236,18 @@ html.js .loader {
 }
 
 @keyframes bonus{
-  0%,1%{ background: url('../img/1x/bonus.jpg'); }
+  0%,1%{ background: url('../img/bonus.jpg'); }
   5%{ transform: translateY(-10px); }
   10%{ transform: translateY(0px); }
-  20% { background: url('../img/1x/bonus_empty.jpg'); }
-  30% {background: url('../img/1x/bonus_empty.jpg');}
-  40% {background: url('../img/1x/bonus_empty.jpg');}
-  50% {background: url('../img/1x/bonus_empty.jpg');}
-  60% {background: url('../img/1x/bonus_empty.jpg');}
-  70% {background: url('../img/1x/bonus_empty.jpg');}
-  80% {background: url('../img/1x/bonus_empty.jpg');}
-  90% {background: url('../img/1x/bonus_empty.jpg');}
- 100% {background: url('../img/1x/bonus_empty.jpg');}
+  20% { background: url('../img/bonus_empty.jpg'); }
+  30% {background: url('../img/bonus_empty.jpg');}
+  40% {background: url('../img/bonus_empty.jpg');}
+  50% {background: url('../img/bonus_empty.jpg');}
+  60% {background: url('../img/bonus_empty.jpg');}
+  70% {background: url('../img/bonus_empty.jpg');}
+  80% {background: url('../img/bonus_empty.jpg');}
+  90% {background: url('../img/bonus_empty.jpg');}
+ 100% {background: url('../img/bonus_empty.jpg');}
 }
 
 @keyframes bonusAnim{

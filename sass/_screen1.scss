@@ -1,12 +1,14 @@
 /*== 2000 ==*/
 
 $dur00: 10000ms;
+$delay: 2000ms;
 
 .c__ball--00{
   top: -73px;
   left: 0px;
+  opacity:0;
   animation-name: bounce-00;
-  animation-delay: 0s;
+  animation-delay: $delay;
   animation-direction: normal;
   animation-duration: $dur00;
   animation-fill-mode: forwards;
@@ -70,9 +72,10 @@ $dur00: 10000ms;
 }
 
 .c__ground--00{
-  background: url('../img/1x/ground-00.png');
+  background: url('../img/ground-00.png');
   background-position: -900-180px;
  animation: groundMove $dur00 linear forwards;
+ animation-delay: $delay;
 }
 
 @keyframes groundMove {
@@ -129,17 +132,16 @@ $dur00: 10000ms;
  100%{ background-position: -1780-40+60-60-60-60-30-30-40-60-120-60-40-20-20-60-120px; }
 }
 .c__mount{
-  background: url('../img/1x/mount.png') repeat-x;
+  background: url('../img/mount.png') repeat-x;
   height: 223px;
   width: 100%;
   position: absolute;
   bottom: 40px;
-  animation: mountLeft-00 1s 2500ms linear forwards; 
   z-index: -2;
 }
 
 .c__year__2000{
-  background: url('../img/1x/year.png');
+  background: url('../img/year.png');
   height: 214px;
   width: 555px;
   top: 210px;
@@ -150,6 +152,7 @@ $dur00: 10000ms;
 .c__bush__1--00{
   left: -205px;
   animation: screenMove $dur00 linear forwards;
+  animation-delay: $delay;
 }
 @keyframes screenMove {
 
@@ -208,25 +211,30 @@ $dur00: 10000ms;
 
 .c__bush__2--00{
   left: 1111px;
-
+  transform: translateX(-180px);
   animation: screenMove $dur00  linear forwards;
+  animation-delay: $delay;
 }
 .c__bush__3--00{
 left: 1588px;
+transform: translateX(-180px);
 animation: screenMove $dur00  linear forwards;
+animation-delay: $delay;
 }
 
 .c__tube--00{
+  transform: translateX(-180px);
   left: 319+150px;
   animation: screenMove $dur00 linear forwards;
+  animation-delay: $delay;
 }
 
 .c__bubble__java{
-  background: url('../img/1x/bubble-java.png');
+  background: url('../img/bubble-java.png');
   bottom: 10px;
   opacity: 0;
   left: 306px;
-  animation: javaBubble $dur00*10/100 3s ease;
+  animation: javaBubble $delay+$dur00*10/100 $delay+3s ease;
   animation-fill-mode: forwards;
   z-index: -1;
   
@@ -249,26 +257,28 @@ animation: screenMove $dur00  linear forwards;
 
 
 .c__move-wrap--00{
-  
+  transform: translateX(-180px);
   height: 46+49px;
   width:372+46px;
   animation: screenMove $dur00  linear forwards;
+  animation-delay: $delay;
   left: 907+90px;
   bottom: 155px;
 }
 .c__move-wrap__02--00{
-  
+  transform: translateX(-180px);
   height: 220px;
   width: 132px;
   left: 1632px;
   bottom: 220px;
   animation: screenMove $dur00  linear forwards;
+  animation-delay: $delay;
 }
 
 .c__bonus__rd{
   bottom:0;
   left: 0;
-  animation-delay: $dur00*52/100;
+  animation-delay: $delay+$dur00*52/100;
 }
 
 .c__brick--00{
@@ -278,12 +288,12 @@ animation: screenMove $dur00  linear forwards;
   
 }
 .c__logo__rd{
-  background: url('../img/1x/2000_Soft.png');
+  background: url('../img/2000_Soft.png');
   width: 73px;
   height: 46px;
   left: 0px;
   bottom: 0px;
-  animation-delay: $dur00*52/100;
+  animation-delay: $delay+$dur00*52/100;
 }
 
 .c__top-ground--00{
@@ -294,15 +304,15 @@ animation: screenMove $dur00  linear forwards;
 .c__bonus__data{
   bottom: 70+80px;
   left: 50px;
-  animation-delay: $dur00*82/100;
+  animation-delay: $delay+$dur00*82/100;
 }
 .c__logo__data{
-  background: url('../img/1x/2000_dataart.png');
+  background: url('../img/2000_dataart.png');
   width: 73px;
   height: 18px;
   top: 30px;
   left: 35px;
-  animation-delay: $dur00*82/100;
+  animation-delay: $delay+$dur00*82/100;
 }
 .c__move-wrap__3--00{
   width: 74+90+150px;
@@ -313,15 +323,15 @@ animation: screenMove $dur00  linear forwards;
 
 }
 .c__bubble__sql{
-  background: url('../img/1x/bubble-sql.png');
+  background: url('../img/bubble-sql.png');
   left: 0;
   bottom:0;
-  animation-delay: $dur00*94/100;
+  animation-delay: $delay+$dur00*94/100;
 }
 .c__teleport--00{
   left: 2100px;
   bottom: 47px;
   left: 90+60px;
   bottom:0;
-  animation-delay: $dur00*98/100;
+  animation-delay: $delay+$dur00*98/100;
 }

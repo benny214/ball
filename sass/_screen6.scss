@@ -1,6 +1,7 @@
 /*=== 2013 ===*/
 
 $dur13: 15000ms;
+$delay: 2000ms;
 
 
 @keyframes bounce-13{
@@ -165,7 +166,8 @@ $dur13: 15000ms;
 }
 .c__ball--13{
 	animation-name: bounce-13;
-	animation-delay: 0s;
+	opacity:0;
+	animation-delay: $delay;
 	animation-direction: normal;
 	animation-duration: $dur13;
 	animation-fill-mode: forwards;
@@ -173,14 +175,17 @@ $dur13: 15000ms;
 }
 
 .c__ground--13{
-	background: url('../img/1x/ground-13.png');
+	background: url('../img/ground-13.png');
+	background-position: -810px;
 	animation: groundMove13 $dur13  linear forwards;
+	animation-delay: $delay;
 
 }
 .c__move-wrap--13{
 	left: 109px;
 	bottom: 47px;
 	animation: screenMove13 $dur13  linear forwards;
+	animation-delay: $delay;
 }
 .c__bush__1--13{
 	left: 0;
@@ -211,15 +216,15 @@ $dur13: 15000ms;
 .c__bonus__telecom{
 	left: 1177px;
 	bottom: 370px;
-	animation-delay: $dur13*40/100;
+	animation-delay: $delay+$dur13*40/100;
 }
 .c__logo__rostel{
-	background: url('../img/1x/2013_rostel.png');
+	background: url('../img/2013_rostel.png');
 	width: 90px;
 	height: 39px;
 	left: 1150px;
 	bottom: 370+46px;
-	animation-delay: $dur13*40/100;
+	animation-delay: $delay+$dur13*40/100;
 }
 .c__top-ground__2--13{
 	width:206px;
@@ -234,18 +239,18 @@ $dur13: 15000ms;
 .c__bonus__pochta{
 	bottom: 403px;
 	left: 481+1244px;
-	animation-delay: $dur13*56/100;
+	animation-delay: $delay+$dur13*56/100;
 }
 .c__logo__pochta{
-	background: url('../img/1x/2013_pochta.png');
+	background: url('../img/2013_pochta.png');
 	width: 90px;
 	height: 44px;
 	left: 481+1220px;
 	bottom: 403+46px;
-	animation-delay: $dur13*56/100;
+	animation-delay: $delay+$dur13*56/100;
 }
 .c__year__2013{
-	background: url('../img/1x/2013.png');
+	background: url('../img/2013.png');
 	width: 570px;
 	left: 60*4px;
 	top: 60*3px;
@@ -253,10 +258,10 @@ $dur13: 15000ms;
 .c__teleport__1--13{
 	bottom: 47px;
 	left: -50px;
-	animation-delay: $dur13*1/100;
+	animation-delay: $delay+$dur13*1/100;
 }
 .c__teleport__2--13{
 	bottom: 4px;
 	left: 481+1244+150+200px;
-	animation-delay: $dur13*72/100;
+	animation-delay: $delay+$dur13*72/100;
 }

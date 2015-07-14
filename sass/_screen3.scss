@@ -2,11 +2,13 @@
 
 
 $dur08: 15000ms;
+$delay: 2000ms;
 
 
 .c__ball--08{
   animation-name: bounce-08;
-  animation-delay: 0s;
+  opacity:0;
+  animation-delay: $delay;
   animation-direction: normal;
   animation-duration: $dur08;
   animation-fill-mode: forwards;
@@ -172,11 +174,12 @@ $dur08: 15000ms;
 100%{ transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120-120-120-90-30-30+60+60+75+75-60-60-60+90-60-60-60-90-60-60-60-60px); }
 }
 .c__ground__08{
-  background: url('../img/1x/ground-08.png');
+  background: url('../img/ground-08.png');
   animation: groundMove08 $dur08 linear forwards;
+  animation-delay: $delay;
 }
 .c__year__2008{
-  background: url('../img/1x/2008.png');
+  background: url('../img/2008.png');
   width: 591px;
   height: 214px;
   top: 210px;
@@ -186,74 +189,83 @@ $dur08: 15000ms;
 .c__bush__1--08{
   left: 148px;
   animation: screenMove08 $dur08  linear forwards;
+  animation-delay: $delay;
 }
 .c__bush__2--08{
 left: 708px;
 animation: screenMove08 $dur08  linear forwards;
+animation-delay: $delay;
 }
 .c__bush__3--08{
 left: 1353px;
 animation: screenMove08 $dur08  linear forwards;
+animation-delay: $delay;
 }
 .c__bush__4--08{
   left: 1727px;
   animation: screenMove08 $dur08  linear forwards;
+  animation-delay: $delay;
 }
 .c__move-wrap__1--08{
   left: 467px;
   bottom:125px;
   animation: screenMove08 $dur08  linear forwards;
+  animation-delay: $delay;
 }
 .c__move-wrap__2--08{
   left: 912px;
   bottom:125px;
   animation: screenMove08 $dur08  linear forwards;
+  animation-delay: $delay;
 }
 .c__move-wrap__3--08{
 left: 253+1357px;
 bottom:125px;
 animation: screenMove08 $dur08  linear forwards;
+animation-delay: $delay;
 }
 .c__move-wrap__4--08{
   left: 1160px;
   bottom: 306px;
   animation: screenMove08 $dur08  linear forwards;
+  animation-delay: $delay;
 }
 .c__move-wrap__5--08{
 left: 1353+50px;
 bottom: 125px;
 animation: screenMove08 $dur08  linear forwards;
+animation-delay: $delay;
 }
 .c__teleport__1--08{
    opacity: 1;
   bottom: 47px;
   left: -45px;
-  animation-delay: $dur08*1/100;
+  animation-delay: $delay+$dur08*1/100;
 }
 .c__bubble__share{
-  background: url('../img/1x/bubble-share.png');
+  background: url('../img/bubble-share.png');
   left: 0px;
   z-index: 5;
-  animation-delay: $dur08*10/100;
+  animation-delay: $delay+$dur08*10/100;
 }
 .c__bonus__fei{
   left: 146px;
   bottom:27px;
-  animation-delay: $dur08*16/100;
+  animation-delay: $delay+$dur08*16/100;
 }
 .c__logo__fei{
-  background: url('../img/1x/2008_fei.png');
+  background: url('../img/2008_fei.png');
   width: 75px;
   height: 33px;
   left: 130px;
   bottom: 27+50px;
-  animation-delay: $dur08*16/100;
+  animation-delay: $delay+$dur08*16/100;
 }
 .c__bubble__crm{
-  background: url('../img/1x/bubble-crm.png');
+  background: url('../img/bubble-crm.png');
   left: 101px;
   bottom: 27+46px;
-  animation-delay: $dur08*22/100;
+  animation-delay: $delay+$dur08*22/100;
 }
 .c__brick-steel__1--08{
   width: 46px;
@@ -274,16 +286,16 @@ animation: screenMove08 $dur08  linear forwards;
 .c__bonus__conti{
   left: 0px;
   bottom: 27px;
-  animation-delay: $dur08*60/100;
+  animation-delay: $delay+$dur08*60/100;
 
 }
 .c__logo__conti{
-  background: url('../img/1x/Conti.png');
+  background: url('../img/Conti.png');
   width: 154px;
   height: 25px;
   left: -50px;
   bottom: 27+50px;
-  animation-delay: $dur08*60/100;
+  animation-delay: $delay+$dur08*60/100;
 }
 .c__brick__2--08{
   width: 141px;
@@ -296,24 +308,24 @@ animation: screenMove08 $dur08  linear forwards;
   left: 46+141px;
 }
 .c__bubble__qt{
-  background: url('../img/1x/bubble-qt.png');
+  background: url('../img/bubble-qt.png');
   left: 27+141px;
   bottom: 27+46px;
-  animation-delay: $dur08*70/100;
+  animation-delay: $delay+$dur08*70/100;
 }
 
 .c__bonus__nv{
   bottom: 27px;
   left: 0px;
-  animation-delay: $dur08*24/100;
+  animation-delay: $delay+$dur08*24/100;
 }
 .c__logo__nv{
-  background: url('../img/1x/2008_night.png');
+  background: url('../img/2008_night.png');
   width: 59px;
   height: 38px;
   left: -10px;
   bottom: 27+50px;
-  animation-delay: $dur08*24/100;
+  animation-delay: $delay+$dur08*24/100;
 }
 .c__brick__3--08{
   width: 174px;
@@ -326,21 +338,21 @@ animation: screenMove08 $dur08  linear forwards;
   bottom:27px;
 }
 .c__bubble__prize{
-  background: url('../img/1x/bubble-prize.png');
+  background: url('../img/bubble-prize.png');
   left:46+174+211px;
   bottom: 27+50px;
   z-index: 15;
-  animation-delay: $dur08*42/100;
+  animation-delay: $delay+$dur08*42/100;
 }
 .c__bubble__ccc{
-  background: url('../img/1x/bubble-ccc.png');
+  background: url('../img/bubble-ccc.png');
   left: 0px;
   z-index: 10;
-  animation-delay: $dur08*54/100;
+  animation-delay: $delay+$dur08*54/100;
 }
 .c__teleport__2--08{
   left: 533px;
   bottom: -77px;
   opacity: 0;
-  animation-delay: $dur08*78/100;
+  animation-delay: $delay+$dur08*78/100;
 }

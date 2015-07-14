@@ -1,6 +1,7 @@
 /*=== 2012 ===*/
 
 $dur12: 15000ms;
+$delay: 2000ms;
 
 @keyframes bounce-12{
  0%  { transform: translate(0px, 460px);opacity: 0; }
@@ -164,8 +165,8 @@ $dur12: 15000ms;
 
 .c__ball--12{
   animation-name: bounce-12;
-  animation-delay: 0s;
-  animation-direction: normal;
+ opacity: 0;
+animation-delay: $delay;
   animation-duration: $dur08;
   animation-fill-mode: forwards;
   animation-timing-function: linear ;
@@ -174,21 +175,23 @@ $dur12: 15000ms;
 	left:112px;
 	bottom: 47px;
 	 animation: screenMove12 $dur12 linear forwards;
+	 animation-delay: $delay;
 }
 .c__ground--12{
-	background: url('../img/1x/ground-04.png');
+	background: url('../img/ground-04.png');
 	 animation: groundMove12 $dur12 linear forwards;
+	 animation-delay: $delay;
 }
 
 .c__city__london{
-	background: url('../img/1x/City_london.png') repeat-x;
+	background: url('../img/City_london.png') repeat-x;
 	height: 420px;
 	width: 100%;
 	position: absolute;
 	bottom: 47px;
 }
 .c__year__2012{
-	background: url('../img/1x/2012.png');
+	background: url('../img/2012.png');
 	width: 570px;
 	top: 110px;
 	left: 264px;
@@ -197,7 +200,7 @@ $dur12: 15000ms;
 .c__teleport__1--12{
 	bottom: 47px;
 	left: -53px;
-	animation-delay: $dur12*1/100;
+	animation-delay: $delay+$dur12*1/100;
 }
 .c__bush__1--12{
 	left: 0;
@@ -211,26 +214,27 @@ $dur12: 15000ms;
 .c__bonus__korus{
 	left: 169+51px;
 	bottom: 254px;
-	animation-delay: $dur12*12/100;
+	animation-delay: $delay+$dur12*12/100;
 }
 .c__bubble__london{
-	background: url('../img/1x/bubble-london.png');
+	background: url('../img/bubble-london.png');
 	left: 51px;
 	bottom: 254+46px;
+	animation-delay: $delay+$dur12*22/100;
 }
 .c__bubble__azure{
-	background: url('../img/1x/bubble-azure.png');
+	background: url('../img/bubble-azure.png');
 	left: 1141+60px;
 	bottom: 4px;
-	animation-delay: $dur12*46/100;
+	animation-delay: $delay+$dur12*46/100;
 }
 .c__logo__korus{
-	background: url('../img/1x/2012_Korus.png');
+	background: url('../img/2012_Korus.png');
 	width:105px;
 	height:21px;
 	left: 169+31px;
 	bottom: 254+50px;
-	animation-delay: $dur12*12/100;
+	animation-delay: $delay+$dur12*12/100;
 }
 .c__brick__2--12{
 	left: 236px;
@@ -250,6 +254,14 @@ $dur12: 15000ms;
 	left: 543px;
 	bottom: 4px;
 }
+.c__bush__3--12{
+	left: 543+550px;
+	bottom: 4px;
+}
+.c__bush__4--12{
+	left: 543+550+550px;
+	bottom: 4px;
+}
 .c__top-ground__1--12{
 	width: 419px;
 	left: 780px;
@@ -258,15 +270,15 @@ $dur12: 15000ms;
 .c__bonus__bubbles{
 	bottom: 252px;
 	left:861px;
-	animation-delay: $dur12*40/100;
+	animation-delay: $delay+$dur12*40/100;
 }
 .c__logo__bubbles{
-	background: url('../img/1x/bubbles.png');
+	background: url('../img/bubbles.png');
 	width: 57px;
 	height: 55px;
 	bottom: 252+50px;
 	left:861px;
-	animation-delay: $dur12*40/100;
+	animation-delay: $delay+$dur12*40/100;
 }
 .c__tube-bott__2--12{
 	left: 1038px;
@@ -285,28 +297,28 @@ $dur12: 15000ms;
 .c__bonus__bio{
 	left: 1266+74px;
 	bottom: 403px;
-	animation-delay: $dur12*72/100;
+	animation-delay: $delay+$dur12*72/100;
 }
 .c__logo__bio{
-	background: url('../img/1x/2012_Biociences.png');
+	background: url('../img/2012_Biociences.png');
 	width: 105px;
 	height: 27px;
 	bottom: 403+46px;
 	left: 1266+35px;
-	animation-delay: $dur12*72/100;
+	animation-delay: $delay+$dur12*72/100;
 }
 .c__bonus__krok{
 	left: 780+811px;
 	bottom: 103px;
-	animation-delay: $dur12*56/100;
+	animation-delay: $delay+$dur12*56/100;
 }
 .c__logo__krok{
-	background: url('../img/1x/2012_Krok.png');
+	background: url('../img/2012_Krok.png');
 	width: 105px;
 	height: 31px;
 	left: 780+800px;
 	bottom: 103+50px;
-	animation-delay: $dur12*56/100;
+	animation-delay: $delay+$dur12*56/100;
 }
 .c__brick__3--12{
 	left: 780+811+46px;
@@ -316,5 +328,5 @@ $dur12: 15000ms;
 .c__teleport__2--12{
 	left: 780+811+306px;
 	bottom: 4px;
-	animation-delay: $dur12*88/100;
+	animation-delay: $delay+$dur12*88/100;
 }

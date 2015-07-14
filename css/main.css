@@ -19,9 +19,8 @@ html.js .loader {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-color: #fff;
-  height: 60px;
-  width: 60px;
+  height: 160px;
+  width: 160px;
   margin-top: -30px;
   margin-left: -30px;
   left: 50%;
@@ -61,21 +60,6 @@ html.js .loader {
   background-image: -webkit-repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), -webkit-repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), -webkit-repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), -webkit-repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px);
   background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px); }
 
-.c__stage_1 {
-  display: none; }
-
-.c__stage_2 {
-  display: none; }
-
-.c__stage_3 {
-  display: none; }
-
-.c__stage_4 {
-  display: none; }
-
-.c__stage_5 {
-  display: none; }
-
 .c__stage_7 {
   display: none; }
 
@@ -84,6 +68,7 @@ html.js .loader {
   width: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
   top: 0;
   background: #E4F3F6;
   z-index: -1;
@@ -98,7 +83,7 @@ html.js .loader {
   z-index: 2; }
 
 [class*='c__bush'] {
-  background: url("../img/1x/bush.png");
+  background: url("../img/bush.png");
   height: 68px;
   width: 205px;
   z-index: 10;
@@ -106,21 +91,21 @@ html.js .loader {
   position: absolute; }
 
 [class*='c__sky'] {
-  background: url("../img/1x/sky.png") repeat-x;
+  background: url("../img/sky.png") repeat-x;
   width: 100%;
   height: 261px;
   position: absolute;
   left: -300px; }
 
 [class*='c__ball'] {
-  background: url("../img/1x/ball.png");
+  background: url("../img/ball.png");
   height: 46px;
   width: 46px;
   position: absolute;
   z-index: 20; }
 
 [class*='c__tube'] {
-  background: url("../img/1x/tube_top.png");
+  background: url("../img/tube_top.png");
   width: 100px;
   height: 76px;
   position: absolute;
@@ -131,10 +116,12 @@ html.js .loader {
   width: 74px;
   height: 74px;
   position: absolute;
-  z-index: 25; }
+  z-index: 25;
+  -webkit-animation: bonusAnim 2s ease forwards;
+          animation: bonusAnim 2s ease forwards; }
 
 [class*='c__bonus'] {
-  background: url("../img/1x/bonus.jpg");
+  background: url("../img/bonus.jpg");
   width: 46px;
   height: 46px;
   position: absolute;
@@ -142,17 +129,17 @@ html.js .loader {
           animation: bonus 2s ease forwards; }
 
 [class*='c__brick'] {
-  background: url("../img/1x/pat_brick.jpg") repeat-x;
+  background: url("../img/pat_brick.jpg") repeat-x;
   height: 46px;
   position: absolute; }
 
 [class*='c__brick-steel'] {
-  background: url("../img/1x/brick_steel.png") repeat-x;
+  background: url("../img/brick_steel.png") repeat-x;
   height: 46px;
   position: absolute; }
 
 [class*='c__top-ground'] {
-  background: url("../img/1x/top-ground.png") repeat-x;
+  background: url("../img/top-ground.png") repeat-x;
   height: 83px;
   position: absolute; }
 
@@ -161,20 +148,25 @@ html.js .loader {
 
 [class*='c__teleport'] {
   position: absolute;
-  background: url("../img/1x/teleport.png");
+  background: url("../img/teleport.png");
   width: 150px;
   height: 123px;
-  z-index: 99999; }
+  z-index: 99999;
+  -webkit-animation: teleport 2s ease forwards;
+          animation: teleport 2s ease forwards; }
 
 [class*='c__tube-bott'] {
   position: absolute;
-  background: url("../img/1x/tube_bott-.png") repeat-y;
+  background: url("../img/tube_bott-.png") repeat-y;
   width: 88px;
   height: 11px;
   z-index: 10; }
 
 [class*='c__logo'] {
-  position: absolute; }
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: bonusAnim 2s ease forwards;
+          animation: bonusAnim 2s ease forwards; }
 
 [class*='c__year'] {
   position: absolute;
@@ -182,7 +174,7 @@ html.js .loader {
   z-index: -3; }
 
 [class*='c__bridge'] {
-  background: url("../img/1x/bridje.png");
+  background: url("../img/bridje.png");
   width: 123px;
   height: 26px;
   position: absolute; }
@@ -203,7 +195,7 @@ html.js .loader {
   border-right: 1px solid #222; }
 
 .c__sun {
-  background: url("../img/1x/sun.png");
+  background: url("../img/sun.png");
   width: 589px;
   height: 589px;
   position: absolute;
@@ -212,7 +204,7 @@ html.js .loader {
 
 @-webkit-keyframes bonus {
   0%, 1% {
-    background: url("../img/1x/bonus.jpg"); }
+    background: url("../img/bonus.jpg"); }
   5% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px); }
@@ -220,27 +212,27 @@ html.js .loader {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); }
   20% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   30% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   40% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   50% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   60% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   70% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   80% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   90% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   100% {
-    background: url("../img/1x/bonus_empty.jpg"); } }
+    background: url("../img/bonus_empty.jpg"); } }
 
 @keyframes bonus {
   0%, 1% {
-    background: url("../img/1x/bonus.jpg"); }
+    background: url("../img/bonus.jpg"); }
   5% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px); }
@@ -248,23 +240,23 @@ html.js .loader {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); }
   20% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   30% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   40% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   50% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   60% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   70% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   80% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   90% {
-    background: url("../img/1x/bonus_empty.jpg"); }
+    background: url("../img/bonus_empty.jpg"); }
   100% {
-    background: url("../img/1x/bonus_empty.jpg"); } }
+    background: url("../img/bonus_empty.jpg"); } }
 
 @-webkit-keyframes bonusAnim {
   0%, 1% {
@@ -410,10 +402,11 @@ html.js .loader {
 .c__ball--00 {
   top: -73px;
   left: 0px;
+  opacity: 0;
   -webkit-animation-name: bounce-00;
           animation-name: bounce-00;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 10000ms;
@@ -836,10 +829,12 @@ html.js .loader {
     opacity: 0; } }
 
 .c__ground--00 {
-  background: url("../img/1x/ground-00.png");
+  background: url("../img/ground-00.png");
   background-position: -1080px;
   -webkit-animation: groundMove 10000ms linear forwards;
-          animation: groundMove 10000ms linear forwards; }
+          animation: groundMove 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 @-webkit-keyframes groundMove {
   0% {
@@ -1050,17 +1045,15 @@ html.js .loader {
     background-position: -2540px; } }
 
 .c__mount {
-  background: url("../img/1x/mount.png") repeat-x;
+  background: url("../img/mount.png") repeat-x;
   height: 223px;
   width: 100%;
   position: absolute;
   bottom: 40px;
-  -webkit-animation: mountLeft-00 1s 2500ms linear forwards;
-          animation: mountLeft-00 1s 2500ms linear forwards;
   z-index: -2; }
 
 .c__year__2000 {
-  background: url("../img/1x/year.png");
+  background: url("../img/year.png");
   height: 214px;
   width: 555px;
   top: 210px;
@@ -1070,7 +1063,9 @@ html.js .loader {
 .c__bush__1--00 {
   left: -205px;
   -webkit-animation: screenMove 10000ms linear forwards;
-          animation: screenMove 10000ms linear forwards; }
+          animation: screenMove 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 @-webkit-keyframes screenMove {
   0% {
@@ -1384,26 +1379,41 @@ html.js .loader {
 
 .c__bush__2--00 {
   left: 1111px;
+  -webkit-transform: translateX(-180px);
+      -ms-transform: translateX(-180px);
+          transform: translateX(-180px);
   -webkit-animation: screenMove 10000ms linear forwards;
-          animation: screenMove 10000ms linear forwards; }
+          animation: screenMove 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__3--00 {
   left: 1588px;
+  -webkit-transform: translateX(-180px);
+      -ms-transform: translateX(-180px);
+          transform: translateX(-180px);
   -webkit-animation: screenMove 10000ms linear forwards;
-          animation: screenMove 10000ms linear forwards; }
+          animation: screenMove 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__tube--00 {
+  -webkit-transform: translateX(-180px);
+      -ms-transform: translateX(-180px);
+          transform: translateX(-180px);
   left: 469px;
   -webkit-animation: screenMove 10000ms linear forwards;
-          animation: screenMove 10000ms linear forwards; }
+          animation: screenMove 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bubble__java {
-  background: url("../img/1x/bubble-java.png");
+  background: url("../img/bubble-java.png");
   bottom: 10px;
   opacity: 0;
   left: 306px;
-  -webkit-animation: javaBubble 1000ms 3s ease;
-          animation: javaBubble 1000ms 3s ease;
+  -webkit-animation: javaBubble 3000ms 5000ms ease;
+          animation: javaBubble 3000ms 5000ms ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   z-index: -1; }
@@ -1497,26 +1507,36 @@ html.js .loader {
     opacity: 0; } }
 
 .c__move-wrap--00 {
+  -webkit-transform: translateX(-180px);
+      -ms-transform: translateX(-180px);
+          transform: translateX(-180px);
   height: 95px;
   width: 418px;
   -webkit-animation: screenMove 10000ms linear forwards;
           animation: screenMove 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   left: 997px;
   bottom: 155px; }
 
 .c__move-wrap__02--00 {
+  -webkit-transform: translateX(-180px);
+      -ms-transform: translateX(-180px);
+          transform: translateX(-180px);
   height: 220px;
   width: 132px;
   left: 1632px;
   bottom: 220px;
   -webkit-animation: screenMove 10000ms linear forwards;
-          animation: screenMove 10000ms linear forwards; }
+          animation: screenMove 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bonus__rd {
   bottom: 0;
   left: 0;
-  -webkit-animation-delay: 5200ms;
-          animation-delay: 5200ms; }
+  -webkit-animation-delay: 7200ms;
+          animation-delay: 7200ms; }
 
 .c__brick--00 {
   width: 372px;
@@ -1524,13 +1544,13 @@ html.js .loader {
   bottom: 0; }
 
 .c__logo__rd {
-  background: url("../img/1x/2000_Soft.png");
+  background: url("../img/2000_Soft.png");
   width: 73px;
   height: 46px;
   left: 0px;
   bottom: 0px;
-  -webkit-animation-delay: 5200ms;
-          animation-delay: 5200ms; }
+  -webkit-animation-delay: 7200ms;
+          animation-delay: 7200ms; }
 
 .c__top-ground--00 {
   width: 129px;
@@ -1540,17 +1560,17 @@ html.js .loader {
 .c__bonus__data {
   bottom: 150px;
   left: 50px;
-  -webkit-animation-delay: 8200ms;
-          animation-delay: 8200ms; }
+  -webkit-animation-delay: 10200ms;
+          animation-delay: 10200ms; }
 
 .c__logo__data {
-  background: url("../img/1x/2000_dataart.png");
+  background: url("../img/2000_dataart.png");
   width: 73px;
   height: 18px;
   top: 30px;
   left: 35px;
-  -webkit-animation-delay: 8200ms;
-          animation-delay: 8200ms; }
+  -webkit-animation-delay: 10200ms;
+          animation-delay: 10200ms; }
 
 .c__move-wrap__3--00 {
   width: 314px;
@@ -1560,32 +1580,33 @@ html.js .loader {
   z-index: 12; }
 
 .c__bubble__sql {
-  background: url("../img/1x/bubble-sql.png");
+  background: url("../img/bubble-sql.png");
   left: 0;
   bottom: 0;
-  -webkit-animation-delay: 9400ms;
-          animation-delay: 9400ms; }
+  -webkit-animation-delay: 11400ms;
+          animation-delay: 11400ms; }
 
 .c__teleport--00 {
   left: 2100px;
   bottom: 47px;
   left: 150px;
   bottom: 0;
-  -webkit-animation-delay: 9800ms;
-          animation-delay: 9800ms; }
+  -webkit-animation-delay: 11800ms;
+          animation-delay: 11800ms; }
 
 /*== 2004 ==*/
 .c__ball--04 {
   bottom: 47px;
   left: 0;
+  opacity: 0;
   -webkit-animation-name: bounce-04;
           animation-name: bounce-04;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-  -webkit-animation-duration: 15000ms;
-          animation-duration: 15000ms;
+  -webkit-animation-duration: 10000ms;
+          animation-duration: 10000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
@@ -2424,26 +2445,28 @@ html.js .loader {
             transform: translateX(-980px); } }
 
 .c__ground__04 {
-  background: url("../img/1x/ground-04.png");
-  -webkit-animation: groundMove04 15000ms linear forwards;
-          animation: groundMove04 15000ms linear forwards; }
+  background: url("../img/ground-04.png");
+  -webkit-animation: groundMove04 10000ms linear forwards;
+          animation: groundMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__teleport__1--04 {
   opacity: 1;
   bottom: 47px;
   left: -45px;
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms; }
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms; }
 
 .c__city {
-  background: url("../img/1x/city.png") repeat-x;
+  background: url("../img/city.png") repeat-x;
   height: 162px;
   width: 100%;
   position: absolute;
   bottom: 47px; }
 
 .c__year__2004 {
-  background: url("../img/1x/2004.png");
+  background: url("../img/2004.png");
   height: 214px;
   width: 598px;
   top: 210px;
@@ -2452,44 +2475,54 @@ html.js .loader {
 
 .c__bush__1--04 {
   left: 148px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__2--04 {
   left: 709px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__3--04 {
   left: 1178px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__4--04 {
   left: 1724px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap__1--04 {
   left: 416px;
   bottom: 155px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bonus__sync {
   left: 0px;
   bottom: 0px;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms; }
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms; }
 
 .c__logo__sync {
-  background: url("../img/1x/2004_syncr.png");
+  background: url("../img/2004_syncr.png");
   width: 95px;
   height: 25px;
   left: -35px;
   bottom: 58px;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms; }
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms; }
 
 .c__brick-steel--04 {
   width: 460px;
@@ -2499,8 +2532,10 @@ html.js .loader {
 .c__move-wrap__2--04 {
   left: 849px;
   bottom: 306px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__top-ground--04 {
   width: 284px;
@@ -2508,18 +2543,20 @@ html.js .loader {
   left: 0px; }
 
 .c__bubble__net {
-  background: url("../img/1x/bubble-net.png");
+  background: url("../img/bubble-net.png");
   bottom: 53px;
   left: 50px;
   z-index: 5;
-  -webkit-animation-delay: 10500ms;
-          animation-delay: 10500ms; }
+  -webkit-animation-delay: 9000ms;
+          animation-delay: 9000ms; }
 
 .c__move-wrap__3--04 {
   left: 1232px;
   bottom: 155px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__brick__1--04 {
   width: 91px;
@@ -2529,17 +2566,17 @@ html.js .loader {
 .c__bonus__imag {
   left: 91px;
   bottom: 0px;
-  -webkit-animation-delay: 13500ms;
-          animation-delay: 13500ms; }
+  -webkit-animation-delay: 11000ms;
+          animation-delay: 11000ms; }
 
 .c__logo__imag {
-  background: url("../img/1x/2004_imag.png");
+  background: url("../img/2004_imag.png");
   width: 106px;
   height: 15px;
   left: 50px;
   bottom: 50px;
-  -webkit-animation-delay: 13500ms;
-          animation-delay: 13500ms; }
+  -webkit-animation-delay: 11000ms;
+          animation-delay: 11000ms; }
 
 .c__brick__2--04 {
   width: 92px;
@@ -2550,20 +2587,23 @@ html.js .loader {
   left: 1444px;
   bottom: 173px;
   z-index: 50;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards; }
+  -webkit-animation: screenMove04 10000ms linear forwards;
+          animation: screenMove04 10000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__teleport__2--04 {
   opacity: 0;
-  -webkit-animation-delay: 14400ms;
-          animation-delay: 14400ms; }
+  -webkit-animation-delay: 11600ms;
+          animation-delay: 11600ms; }
 
 /*== 2008 ==*/
 .c__ball--08 {
   -webkit-animation-name: bounce-08;
           animation-name: bounce-08;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  opacity: 0;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 15000ms;
@@ -3428,12 +3468,14 @@ html.js .loader {
             transform: translateX(-1520px); } }
 
 .c__ground__08 {
-  background: url("../img/1x/ground-08.png");
+  background: url("../img/ground-08.png");
   -webkit-animation: groundMove08 15000ms linear forwards;
-          animation: groundMove08 15000ms linear forwards; }
+          animation: groundMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__year__2008 {
-  background: url("../img/1x/2008.png");
+  background: url("../img/2008.png");
   width: 591px;
   height: 214px;
   top: 210px;
@@ -3443,88 +3485,106 @@ html.js .loader {
 .c__bush__1--08 {
   left: 148px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__2--08 {
   left: 708px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__3--08 {
   left: 1353px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__4--08 {
   left: 1727px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap__1--08 {
   left: 467px;
   bottom: 125px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap__2--08 {
   left: 912px;
   bottom: 125px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap__3--08 {
   left: 1610px;
   bottom: 125px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap__4--08 {
   left: 1160px;
   bottom: 306px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap__5--08 {
   left: 1403px;
   bottom: 125px;
   -webkit-animation: screenMove08 15000ms linear forwards;
-          animation: screenMove08 15000ms linear forwards; }
+          animation: screenMove08 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__teleport__1--08 {
   opacity: 1;
   bottom: 47px;
   left: -45px;
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms; }
+  -webkit-animation-delay: 2150ms;
+          animation-delay: 2150ms; }
 
 .c__bubble__share {
-  background: url("../img/1x/bubble-share.png");
+  background: url("../img/bubble-share.png");
   left: 0px;
   z-index: 5;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms; }
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms; }
 
 .c__bonus__fei {
   left: 146px;
   bottom: 27px;
-  -webkit-animation-delay: 2400ms;
-          animation-delay: 2400ms; }
+  -webkit-animation-delay: 4400ms;
+          animation-delay: 4400ms; }
 
 .c__logo__fei {
-  background: url("../img/1x/2008_fei.png");
+  background: url("../img/2008_fei.png");
   width: 75px;
   height: 33px;
   left: 130px;
   bottom: 77px;
-  -webkit-animation-delay: 2400ms;
-          animation-delay: 2400ms; }
+  -webkit-animation-delay: 4400ms;
+          animation-delay: 4400ms; }
 
 .c__bubble__crm {
-  background: url("../img/1x/bubble-crm.png");
+  background: url("../img/bubble-crm.png");
   left: 101px;
   bottom: 73px;
-  -webkit-animation-delay: 3300ms;
-          animation-delay: 3300ms; }
+  -webkit-animation-delay: 5300ms;
+          animation-delay: 5300ms; }
 
 .c__brick-steel__1--08 {
   width: 46px;
@@ -3544,17 +3604,17 @@ html.js .loader {
 .c__bonus__conti {
   left: 0px;
   bottom: 27px;
-  -webkit-animation-delay: 9000ms;
-          animation-delay: 9000ms; }
+  -webkit-animation-delay: 11000ms;
+          animation-delay: 11000ms; }
 
 .c__logo__conti {
-  background: url("../img/1x/Conti.png");
+  background: url("../img/Conti.png");
   width: 154px;
   height: 25px;
   left: -50px;
   bottom: 77px;
-  -webkit-animation-delay: 9000ms;
-          animation-delay: 9000ms; }
+  -webkit-animation-delay: 11000ms;
+          animation-delay: 11000ms; }
 
 .c__brick__2--08 {
   width: 141px;
@@ -3567,26 +3627,26 @@ html.js .loader {
   left: 187px; }
 
 .c__bubble__qt {
-  background: url("../img/1x/bubble-qt.png");
+  background: url("../img/bubble-qt.png");
   left: 168px;
   bottom: 73px;
-  -webkit-animation-delay: 10500ms;
-          animation-delay: 10500ms; }
+  -webkit-animation-delay: 12500ms;
+          animation-delay: 12500ms; }
 
 .c__bonus__nv {
   bottom: 27px;
   left: 0px;
-  -webkit-animation-delay: 3600ms;
-          animation-delay: 3600ms; }
+  -webkit-animation-delay: 5600ms;
+          animation-delay: 5600ms; }
 
 .c__logo__nv {
-  background: url("../img/1x/2008_night.png");
+  background: url("../img/2008_night.png");
   width: 59px;
   height: 38px;
   left: -10px;
   bottom: 77px;
-  -webkit-animation-delay: 3600ms;
-          animation-delay: 3600ms; }
+  -webkit-animation-delay: 5600ms;
+          animation-delay: 5600ms; }
 
 .c__brick__3--08 {
   width: 174px;
@@ -3599,26 +3659,26 @@ html.js .loader {
   bottom: 27px; }
 
 .c__bubble__prize {
-  background: url("../img/1x/bubble-prize.png");
+  background: url("../img/bubble-prize.png");
   left: 431px;
   bottom: 77px;
   z-index: 15;
-  -webkit-animation-delay: 6300ms;
-          animation-delay: 6300ms; }
+  -webkit-animation-delay: 8300ms;
+          animation-delay: 8300ms; }
 
 .c__bubble__ccc {
-  background: url("../img/1x/bubble-ccc.png");
+  background: url("../img/bubble-ccc.png");
   left: 0px;
   z-index: 10;
-  -webkit-animation-delay: 8100ms;
-          animation-delay: 8100ms; }
+  -webkit-animation-delay: 10100ms;
+          animation-delay: 10100ms; }
 
 .c__teleport__2--08 {
   left: 533px;
   bottom: -77px;
   opacity: 0;
-  -webkit-animation-delay: 11700ms;
-          animation-delay: 11700ms; }
+  -webkit-animation-delay: 13700ms;
+          animation-delay: 13700ms; }
 
 /*=== 2010 ===*/
 @-webkit-keyframes bounce-10 {
@@ -4467,8 +4527,9 @@ html.js .loader {
 .c__ball--10 {
   -webkit-animation-name: bounce-10;
           animation-name: bounce-10;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  opacity: 0;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 15000ms;
@@ -4479,18 +4540,22 @@ html.js .loader {
           animation-timing-function: linear; }
 
 .c__ground--10 {
-  background: url("../img/1x/ground-04.png");
+  background: url("../img/ground-04.png");
   -webkit-animation: groundMove10 15000ms linear forwards;
-          animation: groundMove10 15000ms linear forwards; }
+          animation: groundMove10 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap--10 {
   bottom: 47px;
   left: 148px;
   -webkit-animation: screenMove10 15000ms linear forwards;
-          animation: screenMove10 15000ms linear forwards; }
+          animation: screenMove10 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__year__2010 {
-  background: url("../img/1x/2010.png");
+  background: url("../img/2010.png");
   width: 574px;
   left: 240px;
   top: 240px; }
@@ -4498,14 +4563,14 @@ html.js .loader {
 .c__teleport__1--10 {
   bottom: 4px;
   left: -200px;
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms; }
+  -webkit-animation-delay: 2150ms;
+          animation-delay: 2150ms; }
 
 .c__teleport__2--10 {
   bottom: 4px;
   left: 1977px;
-  -webkit-animation-delay: 13500ms;
-          animation-delay: 13500ms; }
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms; }
 
 .c__bush__1--10 {
   left: 0;
@@ -4526,17 +4591,17 @@ html.js .loader {
 .c__bonus__thomson {
   left: 231px;
   bottom: 108px;
-  -webkit-animation-delay: 1200ms;
-          animation-delay: 1200ms; }
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms; }
 
 .c__logo__thomson {
-  background: url("../img/1x/2010_thomson.png");
+  background: url("../img/2010_thomson.png");
   width: 109px;
   height: 25px;
   left: 198px;
   bottom: 158px;
-  -webkit-animation-delay: 1200ms;
-          animation-delay: 1200ms; }
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms; }
 
 .c__brick__1--10 {
   left: 277px;
@@ -4553,32 +4618,32 @@ html.js .loader {
   bottom: 4px; }
 
 .c__bubble__php {
-  background: url("../img/1x/bubble-php.png");
+  background: url("../img/bubble-php.png");
   bottom: 4px;
   left: 236px;
-  -webkit-animation-delay: 1350ms;
-          animation-delay: 1350ms; }
+  -webkit-animation-delay: 3350ms;
+          animation-delay: 3350ms; }
 
 .c__bubble__partner {
-  background: url("../img/1x/bubble-partner.png");
+  background: url("../img/bubble-partner.png");
   bottom: 154px;
   left: 595px;
-  -webkit-animation-delay: 3900ms;
-          animation-delay: 3900ms; }
+  -webkit-animation-delay: 5900ms;
+          animation-delay: 5900ms; }
 
 .c__bubble__ruby {
-  background: url("../img/1x/bubble-ruby.png");
+  background: url("../img/bubble-ruby.png");
   left: 453px;
   bottom: 224px;
-  -webkit-animation-delay: 3300ms;
-          animation-delay: 3300ms; }
+  -webkit-animation-delay: 5300ms;
+          animation-delay: 5300ms; }
 
 .c__bubble__gold {
-  background: url("../img/1x/bubble-gold.png");
+  background: url("../img/bubble-gold.png");
   bottom: 4px;
   left: 1056px;
-  -webkit-animation-delay: 6900ms;
-          animation-delay: 6900ms; }
+  -webkit-animation-delay: 8900ms;
+          animation-delay: 8900ms; }
 
 .c__top-ground__1--10 {
   left: 700px;
@@ -4593,17 +4658,17 @@ html.js .loader {
 .c__bonus__it {
   bottom: 347px;
   left: 819px;
-  -webkit-animation-delay: 5400ms;
-          animation-delay: 5400ms; }
+  -webkit-animation-delay: 7400ms;
+          animation-delay: 7400ms; }
 
 .c__logo__it {
-  background: url("../img/1x/2010_ayti.png");
+  background: url("../img/2010_ayti.png");
   width: 59px;
   height: 17px;
   bottom: 400px;
   left: 819px;
-  -webkit-animation-delay: 5400ms;
-          animation-delay: 5400ms; }
+  -webkit-animation-delay: 7400ms;
+          animation-delay: 7400ms; }
 
 .c__brick__3--10 {
   width: 46px;
@@ -4627,24 +4692,24 @@ html.js .loader {
 .c__bonus__pfrf {
   left: 1273px;
   bottom: 334px;
-  -webkit-animation-delay: 8400ms;
-          animation-delay: 8400ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__logo__pfrf {
-  background: url("../img/1x/2010_pfrf.png");
+  background: url("../img/2010_pfrf.png");
   width: 134px;
   height: 25px;
   left: 1260px;
   bottom: 394px;
-  -webkit-animation-delay: 8400ms;
-          animation-delay: 8400ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__bubble__ios {
-  background: url("../img/1x/bubble-ios.png");
+  background: url("../img/bubble-ios.png");
   left: 1358px;
   bottom: 155px;
-  -webkit-animation-delay: 9300ms;
-          animation-delay: 9300ms; }
+  -webkit-animation-delay: 11300ms;
+          animation-delay: 11300ms; }
 
 .c__top-ground__3--10 {
   width: 285px;
@@ -4652,23 +4717,23 @@ html.js .loader {
   bottom: 214px; }
 
 .c__bubble__android {
-  background: url("../img/1x/bubble-android.png");
+  background: url("../img/bubble-android.png");
   left: 1562px;
   bottom: 261px;
-  -webkit-animation-delay: 9900ms;
-          animation-delay: 9900ms; }
+  -webkit-animation-delay: 11900ms;
+          animation-delay: 11900ms; }
 
 .c__bubble__nvidia {
-  background: url("../img/1x/bubble-nvidia.png");
+  background: url("../img/bubble-nvidia.png");
   left: 1667px;
   bottom: 261px; }
 
 .c__bubble__bd {
-  background: url("../img/1x/bubble-bd.png");
+  background: url("../img/bubble-bd.png");
   left: 1732px;
   bottom: 4px;
-  -webkit-animation-delay: 12300ms;
-          animation-delay: 12300ms; }
+  -webkit-animation-delay: 14300ms;
+          animation-delay: 14300ms; }
 
 /*=== 2012 ===*/
 @-webkit-keyframes bounce-12 {
@@ -5521,10 +5586,9 @@ html.js .loader {
 .c__ball--12 {
   -webkit-animation-name: bounce-12;
           animation-name: bounce-12;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
+  opacity: 0;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
@@ -5536,22 +5600,26 @@ html.js .loader {
   left: 112px;
   bottom: 47px;
   -webkit-animation: screenMove12 15000ms linear forwards;
-          animation: screenMove12 15000ms linear forwards; }
+          animation: screenMove12 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__ground--12 {
-  background: url("../img/1x/ground-04.png");
+  background: url("../img/ground-04.png");
   -webkit-animation: groundMove12 15000ms linear forwards;
-          animation: groundMove12 15000ms linear forwards; }
+          animation: groundMove12 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__city__london {
-  background: url("../img/1x/City_london.png") repeat-x;
+  background: url("../img/City_london.png") repeat-x;
   height: 420px;
   width: 100%;
   position: absolute;
   bottom: 47px; }
 
 .c__year__2012 {
-  background: url("../img/1x/2012.png");
+  background: url("../img/2012.png");
   width: 570px;
   top: 110px;
   left: 264px; }
@@ -5559,8 +5627,8 @@ html.js .loader {
 .c__teleport__1--12 {
   bottom: 47px;
   left: -53px;
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms; }
+  -webkit-animation-delay: 2150ms;
+          animation-delay: 2150ms; }
 
 .c__bush__1--12 {
   left: 0;
@@ -5574,29 +5642,31 @@ html.js .loader {
 .c__bonus__korus {
   left: 220px;
   bottom: 254px;
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms; }
+  -webkit-animation-delay: 3800ms;
+          animation-delay: 3800ms; }
 
 .c__bubble__london {
-  background: url("../img/1x/bubble-london.png");
+  background: url("../img/bubble-london.png");
   left: 51px;
-  bottom: 300px; }
+  bottom: 300px;
+  -webkit-animation-delay: 5300ms;
+          animation-delay: 5300ms; }
 
 .c__bubble__azure {
-  background: url("../img/1x/bubble-azure.png");
+  background: url("../img/bubble-azure.png");
   left: 1201px;
   bottom: 4px;
-  -webkit-animation-delay: 6900ms;
-          animation-delay: 6900ms; }
+  -webkit-animation-delay: 8900ms;
+          animation-delay: 8900ms; }
 
 .c__logo__korus {
-  background: url("../img/1x/2012_Korus.png");
+  background: url("../img/2012_Korus.png");
   width: 105px;
   height: 21px;
   left: 200px;
   bottom: 304px;
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms; }
+  -webkit-animation-delay: 3800ms;
+          animation-delay: 3800ms; }
 
 .c__brick__2--12 {
   left: 236px;
@@ -5616,6 +5686,14 @@ html.js .loader {
   left: 543px;
   bottom: 4px; }
 
+.c__bush__3--12 {
+  left: 1093px;
+  bottom: 4px; }
+
+.c__bush__4--12 {
+  left: 1643px;
+  bottom: 4px; }
+
 .c__top-ground__1--12 {
   width: 419px;
   left: 780px;
@@ -5624,17 +5702,17 @@ html.js .loader {
 .c__bonus__bubbles {
   bottom: 252px;
   left: 861px;
-  -webkit-animation-delay: 6000ms;
-          animation-delay: 6000ms; }
+  -webkit-animation-delay: 8000ms;
+          animation-delay: 8000ms; }
 
 .c__logo__bubbles {
-  background: url("../img/1x/bubbles.png");
+  background: url("../img/bubbles.png");
   width: 57px;
   height: 55px;
   bottom: 302px;
   left: 861px;
-  -webkit-animation-delay: 6000ms;
-          animation-delay: 6000ms; }
+  -webkit-animation-delay: 8000ms;
+          animation-delay: 8000ms; }
 
 .c__tube-bott__2--12 {
   left: 1038px;
@@ -5653,32 +5731,32 @@ html.js .loader {
 .c__bonus__bio {
   left: 1340px;
   bottom: 403px;
-  -webkit-animation-delay: 10800ms;
-          animation-delay: 10800ms; }
+  -webkit-animation-delay: 12800ms;
+          animation-delay: 12800ms; }
 
 .c__logo__bio {
-  background: url("../img/1x/2012_Biociences.png");
+  background: url("../img/2012_Biociences.png");
   width: 105px;
   height: 27px;
   bottom: 449px;
   left: 1301px;
-  -webkit-animation-delay: 10800ms;
-          animation-delay: 10800ms; }
+  -webkit-animation-delay: 12800ms;
+          animation-delay: 12800ms; }
 
 .c__bonus__krok {
   left: 1591px;
   bottom: 103px;
-  -webkit-animation-delay: 8400ms;
-          animation-delay: 8400ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__logo__krok {
-  background: url("../img/1x/2012_Krok.png");
+  background: url("../img/2012_Krok.png");
   width: 105px;
   height: 31px;
   left: 1580px;
   bottom: 153px;
-  -webkit-animation-delay: 8400ms;
-          animation-delay: 8400ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__brick__3--12 {
   left: 1637px;
@@ -5688,8 +5766,8 @@ html.js .loader {
 .c__teleport__2--12 {
   left: 1897px;
   bottom: 4px;
-  -webkit-animation-delay: 13200ms;
-          animation-delay: 13200ms; }
+  -webkit-animation-delay: 15200ms;
+          animation-delay: 15200ms; }
 
 /*=== 2013 ===*/
 @-webkit-keyframes bounce-13 {
@@ -6556,8 +6634,9 @@ html.js .loader {
 .c__ball--13 {
   -webkit-animation-name: bounce-13;
           animation-name: bounce-13;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  opacity: 0;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 15000ms;
@@ -6568,15 +6647,20 @@ html.js .loader {
           animation-timing-function: linear; }
 
 .c__ground--13 {
-  background: url("../img/1x/ground-13.png");
+  background: url("../img/ground-13.png");
+  background-position: -810px;
   -webkit-animation: groundMove13 15000ms linear forwards;
-          animation: groundMove13 15000ms linear forwards; }
+          animation: groundMove13 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__move-wrap--13 {
   left: 109px;
   bottom: 47px;
   -webkit-animation: screenMove13 15000ms linear forwards;
-          animation: screenMove13 15000ms linear forwards; }
+          animation: screenMove13 15000ms linear forwards;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms; }
 
 .c__bush__1--13 {
   left: 0;
@@ -6607,17 +6691,17 @@ html.js .loader {
 .c__bonus__telecom {
   left: 1177px;
   bottom: 370px;
-  -webkit-animation-delay: 6000ms;
-          animation-delay: 6000ms; }
+  -webkit-animation-delay: 8000ms;
+          animation-delay: 8000ms; }
 
 .c__logo__rostel {
-  background: url("../img/1x/2013_rostel.png");
+  background: url("../img/2013_rostel.png");
   width: 90px;
   height: 39px;
   left: 1150px;
   bottom: 416px;
-  -webkit-animation-delay: 6000ms;
-          animation-delay: 6000ms; }
+  -webkit-animation-delay: 8000ms;
+          animation-delay: 8000ms; }
 
 .c__top-ground__2--13 {
   width: 206px;
@@ -6632,20 +6716,20 @@ html.js .loader {
 .c__bonus__pochta {
   bottom: 403px;
   left: 1725px;
-  -webkit-animation-delay: 8400ms;
-          animation-delay: 8400ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__logo__pochta {
-  background: url("../img/1x/2013_pochta.png");
+  background: url("../img/2013_pochta.png");
   width: 90px;
   height: 44px;
   left: 1701px;
   bottom: 449px;
-  -webkit-animation-delay: 8400ms;
-          animation-delay: 8400ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__year__2013 {
-  background: url("../img/1x/2013.png");
+  background: url("../img/2013.png");
   width: 570px;
   left: 240px;
   top: 180px; }
@@ -6653,11 +6737,11 @@ html.js .loader {
 .c__teleport__1--13 {
   bottom: 47px;
   left: -50px;
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms; }
+  -webkit-animation-delay: 2150ms;
+          animation-delay: 2150ms; }
 
 .c__teleport__2--13 {
   bottom: 4px;
   left: 2075px;
-  -webkit-animation-delay: 10800ms;
-          animation-delay: 10800ms; }
+  -webkit-animation-delay: 12800ms;
+          animation-delay: 12800ms; }
