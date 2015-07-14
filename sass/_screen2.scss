@@ -185,7 +185,6 @@ $dur04: 15000ms;
   opacity: 1;
   bottom: 47px;
   left: -45px;
-  animation: teleport 2s ease forwards;
   animation-delay: $dur04*1/100;
 }
 .city{
@@ -199,7 +198,6 @@ $dur04: 15000ms;
   background: url('../img/1x/2004.png');
   height: 214px;
   width: 598px;
-  position: absolute;
   top: 210px;
   left: 264px;
   z-index: -1;
@@ -229,18 +227,14 @@ $dur04: 15000ms;
 .bonus__sync{
   left: 0px;
   bottom: 0px;
-  animation: bonus 2s ease forwards;
   animation-delay: $dur04*20/100;
 }
 .logo__sync{
   background: url('../img/1x/2004_syncr.png');
   width: 95px;
   height: 25px;
-  position: absolute;
   left: -35px;
   bottom: 213-155px;
-  opacity: 0;
-  animation: bonusAnim 2s ease forwards;
   animation-delay: $dur04*20/100;
 }
 .brick-steel--04{
@@ -263,7 +257,6 @@ $dur04: 15000ms;
   bottom: 53px;
   left: 50px;
   z-index: 5;
-  animation: bonusAnim 2s ease forwards;
   animation-delay: $dur04*70/100;
 }
 .move-wrap__3--04{
@@ -279,18 +272,14 @@ $dur04: 15000ms;
 .bonus__imag{
   left: 91px;
   bottom: 0px;
-  animation: bonus 2s ease forwards;
   animation-delay: $dur04*90/100;
 }
 .logo__imag{
   background: url('../img/1x/2004_imag.png');
   width: 106px;
   height: 15px;
-  position: absolute;
   left: 50px;
   bottom: 50px;
-  opacity: 0;
-  animation: bonusAnim 2s ease forwards;
   animation-delay: $dur04*90/100;
 
 }
@@ -307,7 +296,6 @@ $dur04: 15000ms;
 }
 .teleport__2--04{
   opacity: 0;
-  animation: teleport 2s ease forwards;
   animation-delay: $dur04*96/100;
 }
 

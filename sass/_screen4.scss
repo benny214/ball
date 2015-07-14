@@ -1,0 +1,154 @@
+/*=== 2010 ===*/
+
+$dur10: 15000ms;
+$bounce: translate(0px, 460px);
+
+.ball--10{
+	transform: $bounce;
+}
+.move-wrap--10{
+	bottom: 47px;
+	left: 148px;
+}
+.teleport__1--10{
+	bottom: 4px;
+	left: -53-148px;
+}
+.bush__1--10{
+	left: 0;
+	bottom: 4px;
+}
+.bush__2--10{
+	left: 726px;
+	bottom: 4px;
+}
+.bush__3--10{
+	left: 726+483px;
+	bottom: 4px;
+}
+.bush__4--10{
+	left: 726+483+345px;
+	bottom: 4px;
+}
+.bonus__thomson{
+	left: 231px;
+	bottom: 104+4px;
+}
+.logo__thomson{
+	background: url('../img/1x/2010_thomson.png');
+	width:109px;
+	height: 25px;
+	left: 198px;
+	bottom: 104+4+50px;
+}
+.brick__1--10{
+	left: 231+46px;
+	bottom: 108px;
+	width: 424px;
+}
+.tube__1--10{
+	left: 437px;
+	bottom: 148px;
+}
+.tube-bott__1--10{
+	height: 148px;
+	left: 443px;
+	bottom: 4px;
+}
+.bubble__php{
+	background: url('../img/1x/bubble-php.png');
+	bottom: 4px;
+	left: 236px;
+}
+.bubble__partner{
+	background: url('../img/1x/bubble-partner.png');
+	bottom: 4px;
+	left: 545px;
+}
+.bubble__ruby{
+	background: url('../img/1x/bubble-ruby.png');
+	left: 453px;
+	bottom: 224px;
+}
+.top-ground__1--10{
+	left: 700px;
+	bottom: 210+4px;
+	width: 286px;
+}
+.brick__2--10{
+	width: 46px;
+	bottom: 90+210+47px;
+	left: 773px;
+}
+.bonus__it{
+	bottom: 90+210+47px;
+	left: 773+46px;
+}
+.logo__it{
+	background: url('../img/1x/2010_ayti.png');
+	width: 59px;
+	height:17px;
+	bottom: 90+210+47+53px;
+	left: 773+46px;
+
+}
+.brick__3--10{
+	width: 46px;
+	bottom: 90+210+47px;
+	left: 773+46+46px;
+}
+.bubble__partner{
+	background: url('../img/1x/bubble-partner.png');
+	left: 1058px;
+	bottom: 4px;
+}
+.top-ground__2--10{
+	width: 283px;
+	left: 1153px;
+	bottom: 104+4px;
+}
+.tube-bott__2--10{
+	height: 29px;
+	left:1249px;
+	bottom: 104+4+47px;
+}
+.tube__2--10{
+	left: 1243px;
+	bottom: 104+4+47+29px;
+}
+.bonus__pfrf{
+	left: 1273px;
+	bottom: 90+104+4+47+29+60px
+}
+.logo__pfrf{
+	background: url('../img/1x/2010_pfrf.png');
+	width: 134px;
+	height: 25px;
+	left: 1260px;
+	bottom: 90+104+4+47+29+60+60px
+}
+.bubble__ios{
+	background: url('../img/1x/bubble-ios.png');
+	left:1153+205px;
+	bottom: 104+4+47px;
+}
+.top-ground__3--10{
+	width: 285px;
+	left:1153+205+188px;
+	bottom: 210+4px;
+}
+.bubble__android{
+	background: url('../img/1x/bubble-android.png');
+	left:1153+205+188+16px;
+	bottom: 210+4+47px;
+}
+.bubble__nvidia{
+	background: url('../img/1x/bubble-nvidia.png');
+	left:1153+205+188+16+105px;
+	bottom: 210+4+47px;
+}
+.bubble__bd{
+	background: url('../img/1x/bubble-bd.png');
+	left:1153+205+188+16+170px;
+	bottom: 4px;
+}

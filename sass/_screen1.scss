@@ -142,7 +142,6 @@ $dur00: 10000ms;
   background: url('../img/1x/year.png');
   height: 214px;
   width: 555px;
-  position: absolute;
   top: 210px;
   left: 264px;
   z-index: -3;
@@ -253,7 +252,6 @@ animation: screenMove $dur00  linear forwards;
   
   height: 46+49px;
   width:372+46px;
-  position: absolute;
   animation: screenMove $dur00  linear forwards;
   left: 907+90px;
   bottom: 155px;
@@ -262,7 +260,6 @@ animation: screenMove $dur00  linear forwards;
   
   height: 220px;
   width: 132px;
-  position: absolute;
   left: 1632px;
   bottom: 220px;
   animation: screenMove $dur00  linear forwards;
@@ -271,23 +268,7 @@ animation: screenMove $dur00  linear forwards;
 .bonus__rd{
   bottom:0;
   left: 0;
-  animation: bonus 2s ease forwards;
   animation-delay: $dur00*52/100;
-}
-
-@keyframes bonus{
-  0%,1%{ background: url('../img/1x/bonus.jpg'); }
-  5%{ transform: translateY(-10px); }
-  10%{ transform: translateY(0px); }
-  20% { background: url('../img/1x/bonus_empty.jpg'); }
-  30% {background: url('../img/1x/bonus_empty.jpg');}
-  40% {background: url('../img/1x/bonus_empty.jpg');}
-  50% {background: url('../img/1x/bonus_empty.jpg');}
-  60% {background: url('../img/1x/bonus_empty.jpg');}
-  70% {background: url('../img/1x/bonus_empty.jpg');}
-  80% {background: url('../img/1x/bonus_empty.jpg');}
-  90% {background: url('../img/1x/bonus_empty.jpg');}
- 100% {background: url('../img/1x/bonus_empty.jpg');}
 }
 
 .brick--00{
@@ -300,26 +281,9 @@ animation: screenMove $dur00  linear forwards;
   background: url('../img/1x/2000_Soft.png');
   width: 73px;
   height: 46px;
-  position: absolute;
   left: 0px;
   bottom: 0px;
-  animation: bonusAnim 2s ease forwards;
   animation-delay: $dur00*52/100;
-  z-index: -5;
-}
-@keyframes bonusAnim{
-  0%,1%{ opacity:0; }
-  5%  { transform: translateY(-52px); opacity: 1; }
-  10% { transform: translateY(-52px); opacity: 1; }
-  20% { transform: translateY(-52px); opacity: 1; }
-  30% { transform: translateY(-52px); opacity: 1; }
-  40% { transform: translateY(-52px); opacity: 1; }
-  50% { transform: translateY(-52px); opacity: 1; }
-  60% { transform: translateY(-52px); opacity: 1; }
-  70% { transform: translateY(-52px); opacity: 1; }
-  80% { transform: translateY(-52px); opacity: 1; }
-  90% { opacity: 0; }
- 100% { opacity: 0; }
 }
 
 .top-ground--00{
@@ -330,28 +294,21 @@ animation: screenMove $dur00  linear forwards;
 .bonus__data{
   bottom: 70+80px;
   left: 50px;
-  animation: bonus 2s ease forwards;
   animation-delay: $dur00*82/100;
 }
 .logo__data{
   background: url('../img/1x/2000_dataart.png');
   width: 73px;
   height: 18px;
-  position: absolute;
   top: 30px;
   left: 35px;
-  opacity: 0;
-  animation: bonusAnim 2s ease forwards;
   animation-delay: $dur00*82/100;
-  z-index: -5;
 }
 .move-wrap__3--00{
-  position: absolute;
   width: 74+90+150px;
   height: 74px;
   left: 1730+180+30+20px;
   bottom: 53px;
-  animation: screenMove $dur00  linear forwards;
   z-index: 12;
 
 }
@@ -359,29 +316,12 @@ animation: screenMove $dur00  linear forwards;
   background: url('../img/1x/bubble-sql.png');
   left: 0;
   bottom:0;
-   animation: bonusAnim 2s ease forwards;
   animation-delay: $dur00*94/100;
 }
 .teleport--00{
   left: 2100px;
   bottom: 47px;
-  position: absolute;
   left: 90+60px;
   bottom:0;
-  animation: teleport 2s ease forwards;
   animation-delay: $dur00*98/100;
-}
-@keyframes teleport{
-  0%,1%{ opacity:0; }
-  5%  { opacity: 0.5; }
-  10% { opacity: 0.6; }
-  20% { opacity: 0.7; }
-  30% { opacity: 0.8; }
-  40% { opacity: 0.9; }
-  50% { opacity: 1; }
-  60% { opacity: 1; }
-  70% { opacity: 1; }
-  80% { opacity: 1; }
-  90% { opacity: 0; }
- 100% { opacity: 0; }
 }
