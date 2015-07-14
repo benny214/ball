@@ -122,7 +122,9 @@ html.js .loader {
   width: 74px;
   height: 74px;
   position: absolute;
-  z-index: 25; }
+  z-index: 25;
+  -webkit-animation: bonusAnim 2s ease forwards;
+          animation: bonusAnim 2s ease forwards; }
 
 [class*='bonus'] {
   background: url("../img/1x/bonus.jpg");

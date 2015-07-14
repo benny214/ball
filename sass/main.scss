@@ -148,7 +148,7 @@ html.js .loader {
   height: 74px;
   position: absolute;
   z-index: 25;
-  // animation: bonusAnim 2s ease forwards;
+  animation: bonusAnim 2s ease forwards;
 }
 [class*='bonus']{
   background: url('../img/1x/bonus.jpg');
