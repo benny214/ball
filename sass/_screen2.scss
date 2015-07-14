@@ -4,7 +4,7 @@
 
 $dur04: 15000ms;
 
-.ball--04{
+.c__ball--04{
   bottom: 47px;
   left: 0;
   animation-name: bounce-04;
@@ -177,24 +177,24 @@ $dur04: 15000ms;
 100%{ transform: translateX(-375-120-60-15-45-5-15-15-60-30-60-60-60-60px); }
 }
 
-.ground__04{
+.c__ground__04{
   background: url('../img/1x/ground-04.png');
   animation: groundMove04 $dur04 linear forwards;
 }
-.teleport__1--04{
+.c__teleport__1--04{
   opacity: 1;
   bottom: 47px;
   left: -45px;
   animation-delay: $dur04*1/100;
 }
-.city{
+.c__city{
   background: url('../img/1x/city.png') repeat-x;
   height: 162px;
   width: 100%;
   position: absolute;
   bottom: 47px;
 }
-.year__2004{
+.c__year__2004{
   background: url('../img/1x/2004.png');
   height: 214px;
   width: 598px;
@@ -202,34 +202,34 @@ $dur04: 15000ms;
   left: 264px;
   z-index: -1;
 }
-.bush__1--04{
+.c__bush__1--04{
   left: 148px;
   animation: screenMove04 $dur04  linear forwards;
 }
-.bush__2--04{
+.c__bush__2--04{
   left: 709px;
   animation: screenMove04 $dur04  linear forwards;
 }
-.bush__3--04{
+.c__bush__3--04{
   left: 1178px;
   animation: screenMove04 $dur04  linear forwards;
 }
-.bush__4--04{
+.c__bush__4--04{
   left: 1178+546px;
   animation: screenMove04 $dur04  linear forwards;
 }
 
-.move-wrap__1--04{
+.c__move-wrap__1--04{
   left: 416px;
   bottom: 155px;
   animation: screenMove04 $dur04  linear forwards;
 }
-.bonus__sync{
+.c__bonus__sync{
   left: 0px;
   bottom: 0px;
   animation-delay: $dur04*20/100;
 }
-.logo__sync{
+.c__logo__sync{
   background: url('../img/1x/2004_syncr.png');
   width: 95px;
   height: 25px;
@@ -237,44 +237,44 @@ $dur04: 15000ms;
   bottom: 213-155px;
   animation-delay: $dur04*20/100;
 }
-.brick-steel--04{
+.c__brick-steel--04{
   width: 460px;
   left:46px;
   bottom: 0px;
 }
-.move-wrap__2--04{
+.c__move-wrap__2--04{
   left: 849px;
   bottom: 306px;
   animation: screenMove04 $dur04  linear forwards;
 }
-.top-ground--04{
+.c__top-ground--04{
   width: 284px;
   bottom: 0px;
   left: 0px;
 }
-.bubble__net{
+.c__bubble__net{
   background: url('../img/1x/bubble-net.png');
   bottom: 53px;
   left: 50px;
   z-index: 5;
   animation-delay: $dur04*70/100;
 }
-.move-wrap__3--04{
+.c__move-wrap__3--04{
   left: 1232px;
   bottom: 155px;
   animation: screenMove04 $dur04  linear forwards;
 }
-.brick__1--04{
+.c__brick__1--04{
   width:91px;
   left: 0px;
   bottom: 0;
 }
-.bonus__imag{
+.c__bonus__imag{
   left: 91px;
   bottom: 0px;
   animation-delay: $dur04*90/100;
 }
-.logo__imag{
+.c__logo__imag{
   background: url('../img/1x/2004_imag.png');
   width: 106px;
   height: 15px;
@@ -283,18 +283,18 @@ $dur04: 15000ms;
   animation-delay: $dur04*90/100;
 
 }
-.brick__2--04{
+.c__brick__2--04{
   width: 92px;
   left: 91+46px;
   bottom: 0px;
 }
-.move-wrap__4--04{
+.c__move-wrap__4--04{
   left: 1178+546-280px;
   bottom: 173px;
   z-index: 50;
   animation: screenMove04 $dur04  linear forwards;
 }
-.teleport__2--04{
+.c__teleport__2--04{
   opacity: 0;
   animation-delay: $dur04*96/100;
 }

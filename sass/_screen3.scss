@@ -4,7 +4,7 @@
 $dur08: 15000ms;
 
 
-.ball--08{
+.c__ball--08{
   animation-name: bounce-08;
   animation-delay: 0s;
   animation-direction: normal;
@@ -171,11 +171,11 @@ $dur08: 15000ms;
 98% { transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120-120-120-90-30-30+60+60+75+75-60-60-60+90-60-60-60-90-60-60-60-60px); }
 100%{ transform: translateX(0-60-60-120-120-120-140-60+60+60-60-60-120-120-120-90-30-30+60+60+75+75-60-60-60+90-60-60-60-90-60-60-60-60px); }
 }
-.ground__08{
+.c__ground__08{
   background: url('../img/1x/ground-08.png');
   animation: groundMove08 $dur08 linear forwards;
 }
-.year__2008{
+.c__year__2008{
   background: url('../img/1x/2008.png');
   width: 591px;
   height: 214px;
@@ -183,65 +183,65 @@ $dur08: 15000ms;
   left: 264px;
   z-index: -1;
 }
-.bush__1--08{
+.c__bush__1--08{
   left: 148px;
   animation: screenMove08 $dur08  linear forwards;
 }
-.bush__2--08{
+.c__bush__2--08{
 left: 708px;
 animation: screenMove08 $dur08  linear forwards;
 }
-.bush__3--08{
+.c__bush__3--08{
 left: 1353px;
 animation: screenMove08 $dur08  linear forwards;
 }
-.bush__4--08{
+.c__bush__4--08{
   left: 1727px;
   animation: screenMove08 $dur08  linear forwards;
 }
-.move-wrap__1--08{
+.c__move-wrap__1--08{
   left: 467px;
   bottom:125px;
   animation: screenMove08 $dur08  linear forwards;
 }
-.move-wrap__2--08{
+.c__move-wrap__2--08{
   left: 912px;
   bottom:125px;
   animation: screenMove08 $dur08  linear forwards;
 }
-.move-wrap__3--08{
+.c__move-wrap__3--08{
 left: 253+1357px;
 bottom:125px;
 animation: screenMove08 $dur08  linear forwards;
 }
-.move-wrap__4--08{
+.c__move-wrap__4--08{
   left: 1160px;
   bottom: 306px;
   animation: screenMove08 $dur08  linear forwards;
 }
-.move-wrap__5--08{
+.c__move-wrap__5--08{
 left: 1353+50px;
 bottom: 125px;
 animation: screenMove08 $dur08  linear forwards;
 }
-.teleport__1--08{
+.c__teleport__1--08{
    opacity: 1;
   bottom: 47px;
   left: -45px;
   animation-delay: $dur08*1/100;
 }
-.bubble__share{
+.c__bubble__share{
   background: url('../img/1x/bubble-share.png');
   left: 0px;
   z-index: 5;
   animation-delay: $dur08*10/100;
 }
-.bonus__fei{
+.c__bonus__fei{
   left: 146px;
   bottom:27px;
   animation-delay: $dur08*16/100;
 }
-.logo__fei{
+.c__logo__fei{
   background: url('../img/1x/2008_fei.png');
   width: 75px;
   height: 33px;
@@ -249,35 +249,35 @@ animation: screenMove08 $dur08  linear forwards;
   bottom: 27+50px;
   animation-delay: $dur08*16/100;
 }
-.bubble__crm{
+.c__bubble__crm{
   background: url('../img/1x/bubble-crm.png');
   left: 101px;
   bottom: 27+46px;
   animation-delay: $dur08*22/100;
 }
-.brick-steel__1--08{
+.c__brick-steel__1--08{
   width: 46px;
   left: 0px;
   bottom:27px;
 }
-.brick__1--08{
+.c__brick__1--08{
   width: 352px;
   left:46px;
   bottom: 27px;
 }
-.brick-steel__2--08{
+.c__brick-steel__2--08{
   width: 46px;
   left: 47+352px;
   bottom: 27px;
 }
 
-.bonus__conti{
+.c__bonus__conti{
   left: 0px;
   bottom: 27px;
   animation-delay: $dur08*60/100;
 
 }
-.logo__conti{
+.c__logo__conti{
   background: url('../img/1x/Conti.png');
   width: 154px;
   height: 25px;
@@ -285,29 +285,29 @@ animation: screenMove08 $dur08  linear forwards;
   bottom: 27+50px;
   animation-delay: $dur08*60/100;
 }
-.brick__2--08{
+.c__brick__2--08{
   width: 141px;
   bottom: 27px;
   left: 46px;
 }
-.brick-steel__3--08{
+.c__brick-steel__3--08{
   width: 46px;
   bottom:27px;
   left: 46+141px;
 }
-.bubble__qt{
+.c__bubble__qt{
   background: url('../img/1x/bubble-qt.png');
   left: 27+141px;
   bottom: 27+46px;
   animation-delay: $dur08*70/100;
 }
 
-.bonus__nv{
+.c__bonus__nv{
   bottom: 27px;
   left: 0px;
   animation-delay: $dur08*24/100;
 }
-.logo__nv{
+.c__logo__nv{
   background: url('../img/1x/2008_night.png');
   width: 59px;
   height: 38px;
@@ -315,30 +315,30 @@ animation: screenMove08 $dur08  linear forwards;
   bottom: 27+50px;
   animation-delay: $dur08*24/100;
 }
-.brick__3--08{
+.c__brick__3--08{
   width: 174px;
   left: 46px;
   bottom: 27px;
 }
-.top-ground--08{
+.c__top-ground--08{
   width: 285px;
   left: 46+174px;
   bottom:27px;
 }
-.bubble__prize{
+.c__bubble__prize{
   background: url('../img/1x/bubble-prize.png');
   left:46+174+211px;
   bottom: 27+50px;
   z-index: 15;
   animation-delay: $dur08*42/100;
 }
-.bubble__ccc{
+.c__bubble__ccc{
   background: url('../img/1x/bubble-ccc.png');
   left: 0px;
   z-index: 10;
   animation-delay: $dur08*54/100;
 }
-.teleport__2--08{
+.c__teleport__2--08{
   left: 533px;
   bottom: -77px;
   opacity: 0;
