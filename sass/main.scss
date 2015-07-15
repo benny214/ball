@@ -107,13 +107,14 @@ html.js .loader {
   background: #E4F3F6;
   z-index: -1;
   animation: screen 30s linear 4s 1;
+border-bottom: 3px solid #222;
 }
 [class*='c__ground']{
   width: 100%;
   height: 78px;
   position: absolute;
   bottom: 0;
-  z-index: 2;
+  z-index: 1;
 }
 [class*='c__bush']{
   background: url('../img/bush.png');
@@ -178,6 +179,7 @@ html.js .loader {
 
 [class*='c__move-wrap']{
   position: absolute;
+  z-index: 2;
 }
 
 [class*='c__teleport']{
