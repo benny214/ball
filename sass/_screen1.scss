@@ -335,3 +335,57 @@ animation-delay: $delay;
   bottom:0;
   animation-delay: $delay+$dur00*98/100;
 }
+
+// .c_stats{
+//   position: absolute;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 99999;
+//   background: url('../img/BG_Score.png')repeat-x;
+//   & ul{
+//     margin: 0;
+//     padding: 0;
+//   }
+//   & li{
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+// }
+// .c_stats__wrap{
+//   width: 1084px;
+//   height: 560px;
+//   margin: 0 auto;
+// }
+// .c_head__stats{
+//   font-size: 43px;
+//   font-weight: 300;
+//   color: #00afec;
+//   text-shadow: 0 0 0.2em #00afec;
+//   float: left;
+// }
+// .c_head__btn-next{
+//   float: left;
+// }
+// .c_company__stats,
+// .c_clients__stats,
+// .c_tech__stats{
+//   font-size: 17px;
+//   font-weight: 700;
+//   color: #fff;
+//   text-shadow: 0 0 0.2em #00afec;
+// }
+// .c_company__item {
+//   font-weight: 300;
+//   font-size: 17px;
+//   color: #fff;
+// }
+// .c_company__item--bold{
+//   font-weight: 700;
+//   font-size: 28px;
+// }
+// .c_head__stats--bold{
+//   font-weight: 800;
+// }

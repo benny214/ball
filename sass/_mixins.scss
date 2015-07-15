@@ -27,3 +27,13 @@
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

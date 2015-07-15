@@ -1,4 +1,5 @@
 @import "_mixins.scss";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic);
 
 $browser-context: 16;
 
@@ -6,6 +7,7 @@ $browser-context: 16;
     padding: 0;
     margin: 0;
     outline: none;
+    font-family: 'Open Sans', sans-serif
 }
 
 html.js .loader {
@@ -61,16 +63,16 @@ html.js .loader {
 /*=== Movie styles ====*/
 
 /*== Main styles ==*/
-.c__repeating-grid {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-size: 60px 60px;
-    background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px);
-}
+// .c__repeating-grid {
+//     z-index: 1;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     background-size: 60px 60px;
+//     background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px);
+// }
 
 
 // .c__stage_1{
@@ -88,12 +90,12 @@ html.js .loader {
 // .c__stage_5{
 //   display: none;
 // }
-// // .c__stage_6{
-// //   display: none;
-// // }
-.c__stage_7{
-  display: none;
-}
+// .c__stage_6{
+//   display: none;
+// }
+// .c__stage_7{
+//   display: none;
+// }
 
 [class*='c__stage'] {
   height: 560px;
@@ -211,13 +213,6 @@ opacity: 0;
   position: absolute;
 }
 
-.c__center{
-  background: #222;
-  width: 1px;
-  height: 560px;
-  position: absolute;
-  left: 541px;
-}
 .c__game-wrap{
   width: 1084px;
   height:560px;
@@ -286,6 +281,7 @@ opacity: 0;
 @import "_screen4.scss";
 @import "_screen5.scss";
 @import "_screen6.scss";
+@import "_screen7.scss";
 
 
 // 0%  {  }
