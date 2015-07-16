@@ -515,19 +515,45 @@ html.js .loader {
 .c_company__item img {
   height: 55px; }
 
-.c_stats__wrap {
+[class*='c_stats__wrap'] {
   width: 1084px;
   height: 560px;
   margin: 45px auto;
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 24000ms;
-          animation-delay: 24000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
           animation-duration: 2s; }
+
+.c_stats__wrap1 {
+  -webkit-animation-delay: 14000ms;
+          animation-delay: 14000ms; }
+
+.c_stats__wrap2 {
+  -webkit-animation-delay: 14000ms;
+          animation-delay: 14000ms; }
+
+.c_stats__wrap3 {
+  -webkit-animation-delay: 24000ms;
+          animation-delay: 24000ms; }
+
+.c_stats__wrap4 {
+  -webkit-animation-delay: 24000ms;
+          animation-delay: 24000ms; }
+
+.c_stats__wrap5 {
+  -webkit-animation-delay: 24000ms;
+          animation-delay: 24000ms; }
+
+.c_stats__wrap6 {
+  -webkit-animation-delay: 24000ms;
+          animation-delay: 24000ms; }
+
+.c_stats__wrap7 {
+  -webkit-animation-delay: 24000ms;
+          animation-delay: 24000ms; }
 
 .c_head__container,
 .c_company__container,

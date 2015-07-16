@@ -376,17 +376,22 @@ opacity: 0;
 }
 
 
-.c_stats__wrap{
+[class*='c_stats__wrap']{
   width: 1084px;
   height: 560px;
   margin: 45px auto;
-    opacity:0;
+  opacity:0;
   animation-name: fadeIn;
-  animation-delay: $delay+$dur15+2s;
   animation-fill-mode: forwards;
   animation-duration: 2s;
-
 }
+.c_stats__wrap1{animation-delay: $delay+$dur00+2s;}
+.c_stats__wrap2{animation-delay: $delay+$dur04+2s;}
+.c_stats__wrap3{animation-delay: $delay+$dur08+2s;}
+.c_stats__wrap4{animation-delay: $delay+$dur10+2s;}
+.c_stats__wrap5{animation-delay: $delay+$dur12+2s;;}
+.c_stats__wrap6{animation-delay: $delay+$dur13+2s;}
+.c_stats__wrap7{animation-delay: $delay+$dur15+2s;}
 .c_head__container,
 .c_company__container,
 .c_clients__container
