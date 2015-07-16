@@ -7952,6 +7952,12 @@ html.js .loader {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
+.c__year__2015 {
+  background: url("../img/2015.png");
+  width: 535px;
+  left: 240px;
+  top: 240px; }
+
 .c__bush__1--15 {
   left: 0;
   bottom: 4px; }
