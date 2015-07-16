@@ -609,6 +609,9 @@ html.js .loader {
   margin-bottom: 13px;
   text-shadow: 0 0 0.1em #fff; }
 
+.c_tech__stats {
+  color: #00afec; }
+
 .c_company__item,
 .c_clients__item,
 .c_tech__item {
