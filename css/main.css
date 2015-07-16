@@ -147,7 +147,11 @@ html.js .loader {
 .c_stage-wrap5,
 .c_stage-wrap6,
 .c_stage-wrap7 {
-  position: relative; }
+  position: relative;
+  display: none; }
+
+.active {
+  display: block; }
 
 [class*='c__stage'] {
   height: 560px;
@@ -159,8 +163,7 @@ html.js .loader {
   background: #E4F3F6;
   z-index: -1;
   -webkit-animation: screen 30s linear 4s 1;
-          animation: screen 30s linear 4s 1;
-  border-bottom: 3px solid #222; }
+          animation: screen 30s linear 4s 1; }
 
 [class*='c__ground'] {
   width: 100%;
@@ -271,9 +274,7 @@ html.js .loader {
   width: 1084px;
   height: 560px;
   margin: 0 auto;
-  position: relative;
-  border-left: 1px solid #222;
-  border-right: 1px solid #222; }
+  position: relative; }
 
 .c__sun {
   background: url("../img/sun.png");
