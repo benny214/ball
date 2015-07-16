@@ -81,9 +81,9 @@ html.js .loader {
 // .c__stage_2{
 //   display: none;
 // }
-// .c__stage_3{
-//   display: none;
-// }
+// // .c__stage_3{
+// //   display: none;
+// // }
 // .c__stage_4{
 //   display: none;
 // }
@@ -96,6 +96,78 @@ html.js .loader {
 // .c__stage_7{
 //   display: none;
 // }
+
+$delay: 2000ms;
+$dur00: 10000ms;
+$dur04: 10000ms;
+$dur08: 20000ms;
+$dur10: 20000ms;
+$dur12: 20000ms;
+$dur13: 20000ms;
+$dur15: 20000ms;
+
+.c_stats1{ 
+  opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur00;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+ }
+.c_stats2{ 
+  opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur04;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+ }
+.c_stats3{ 
+  opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur08;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+ }
+.c_stats4{ 
+  opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur10;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+ }
+.c_stats5{ 
+  opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur12;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+ }
+.c_stats6{ 
+  opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur13;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+ }
+.c_stats7{ 
+  opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur15;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+ }
+ @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.c_stage-wrap1,
+.c_stage-wrap2,
+.c_stage-wrap3,
+.c_stage-wrap4,
+.c_stage-wrap5,
+.c_stage-wrap6,
+.c_stage-wrap7{
+  position: relative;
+}
 
 [class*='c__stage'] {
   height: 560px;
@@ -275,6 +347,122 @@ opacity: 0;
   90% { opacity: 0; }
  100% { opacity: 0; }
 }
+
+.c_stats1,
+.c_stats2,
+.c_stats3,
+.c_stats4,
+.c_stats5,
+.c_stats6,
+.c_stats7{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: url('../img/BG_Score.png')repeat-x;
+  & ul{
+    margin: 0;
+    padding: 0;
+  }
+  & li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.c_company__item img{
+  height: 55px;
+}
+
+
+.c_stats__wrap{
+  width: 1084px;
+  height: 560px;
+  margin: 45px auto;
+    opacity:0;
+  animation-name: fadeIn;
+  animation-delay: $delay+$dur15+2s;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+
+}
+.c_head__container,
+.c_company__container,
+.c_clients__container
+{
+  @include clearfix();
+  margin-bottom: 45px;
+}
+.c_head__stats{
+  font-size: 43px;
+  font-weight: 300;
+  color: #00afec;
+  text-shadow: 0 0 0.2em #00afec;
+  float: left;
+}
+.c_head__btn-next{
+  float: left;
+  display: block;
+  margin-left: 574px;
+  height: 54px;
+  width: 175px;
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px #00afec;
+  color: #00afec;
+  cursor: pointer;
+  z-index: 9999;
+  &:hover,
+  &:active,
+  &:focus{
+    background: #00afec;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+.c_company__stats,
+.c_clients__stats,
+.c_tech__stats{
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 13px;
+  text-shadow: 0 0 0.1em #fff;
+}
+.c_company__item,
+.c_clients__item,
+.c_tech__item{
+  display: inline-block;
+  width: 210px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 17px;
+  &:first-child{
+    text-align: left;
+    margin-left:15px;
+  }
+}
+.c_company__item:first-child{
+  text-align: center;
+}
+
+.c_company__item--bold{
+  font-weight: 700;
+  font-size: 28px;
+  display: block;
+}
+.c_head__stats--bold{
+  font-weight: 800;
+
+}
+.c_company__stats{
+  margin-bottom: 13px;
+}
+.c_company__item{text-align: center;}
+
 
 
 @import "_screen1.scss";
