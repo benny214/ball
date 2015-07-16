@@ -55,8 +55,8 @@ html.js .loader {
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
+  -webkit-animation-delay: 22000ms;
+          animation-delay: 22000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -66,8 +66,8 @@ html.js .loader {
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
+  -webkit-animation-delay: 22000ms;
+          animation-delay: 22000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -529,12 +529,12 @@ html.js .loader {
           animation-duration: 2s; }
 
 .c_stats__wrap1 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 24000ms;
+          animation-delay: 24000ms; }
 
 .c_stats__wrap2 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 24000ms;
+          animation-delay: 24000ms; }
 
 .c_stats__wrap3 {
   -webkit-animation-delay: 24000ms;
@@ -655,8 +655,8 @@ html.js .loader {
           animation-delay: 2000ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-  -webkit-animation-duration: 15000ms;
-          animation-duration: 15000ms;
+  -webkit-animation-duration: 20000ms;
+          animation-duration: 20000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
@@ -1077,8 +1077,8 @@ html.js .loader {
 .c__ground--00 {
   background: url("../img/ground-00.png");
   background-position: -1080px;
-  -webkit-animation: groundMove 15000ms linear forwards;
-          animation: groundMove 15000ms linear forwards;
+  -webkit-animation: groundMove 20000ms linear forwards;
+          animation: groundMove 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -1308,8 +1308,8 @@ html.js .loader {
 
 .c__bush__1--00 {
   left: -205px;
-  -webkit-animation: screenMove 15000ms linear forwards;
-          animation: screenMove 15000ms linear forwards;
+  -webkit-animation: screenMove 20000ms linear forwards;
+          animation: screenMove 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -1628,8 +1628,8 @@ html.js .loader {
   -webkit-transform: translateX(-180px);
       -ms-transform: translateX(-180px);
           transform: translateX(-180px);
-  -webkit-animation: screenMove 15000ms linear forwards;
-          animation: screenMove 15000ms linear forwards;
+  -webkit-animation: screenMove 20000ms linear forwards;
+          animation: screenMove 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -1638,8 +1638,8 @@ html.js .loader {
   -webkit-transform: translateX(-180px);
       -ms-transform: translateX(-180px);
           transform: translateX(-180px);
-  -webkit-animation: screenMove 15000ms linear forwards;
-          animation: screenMove 15000ms linear forwards;
+  -webkit-animation: screenMove 20000ms linear forwards;
+          animation: screenMove 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -1648,8 +1648,8 @@ html.js .loader {
       -ms-transform: translateX(-180px);
           transform: translateX(-180px);
   left: 469px;
-  -webkit-animation: screenMove 15000ms linear forwards;
-          animation: screenMove 15000ms linear forwards;
+  -webkit-animation: screenMove 20000ms linear forwards;
+          animation: screenMove 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -1658,8 +1658,8 @@ html.js .loader {
   bottom: 10px;
   opacity: 0;
   left: 306px;
-  -webkit-animation: javaBubble 3500ms 5000ms ease;
-          animation: javaBubble 3500ms 5000ms ease;
+  -webkit-animation: javaBubble 4000ms 5000ms ease;
+          animation: javaBubble 4000ms 5000ms ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   z-index: -1; }
@@ -1758,8 +1758,8 @@ html.js .loader {
           transform: translateX(-180px);
   height: 95px;
   width: 418px;
-  -webkit-animation: screenMove 15000ms linear forwards;
-          animation: screenMove 15000ms linear forwards;
+  -webkit-animation: screenMove 20000ms linear forwards;
+          animation: screenMove 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
   left: 997px;
@@ -1773,16 +1773,16 @@ html.js .loader {
   width: 132px;
   left: 1632px;
   bottom: 220px;
-  -webkit-animation: screenMove 15000ms linear forwards;
-          animation: screenMove 15000ms linear forwards;
+  -webkit-animation: screenMove 20000ms linear forwards;
+          animation: screenMove 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__bonus__rd {
   bottom: 0;
   left: 0;
-  -webkit-animation-delay: 9800ms;
-          animation-delay: 9800ms; }
+  -webkit-animation-delay: 12400ms;
+          animation-delay: 12400ms; }
 
 .c__brick--00 {
   width: 372px;
@@ -1795,8 +1795,8 @@ html.js .loader {
   height: 49px;
   left: 0px;
   bottom: 50px;
-  -webkit-animation-delay: 9800ms;
-          animation-delay: 9800ms; }
+  -webkit-animation-delay: 12400ms;
+          animation-delay: 12400ms; }
 
 .c__top-ground--00 {
   width: 129px;
@@ -1806,8 +1806,8 @@ html.js .loader {
 .c__bonus__data {
   bottom: 150px;
   left: 50px;
-  -webkit-animation-delay: 14300ms;
-          animation-delay: 14300ms; }
+  -webkit-animation-delay: 18400ms;
+          animation-delay: 18400ms; }
 
 .c__logo__data {
   background: url("../img/2000_dataart.png");
@@ -1815,8 +1815,8 @@ html.js .loader {
   height: 18px;
   top: 30px;
   left: 35px;
-  -webkit-animation-delay: 14300ms;
-          animation-delay: 14300ms; }
+  -webkit-animation-delay: 18400ms;
+          animation-delay: 18400ms; }
 
 .c__move-wrap__3--00 {
   width: 314px;
@@ -1829,16 +1829,16 @@ html.js .loader {
   background: url("../img/bubble-sql.png");
   left: 0;
   bottom: 0;
-  -webkit-animation-delay: 16100ms;
-          animation-delay: 16100ms; }
+  -webkit-animation-delay: 20800ms;
+          animation-delay: 20800ms; }
 
 .c__teleport--00 {
   left: 2100px;
   bottom: 47px;
   left: 150px;
   bottom: 0;
-  -webkit-animation-delay: 16700ms;
-          animation-delay: 16700ms; }
+  -webkit-animation-delay: 21600ms;
+          animation-delay: 21600ms; }
 
 /*== 2004 ==*/
 .c__ball--04 {
@@ -1851,8 +1851,8 @@ html.js .loader {
           animation-delay: 2000ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
-  -webkit-animation-duration: 15000ms;
-          animation-duration: 15000ms;
+  -webkit-animation-duration: 20000ms;
+          animation-duration: 20000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
@@ -2692,8 +2692,8 @@ html.js .loader {
 
 .c__ground__04 {
   background: url("../img/ground-04.png");
-  -webkit-animation: groundMove04 15000ms linear forwards;
-          animation: groundMove04 15000ms linear forwards;
+  -webkit-animation: groundMove04 20000ms linear forwards;
+          animation: groundMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -2701,8 +2701,8 @@ html.js .loader {
   opacity: 1;
   bottom: 47px;
   left: -45px;
-  -webkit-animation-delay: 2150ms;
-          animation-delay: 2150ms; }
+  -webkit-animation-delay: 2200ms;
+          animation-delay: 2200ms; }
 
 .c__city {
   background: url("../img/city.png") repeat-x;
@@ -2721,45 +2721,45 @@ html.js .loader {
 
 .c__bush__1--04 {
   left: 148px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__bush__2--04 {
   left: 709px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__bush__3--04 {
   left: 1178px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__bush__4--04 {
   left: 1724px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__move-wrap__1--04 {
   left: 416px;
   bottom: 155px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__bonus__sync {
   left: 0px;
   bottom: 0px;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms; }
+  -webkit-animation-delay: 6000ms;
+          animation-delay: 6000ms; }
 
 .c__logo__sync {
   background: url("../img/2004_syncr.png");
@@ -2767,8 +2767,8 @@ html.js .loader {
   height: 25px;
   left: -35px;
   bottom: 58px;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms; }
+  -webkit-animation-delay: 6000ms;
+          animation-delay: 6000ms; }
 
 .c__brick-steel--04 {
   width: 460px;
@@ -2778,8 +2778,8 @@ html.js .loader {
 .c__move-wrap__2--04 {
   left: 849px;
   bottom: 306px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -2793,14 +2793,14 @@ html.js .loader {
   bottom: 53px;
   left: 50px;
   z-index: 5;
-  -webkit-animation-delay: 12500ms;
-          animation-delay: 12500ms; }
+  -webkit-animation-delay: 16000ms;
+          animation-delay: 16000ms; }
 
 .c__move-wrap__3--04 {
   left: 1232px;
   bottom: 155px;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
@@ -2812,8 +2812,8 @@ html.js .loader {
 .c__bonus__imag {
   left: 91px;
   bottom: 0px;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms; }
+  -webkit-animation-delay: 20000ms;
+          animation-delay: 20000ms; }
 
 .c__logo__imag {
   background: url("../img/2004_imag.png");
@@ -2821,8 +2821,8 @@ html.js .loader {
   height: 15px;
   left: 50px;
   bottom: 50px;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms; }
+  -webkit-animation-delay: 20000ms;
+          animation-delay: 20000ms; }
 
 .c__brick__2--04 {
   width: 92px;
@@ -2833,15 +2833,15 @@ html.js .loader {
   left: 1444px;
   bottom: 173px;
   z-index: 50;
-  -webkit-animation: screenMove04 15000ms linear forwards;
-          animation: screenMove04 15000ms linear forwards;
+  -webkit-animation: screenMove04 20000ms linear forwards;
+          animation: screenMove04 20000ms linear forwards;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__teleport__2--04 {
   opacity: 0;
-  -webkit-animation-delay: 16400ms;
-          animation-delay: 16400ms; }
+  -webkit-animation-delay: 21200ms;
+          animation-delay: 21200ms; }
 
 /*== 2008 ==*/
 .c__ball--08 {
