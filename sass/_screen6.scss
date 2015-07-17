@@ -206,16 +206,16 @@
 }
 .c__bridge__2--13{
 	left: 957px;
-	bottom: 275+4px;
+	bottom: 275+4-50px;
 }
 .c__brick-steel--13{
 	width: 46*3px;
 	left: 1138px;
-	bottom: 251+4px;
+	bottom: 251+4-50px;
 }
 .c__bonus__telecom{
 	left: 1177px;
-	bottom: 370px;
+	bottom: 370-50px;
 	animation-delay: $delay+$dur13*40/100;
 }
 .c__logo__rostel{
@@ -223,7 +223,7 @@
 	width: 90px;
 	height: 39px;
 	left: 1150px;
-	bottom: 370+46px;
+	bottom: 370+46-50px;
 	animation-delay: $delay+$dur13*40/100;
 }
 .c__top-ground__2--13{
@@ -234,10 +234,10 @@
 .c__top-ground__3--13{
 	width:206px;
 	left: 481+1165px;
-	bottom: 254px;
+	bottom: 254-50px;
 }
 .c__bonus__pochta{
-	bottom: 403px;
+	bottom: 403-50px;
 	left: 481+1244px;
 	animation-delay: $delay+$dur13*56/100;
 }
@@ -246,7 +246,7 @@
 	width: 90px;
 	height: 44px;
 	left: 481+1220px;
-	bottom: 403px;
+	bottom: 403-50px;
 	animation-delay: $delay+$dur13*56/100;
 }
 .c__year__2013{
