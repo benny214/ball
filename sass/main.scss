@@ -63,22 +63,22 @@ html.js .loader {
 /*=== Movie styles ====*/
 
 /*== Main styles ==*/
-// .c__repeating-grid {
-//     z-index: 1;
-//     position: absolute;
-//     top: 0;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     background-size: 60px 60px;
-//     background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px);
-// }
-// .center{
-//   border: 1px solid #222;
-//   height: 560px;
-//   left: 50%;
-//   position: absolute;
-// }
+.c__repeating-grid {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: 60px 60px;
+    background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px);
+}
+.center{
+  border: 1px solid #222;
+  height: 560px;
+  left: 50%;
+  position: absolute;
+}
 
 
 // .c__stage_1{
@@ -104,7 +104,7 @@ html.js .loader {
 // }
 
 $delay: 2000ms;
-$dur00: 10000ms;
+$dur00: 20000ms;
 $dur04: 15000ms;
 $dur08: 15000ms;
 $dur10: 20000ms;
@@ -184,7 +184,7 @@ $dur15: 15000ms;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   top:0;
   background: #E4F3F6;
   z-index: -1;
@@ -233,7 +233,7 @@ $dur15: 15000ms;
   height: 74px;
   position: absolute;
   z-index: 25;
- animation: bonusAnim 2s ease forwards;
+ // animation: bonusAnim 2s ease forwards;
 }
 [class*='c__bonus']{
   background: url('../img/bonus.jpg');
@@ -269,7 +269,7 @@ $dur15: 15000ms;
   width: 150px;
   height: 123px;
   z-index: 99999;
- animation: teleport 2s ease forwards;
+ // animation: teleport 2s ease forwards;
 }
 
 [class*='c__tube-bott']{
@@ -281,8 +281,8 @@ $dur15: 15000ms;
 }
 [class*='c__logo']{
   position: absolute;
-opacity: 0;
- animation: bonusAnim 2s ease forwards;
+// opacity: 0;
+ // animation: bonusAnim 2s ease forwards;
 }
 [class*='c__year']{
   position: absolute;
@@ -618,7 +618,7 @@ opacity: 0;
 // 48% {  }
 // 50% {  }
 // 52% {  }
-// 54% {  }//bonus rd
+// 54% {  }
 // 56% {  }
 // 58% {  }
 // 60% {  }
@@ -633,9 +633,9 @@ opacity: 0;
 // 78% {  }
 // 80% {  }
 // 82% {  }
-// 84% {  }//bonus data
+// 84% {  }
 // 86% {  }
-// 88% { }
+// 88% {  }
 // 90% {  }
 // 92% {  }
 // 94% {  }
