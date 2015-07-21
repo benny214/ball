@@ -2101,7 +2101,8 @@ html.js .loader {
   76% {
     bottom: 50px;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out; }
+            animation-timing-function: ease-out;
+    opacity: 1; }
   78% {
     bottom: 50px;
     -webkit-animation-timing-function: ease-in;
@@ -2303,7 +2304,8 @@ html.js .loader {
   76% {
     bottom: 50px;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out; }
+            animation-timing-function: ease-out;
+    opacity: 1; }
   78% {
     bottom: 50px;
     -webkit-animation-timing-function: ease-in;
@@ -3090,15 +3092,15 @@ html.js .loader {
           animation-name: bounce04;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 20000ms;
-          animation-duration: 20000ms;
+  -webkit-animation-duration: 15000ms;
+          animation-duration: 15000ms;
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms; }
 
 .c__ball--04 {
   bottom: 47px;
   left: 0;
-  opacity: 1;
+  opacity: 0;
   bottom: 50px;
   -webkit-animation-name: bounce04;
           animation-name: bounce04;
@@ -3179,8 +3181,8 @@ html.js .loader {
 .c__bonus__sync {
   left: 269px;
   bottom: 103px;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms; }
+  -webkit-animation-delay: 4700ms;
+          animation-delay: 4700ms; }
 
 .c__logo__sync {
   background: url("../img/2004_syncr.png");
@@ -3188,8 +3190,8 @@ html.js .loader {
   height: 25px;
   left: 243px;
   bottom: 153px;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms; }
+  -webkit-animation-delay: 4700ms;
+          animation-delay: 4700ms; }
 
 .c__brick-steel--04 {
   width: 460px;
@@ -3206,8 +3208,8 @@ html.js .loader {
   bottom: 306px;
   left: 807px;
   z-index: 5;
-  -webkit-animation-delay: 12500ms;
-          animation-delay: 12500ms; }
+  -webkit-animation-delay: 9800ms;
+          animation-delay: 9800ms; }
 
 .c__brick__1--04 {
   width: 91px;
@@ -3217,8 +3219,8 @@ html.js .loader {
 .c__bonus__imag {
   left: 1174px;
   bottom: 104px;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms; }
+  -webkit-animation-delay: 11900ms;
+          animation-delay: 11900ms; }
 
 .c__logo__imag {
   background: url("../img/2004_imag.png");
@@ -3226,8 +3228,8 @@ html.js .loader {
   height: 15px;
   left: 1146px;
   bottom: 154px;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms; }
+  -webkit-animation-delay: 11900ms;
+          animation-delay: 11900ms; }
 
 .c__brick__2--04 {
   width: 92px;
@@ -3236,8 +3238,8 @@ html.js .loader {
 
 .c__teleport__2--04 {
   opacity: 0;
-  -webkit-animation-delay: 16400ms;
-          animation-delay: 16400ms; }
+  -webkit-animation-delay: 13700ms;
+          animation-delay: 13700ms; }
 
 /*== 2008 ==*/
 .c__ball--08 {

@@ -49,7 +49,7 @@
 70% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60px; animation-timing-function: ease-in;}
 72% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60px; animation-timing-function: ease-out;}
 74% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60+60px; animation-timing-function: ease-in;}
-76% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60+60-60px; animation-timing-function: ease-out;}
+76% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60+60-60px; animation-timing-function: ease-out;opacity:1;}
 78% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60+60-60px; animation-timing-function: ease-in;}
 80% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60+60-60px; animation-timing-function: ease-out;}
 82% { bottom:110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60+60-60px; animation-timing-function: ease-in;}
@@ -237,14 +237,14 @@
   //bottom: $bounce;
   animation-name: bounce04;
   animation-iteration-count: infinite;
-  animation-duration: $dur00;
+  animation-duration: $dur04;
    animation-delay: $delay;
 }
 
 .c__ball--04{
   bottom: 47px;
   left: 0;
-  opacity:1;
+  opacity:0;
   //bottom: $bounce;
   bottom: 50px;
   animation-name: bounce04;
@@ -320,7 +320,7 @@
 .c__bonus__sync{
   left: 269px;
   bottom: 103px;
-  animation-delay: $delay+$dur04*20/100;
+  animation-delay: $delay+$dur04*18/100;
 }
 .c__logo__sync{
   background: url('../img/2004_syncr.png');
@@ -328,7 +328,7 @@
   height: 25px;
   left: 243px;
   bottom: 103+50px;
-  animation-delay: $delay+$dur04*20/100;
+  animation-delay: $delay+$dur04*18/100;
 }
 .c__brick-steel--04{
   width: 460px;
@@ -345,7 +345,7 @@
   bottom: 299+7px;
   left: 807px;
   z-index: 5;
-  animation-delay: $delay+$dur04*70/100;
+  animation-delay: $delay+$dur04*52/100;
 }
 
 .c__brick__1--04{
@@ -356,7 +356,7 @@
 .c__bonus__imag{
   left: 91+1083px;
   bottom: 104px;
-  animation-delay: $delay+$dur04*90/100;
+  animation-delay: $delay+$dur04*66/100;
 }
 .c__logo__imag{
   background: url('../img/2004_imag.png');
@@ -364,7 +364,7 @@
   height: 15px;
   left: 1146px;
   bottom: 50+104px;
-  animation-delay: $delay+$dur04*90/100;
+  animation-delay: $delay+$dur04*66/100;
 
 }
 .c__brick__2--04{
@@ -375,6 +375,6 @@
 
 .c__teleport__2--04{
   opacity: 0;
-  animation-delay: $delay+$dur04*96/100;
+  animation-delay: $delay+$dur04*78/100;
 }
 
