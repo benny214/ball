@@ -1,15 +1,9 @@
 /*== 2000 ==*/
-// $bounce: 50+120-120+60-60+60-60+60-60+60-60+60-60+210-60+150-75+40-40+60-285+60-60+60-60+60-60+60-60px;
-// $groundMove: -827-120-120-60-60-40-60-60-60-60-60-60-60-10+70-50-50-40-60-60-60-60-80-60-60-60-60-60-60px 0px;
-// $screenMove: translateX(0-120-120-60-60-40-60-60-60-60-60-60-60-10+70-50-50-40-60-60-60-60-80-60-60-60-60-60-60px);
-
-// $travel: 60+60+60+60+60+60+60+90px;
-
 
  @keyframes bounce00 { 
 0%  { bottom: 583px; }
 2%  { bottom: 583px; }
-4%  { bottom: 583px; animation-timing-function: ease-in;}
+4%  { bottom: 583px; }
 6%  { bottom: 50px; animation-timing-function: ease-out;}
 8%  { bottom: 50+60px; animation-timing-function: ease-in;}
 10% { bottom: 50+60-60px; animation-timing-function: ease-out;}
@@ -226,7 +220,6 @@
 }
 
 .c__traveler--00{
- // left: $travel;
   animation-name: travel00;
   animation-duration: $dur00;
   animation-delay: $delay;
@@ -235,7 +228,6 @@
 
 .c__ball--00{
   opacity:1;
-  //bottom: $bounce;
   animation-name: bounce00;
   animation-duration: $dur00;
    animation-delay: $delay;
@@ -244,7 +236,6 @@
 .c__move-wrap--00{
   left: 322px;
   bottom: 50px;
-  //transform: $screenMove;
    animation: screenMove00 $dur00 linear forwards;
    animation-delay: $delay;
 }
@@ -253,7 +244,6 @@
    animation: groundMove00 $dur00 linear forwards;
    animation-delay: $delay;
    background-position: -827px;
-  //background-position: $groundMove;
   background-attachment:fixed;
 }
 
