@@ -227,19 +227,6 @@
 
 }
 
-.sides{
-  position: absolute;
-  border: 1px dashed red;
-  width: 542px;
-  height: 46px;
-  bottom: 52px;
-  z-index: 9999;
-  //bottom: $bounce;
-  animation-name: bounce04;
-  animation-iteration-count: infinite;
-  animation-duration: $dur04;
-   animation-delay: $delay;
-}
 
 .c__ball--04{
   bottom: 47px;
@@ -255,14 +242,12 @@
 }
 
 .c__traveler--04{
-  // left: $travel;
   animation-name: travel04;
   animation-duration: $dur04;
   animation-delay: $delay;
 }
 
 .c__move-wrap--04{
-  // transform: $screenMove;
   left: 148px;
   bottom: 50px;
   animation: screenMove04 $dur04 linear forwards;
@@ -271,7 +256,7 @@
 
 .c__ground__04{
   background: url('../img/ground-04.png');
-  // background-position: $groundMove;
+  
   animation: groundMove04 $dur04 linear forwards;
    animation-delay: $delay;
 }
@@ -374,7 +359,9 @@
 }
 
 .c__teleport__2--04{
-  opacity: 0;
+  left: 1030+430px;
+  bottom: 0;
+  opacity: 1;
   animation-delay: $delay+$dur04*78/100;
 }
 
