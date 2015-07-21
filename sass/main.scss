@@ -233,7 +233,7 @@ $dur15: 15000ms;
   height: 74px;
   position: absolute;
   z-index: 25;
- // animation: bonusAnim 2s ease forwards;
+  animation: bonusAnim 2s ease forwards;
 }
 [class*='c__bonus']{
   background: url('../img/bonus.jpg');
@@ -269,7 +269,7 @@ $dur15: 15000ms;
   width: 150px;
   height: 123px;
   z-index: 99999;
- // animation: teleport 2s ease forwards;
+  animation: teleport 2s ease forwards;
 }
 
 [class*='c__tube-bott']{
@@ -281,8 +281,8 @@ $dur15: 15000ms;
 }
 [class*='c__logo']{
   position: absolute;
-// opacity: 0;
- // animation: bonusAnim 2s ease forwards;
+ opacity: 0;
+ animation: bonusAnim 2s ease forwards;
 }
 [class*='c__year']{
   position: absolute;
@@ -294,6 +294,17 @@ $dur15: 15000ms;
   width: 123px;
   height: 26px;
   position: absolute;
+}
+
+[class*='c__traveler']{
+  height: 560px;
+position: absolute;
+width: 46px;
+animation-timing-function: linear;
+// border: 1px dashed red;
+z-index: 9999;
+
+
 }
 
 .c__game-wrap{

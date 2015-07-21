@@ -2,7 +2,19 @@
 
 /*== 2004 ==*/
 
-
+.sides{
+  position: absolute;
+  border: 1px dashed red;
+  width: 542px;
+  height: 46px;
+  bottom: 52px;
+  z-index: 9999;
+ // bottom: $bounce;
+ animation-name: bounce00;
+ animation-iteration-count: infinite;
+ animation-duration: $dur00;
+  animation-delay: $delay;
+}
 
 .c__ball--04{
   bottom: 47px;
