@@ -1,13 +1,4 @@
 
-
-// $bounce:              110-60+60-60+60-60+60-60+210-60+60-60+210-50+60-60+60-60+60-370+60-60+60-60+60-60+60-60px;
-// $groundMove:              0-60-60-60-60-60-60-90+60+60+60+30-60-60-60-60-60-40-60-40-60-40-40-60-60-60-60-60px;
-// $screenMove: translateX(  0-60-60-60-60-60-60-90+60+60+60+30-60-60-60-60-60-40-60-40-60-40-40-60-60-60-60-60px);
-
-
-// $travel:0+60+60+60+60+60+60+60+30+60px;
-
-
 /*== 2004 ==*/
 
 @keyframes bounce04{
@@ -232,7 +223,6 @@
   bottom: 47px;
   left: 0;
   opacity:0;
-  //bottom: $bounce;
   bottom: 50px;
   animation-name: bounce04;
   animation-direction: normal;
@@ -256,7 +246,6 @@
 
 .c__ground__04{
   background: url('../img/ground-04.png');
-  
   animation: groundMove04 $dur04 linear forwards;
    animation-delay: $delay;
 }
@@ -359,7 +348,7 @@
 }
 
 .c__teleport__2--04{
-  left: 1030+430px;
+  left: 1030+430-30px;
   bottom: 0;
   opacity: 1;
   animation-delay: $delay+$dur04*78/100;
