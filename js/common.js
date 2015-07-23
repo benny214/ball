@@ -33,10 +33,3 @@
  });
 
 
-$(window).load(function() {
-
-	$(".loader_inner").fadeOut(40000);
-	$(".loader").delay(400).fadeOut("slow");
-
-});
-
