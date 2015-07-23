@@ -1,5 +1,10 @@
  $(document).ready(function() {
 
+ 	$('#c_stage-wrap1').click(function(){
+ 		$('.c_stage-wrap1').addClass('active');
+ 		$('.c_stage-wrap-start').removeClass('active');
+ 	});
+
  	$('#c_stage-wrap2').click(function(){
  		$('.c_stage-wrap2').addClass('active');
  		$('.c_stage-wrap1').removeClass('active');
