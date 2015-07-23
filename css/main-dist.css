@@ -5,158 +5,15 @@
   outline: none;
   font-family: 'Open Sans', sans-serif; }
 
-html.js .loader {
-  background: none repeat scroll 0 0 #ffffff;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999; }
-
-.loader_inner {
-  background: url("../img/preloader.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 160px;
-  width: 160px;
-  margin-top: -30px;
-  margin-left: -30px;
-  left: 50%;
-  top: 50%;
-  position: absolute; }
-
 /*Header styles*/
 .header {
   height: 100px;
   position: relative;
   z-index: 15;
-  background: #fff;
-  border-bottom: 1px solid #222; }
-
-.wrapper {
-  width: 1084px;
-  margin: 0 auto;
-  position: relative; }
-
-.logo-wa {
-  background: url("../img/logo-wa.png") top left no-repeat;
-  width: 185px;
-  height: 46px;
-  margin-top: 29px;
-  float: left; }
+  background: #fff; }
 
 /*=== Movie styles ====*/
 /*== Main styles ==*/
-.c__repeating-grid {
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-size: 60px 60px;
-  background-image: -webkit-repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), -webkit-repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), -webkit-repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), -webkit-repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px);
-  background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.44) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px), repeating-linear-gradient(-90deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22) 1px, transparent 1px, transparent 15px); }
-
-.center {
-  border: 1px solid #222;
-  height: 560px;
-  left: 50%;
-  position: absolute; }
-
-.c_stats1 {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.c_stats2 {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.c_stats3 {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.c_stats4 {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.c_stats5 {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.c_stats6 {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.c_stats7 {
-  opacity: 0;
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-delay: 17000ms;
-          animation-delay: 17000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 .c_stage-wrap-start,
 .c_stage-wrap1,
 .c_stage-wrap2,
@@ -179,7 +36,9 @@ html.js .loader {
   overflow: hidden;
   top: 0;
   background: #E4F3F6;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
 
 [class*='c__ground'] {
   width: 100%;
@@ -506,6 +365,95 @@ html.js .loader {
   100% {
     opacity: 0; } }
 
+.c_stats1 {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.c_stats2 {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.c_stats3 {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.c_stats4 {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.c_stats5 {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.c_stats6 {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+.c_stats7 {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-delay: 15500ms;
+          animation-delay: 15500ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .c_stats1,
 .c_stats2,
 .c_stats3,
@@ -555,32 +503,32 @@ html.js .loader {
           animation-duration: 2s; }
 
 .c_stats__wrap1 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 17500ms;
+          animation-delay: 17500ms; }
 
 .c_stats__wrap2 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 17500ms;
+          animation-delay: 17500ms; }
 
 .c_stats__wrap3 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 17500ms;
+          animation-delay: 17500ms; }
 
 .c_stats__wrap4 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 17500ms;
+          animation-delay: 17500ms; }
 
 .c_stats__wrap5 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 17500ms;
+          animation-delay: 17500ms; }
 
 .c_stats__wrap6 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 17500ms;
+          animation-delay: 17500ms; }
 
 .c_stats__wrap7 {
-  -webkit-animation-delay: 19000ms;
-          animation-delay: 19000ms; }
+  -webkit-animation-delay: 17500ms;
+          animation-delay: 17500ms; }
 
 .c_head__container,
 .c_company__container,
@@ -1911,8 +1859,8 @@ html.js .loader {
           animation-name: travel00;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ball--00 {
   opacity: 1;
@@ -1920,8 +1868,8 @@ html.js .loader {
           animation-name: bounce00;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   bottom: 583px; }
 
 .c__move-wrap--00 {
@@ -1929,15 +1877,15 @@ html.js .loader {
   bottom: 50px;
   -webkit-animation: screenMove00 15000ms linear forwards;
           animation: screenMove00 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ground--00 {
   background: url("../img/ground-00.png");
   -webkit-animation: groundMove00 15000ms linear forwards;
           animation: groundMove00 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   background-position: -827px 0px;
   background-attachment: fixed; }
 
@@ -1977,14 +1925,14 @@ html.js .loader {
   background: url("../img/bubble-java.png");
   left: 12px;
   bottom: 78px;
-  -webkit-animation-delay: 4700ms;
-          animation-delay: 4700ms; }
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms; }
 
 .c__bonus__rd {
   left: 584px;
   bottom: 102px;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms; }
+  -webkit-animation-delay: 5300ms;
+          animation-delay: 5300ms; }
 
 .c__brick--00 {
   width: 371px;
@@ -1997,8 +1945,8 @@ html.js .loader {
   height: 49px;
   left: 570px;
   bottom: 154px;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms; }
+  -webkit-animation-delay: 5300ms;
+          animation-delay: 5300ms; }
 
 .c__top-ground--00 {
   width: 129px;
@@ -2008,8 +1956,8 @@ html.js .loader {
 .c__bonus__data {
   bottom: 309px;
   left: 1106px;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms; }
+  -webkit-animation-delay: 8900ms;
+          animation-delay: 8900ms; }
 
 .c__logo__data {
   background: url("../img/2000_dataart.png");
@@ -2017,22 +1965,22 @@ html.js .loader {
   height: 18px;
   bottom: 359px;
   left: 1085px;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms; }
+  -webkit-animation-delay: 8900ms;
+          animation-delay: 8900ms; }
 
 .c__bubble__sql {
   background: url("../img/bubble-sql.png");
   left: 1427px;
   bottom: 0;
-  -webkit-animation-delay: 11900ms;
-          animation-delay: 11900ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__teleport--00 {
   left: 1720px;
   bottom: 0;
   opacity: 0;
-  -webkit-animation-delay: 14300ms;
-          animation-delay: 14300ms; }
+  -webkit-animation-delay: 12800ms;
+          animation-delay: 12800ms; }
 
 /*== 2004 ==*/
 @-webkit-keyframes bounce04 {
@@ -3181,38 +3129,38 @@ html.js .loader {
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__traveler--04 {
   -webkit-animation-name: travel04;
           animation-name: travel04;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__move-wrap--04 {
   left: 148px;
   bottom: 50px;
   -webkit-animation: screenMove04 15000ms linear forwards;
           animation: screenMove04 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ground__04 {
   background: url("../img/ground-04.png");
   -webkit-animation: groundMove04 15000ms linear forwards;
           animation: groundMove04 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__teleport__1--04 {
   opacity: 1;
   bottom: 47px;
   left: -45px;
-  -webkit-animation-delay: 2150ms;
-          animation-delay: 2150ms; }
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms; }
 
 .c__city {
   background: url("../img/city.png") repeat-x;
@@ -3252,8 +3200,8 @@ html.js .loader {
 .c__bonus__sync {
   left: 269px;
   bottom: 103px;
-  -webkit-animation-delay: 4700ms;
-          animation-delay: 4700ms; }
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms; }
 
 .c__logo__sync {
   background: url("../img/2004_syncr.png");
@@ -3261,8 +3209,8 @@ html.js .loader {
   height: 25px;
   left: 243px;
   bottom: 153px;
-  -webkit-animation-delay: 4700ms;
-          animation-delay: 4700ms; }
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms; }
 
 .c__brick-steel--04 {
   width: 460px;
@@ -3279,8 +3227,8 @@ html.js .loader {
   bottom: 306px;
   left: 807px;
   z-index: 5;
-  -webkit-animation-delay: 9800ms;
-          animation-delay: 9800ms; }
+  -webkit-animation-delay: 8300ms;
+          animation-delay: 8300ms; }
 
 .c__brick__1--04 {
   width: 91px;
@@ -3290,8 +3238,8 @@ html.js .loader {
 .c__bonus__imag {
   left: 1174px;
   bottom: 104px;
-  -webkit-animation-delay: 11900ms;
-          animation-delay: 11900ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__logo__imag {
   background: url("../img/2004_imag.png");
@@ -3299,8 +3247,8 @@ html.js .loader {
   height: 15px;
   left: 1146px;
   bottom: 154px;
-  -webkit-animation-delay: 11900ms;
-          animation-delay: 11900ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__brick__2--04 {
   width: 92px;
@@ -3311,8 +3259,8 @@ html.js .loader {
   left: 1430px;
   bottom: 0;
   opacity: 1;
-  -webkit-animation-delay: 13700ms;
-          animation-delay: 13700ms; }
+  -webkit-animation-delay: 12200ms;
+          animation-delay: 12200ms; }
 
 /*== 2008 ==*/
 @-webkit-keyframes bounce08 {
@@ -4455,8 +4403,8 @@ html.js .loader {
   bottom: 50px;
   -webkit-animation-name: bounce08;
           animation-name: bounce08;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
@@ -4467,24 +4415,24 @@ html.js .loader {
           animation-name: travel08;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ground__08 {
   background: url("../img/ground-08.png");
   background-attachment: fixed;
   -webkit-animation: groundMove08 15000ms linear forwards;
           animation: groundMove08 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__move-wrap--08 {
   left: 147px;
   bottom: 50px;
   -webkit-animation: screenMove08 15000ms linear forwards;
           animation: screenMove08 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__year__2008 {
   background: url("../img/2008.png");
@@ -4514,22 +4462,22 @@ html.js .loader {
   opacity: 1;
   bottom: 50px;
   left: -45px;
-  -webkit-animation-delay: 2150ms;
-          animation-delay: 2150ms; }
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms; }
 
 .c__bubble__share {
   background: url("../img/bubble-share.png");
   left: 319px;
   bottom: 0px;
   z-index: 5;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms; }
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms; }
 
 .c__bonus__fei {
   left: 529px;
   bottom: 103px;
-  -webkit-animation-delay: 5900ms;
-          animation-delay: 5900ms; }
+  -webkit-animation-delay: 4400ms;
+          animation-delay: 4400ms; }
 
 .c__logo__fei {
   background: url("../img/2008_fei.png");
@@ -4537,15 +4485,15 @@ html.js .loader {
   height: 33px;
   left: 516px;
   bottom: 153px;
-  -webkit-animation-delay: 5900ms;
-          animation-delay: 5900ms; }
+  -webkit-animation-delay: 4400ms;
+          animation-delay: 4400ms; }
 
 .c__bubble__crm {
   background: url("../img/bubble-crm.png");
   left: 862px;
   bottom: 149px;
-  -webkit-animation-delay: 8000ms;
-          animation-delay: 8000ms; }
+  -webkit-animation-delay: 6500ms;
+          animation-delay: 6500ms; }
 
 .c__brick-steel__1--08 {
   width: 46px;
@@ -4565,8 +4513,8 @@ html.js .loader {
 .c__bonus__conti {
   left: 1417px;
   bottom: 103px;
-  -webkit-animation-delay: 16100ms;
-          animation-delay: 16100ms; }
+  -webkit-animation-delay: 14600ms;
+          animation-delay: 14600ms; }
 
 .c__logo__conti {
   background: url("../img/Conti.png");
@@ -4574,8 +4522,8 @@ html.js .loader {
   height: 25px;
   left: 1364px;
   bottom: 153px;
-  -webkit-animation-delay: 16100ms;
-          animation-delay: 16100ms; }
+  -webkit-animation-delay: 14600ms;
+          animation-delay: 14600ms; }
 
 .c__brick__2--08 {
   width: 141px;
@@ -4591,14 +4539,14 @@ html.js .loader {
   background: url("../img/bubble-qt.png");
   left: 1585px;
   bottom: 149px;
-  -webkit-animation-delay: 13400ms;
-          animation-delay: 13400ms; }
+  -webkit-animation-delay: 11900ms;
+          animation-delay: 11900ms; }
 
 .c__bonus__nv {
   bottom: 252px;
   left: 1013px;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms; }
+  -webkit-animation-delay: 7400ms;
+          animation-delay: 7400ms; }
 
 .c__logo__nv {
   background: url("../img/2008_night.png");
@@ -4606,8 +4554,8 @@ html.js .loader {
   height: 38px;
   left: 1005px;
   bottom: 302px;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms; }
+  -webkit-animation-delay: 7400ms;
+          animation-delay: 7400ms; }
 
 .c__brick__3--08 {
   width: 174px;
@@ -4625,23 +4573,23 @@ html.js .loader {
   left: 1440px;
   bottom: 302px;
   z-index: 15;
-  -webkit-animation-delay: 12800ms;
-          animation-delay: 12800ms; }
+  -webkit-animation-delay: 11300ms;
+          animation-delay: 11300ms; }
 
 .c__bubble__ccc {
   background: url("../img/bubble-ccc.png");
   left: 1253px;
   bottom: 0;
   z-index: 10;
-  -webkit-animation-delay: 15200ms;
-          animation-delay: 15200ms; }
+  -webkit-animation-delay: 13700ms;
+          animation-delay: 13700ms; }
 
 .c__teleport__2--08 {
   left: 1654px;
   bottom: 0px;
   opacity: 1;
-  -webkit-animation-delay: 16700ms;
-          animation-delay: 16700ms; }
+  -webkit-animation-delay: 15200ms;
+          animation-delay: 15200ms; }
 
 /*=== 2010 ===*/
 @-webkit-keyframes bounce10 {
@@ -5792,8 +5740,8 @@ html.js .loader {
   bottom: 50px;
   -webkit-animation-name: bounce10;
           animation-name: bounce10;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
@@ -5804,24 +5752,24 @@ html.js .loader {
           animation-name: travel10;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ground--10 {
   background: url("../img/ground-04.png");
   background-attachment: fixed;
   -webkit-animation: groundMove10 15000ms linear forwards;
           animation: groundMove10 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__move-wrap--10 {
   bottom: 47px;
   left: 148px;
   -webkit-animation: screenMove10 15000ms linear forwards;
           animation: screenMove10 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__year__2010 {
   background: url("../img/2010.png");
@@ -5832,14 +5780,14 @@ html.js .loader {
 .c__teleport__1--10 {
   bottom: 4px;
   left: -200px;
-  -webkit-animation-delay: 2150ms;
-          animation-delay: 2150ms; }
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms; }
 
 .c__teleport__2--10 {
   bottom: 4px;
   left: 1977px;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms; }
+  -webkit-animation-delay: 14000ms;
+          animation-delay: 14000ms; }
 
 .c__bush__1--10 {
   left: 0;
@@ -5860,8 +5808,8 @@ html.js .loader {
 .c__bonus__thomson {
   left: 231px;
   bottom: 108px;
-  -webkit-animation-delay: 4700ms;
-          animation-delay: 4700ms; }
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms; }
 
 .c__logo__thomson {
   background: url("../img/2010_thomson.png");
@@ -5869,8 +5817,8 @@ html.js .loader {
   height: 25px;
   left: 198px;
   bottom: 158px;
-  -webkit-animation-delay: 4700ms;
-          animation-delay: 4700ms; }
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms; }
 
 .c__brick__1--10 {
   left: 277px;
@@ -5890,29 +5838,29 @@ html.js .loader {
   background: url("../img/bubble-php.png");
   bottom: 4px;
   left: 236px;
-  -webkit-animation-delay: 4400ms;
-          animation-delay: 4400ms; }
+  -webkit-animation-delay: 2900ms;
+          animation-delay: 2900ms; }
 
 .c__bubble__partner {
   background: url("../img/bubble-partner.png");
   bottom: 154px;
   left: 595px;
-  -webkit-animation-delay: 7400ms;
-          animation-delay: 7400ms; }
+  -webkit-animation-delay: 5900ms;
+          animation-delay: 5900ms; }
 
 .c__bubble__ruby {
   background: url("../img/bubble-ruby.png");
   left: 453px;
   bottom: 224px;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms; }
+  -webkit-animation-delay: 5300ms;
+          animation-delay: 5300ms; }
 
 .c__bubble__gold {
   background: url("../img/bubble-gold.png");
   bottom: 4px;
   left: 1056px;
-  -webkit-animation-delay: 9200ms;
-          animation-delay: 9200ms; }
+  -webkit-animation-delay: 7700ms;
+          animation-delay: 7700ms; }
 
 .c__top-ground__1--10 {
   left: 700px;
@@ -5927,8 +5875,8 @@ html.js .loader {
 .c__bonus__it {
   bottom: 347px;
   left: 819px;
-  -webkit-animation-delay: 8300ms;
-          animation-delay: 8300ms; }
+  -webkit-animation-delay: 6800ms;
+          animation-delay: 6800ms; }
 
 .c__logo__it {
   background: url("../img/2010_ayti.png");
@@ -5936,8 +5884,8 @@ html.js .loader {
   height: 17px;
   bottom: 400px;
   left: 819px;
-  -webkit-animation-delay: 8300ms;
-          animation-delay: 8300ms; }
+  -webkit-animation-delay: 6800ms;
+          animation-delay: 6800ms; }
 
 .c__brick__3--10 {
   width: 46px;
@@ -5961,8 +5909,8 @@ html.js .loader {
 .c__bonus__pfrf {
   left: 1273px;
   bottom: 334px;
-  -webkit-animation-delay: 10700ms;
-          animation-delay: 10700ms; }
+  -webkit-animation-delay: 9200ms;
+          animation-delay: 9200ms; }
 
 .c__logo__pfrf {
   background: url("../img/2010_pfrf.png");
@@ -5970,15 +5918,15 @@ html.js .loader {
   height: 25px;
   left: 1260px;
   bottom: 394px;
-  -webkit-animation-delay: 10700ms;
-          animation-delay: 10700ms; }
+  -webkit-animation-delay: 9200ms;
+          animation-delay: 9200ms; }
 
 .c__bubble__ios {
   background: url("../img/bubble-ios.png");
   left: 1358px;
   bottom: 155px;
-  -webkit-animation-delay: 11000ms;
-          animation-delay: 11000ms; }
+  -webkit-animation-delay: 9500ms;
+          animation-delay: 9500ms; }
 
 .c__top-ground__3--10 {
   width: 285px;
@@ -5989,22 +5937,22 @@ html.js .loader {
   background: url("../img/bubble-android.png");
   left: 1562px;
   bottom: 261px;
-  -webkit-animation-delay: 11600ms;
-          animation-delay: 11600ms; }
+  -webkit-animation-delay: 10100ms;
+          animation-delay: 10100ms; }
 
 .c__bubble__nvidia {
   background: url("../img/bubble-nvidia.png");
   left: 1667px;
   bottom: 261px;
-  -webkit-animation-delay: 12200ms;
-          animation-delay: 12200ms; }
+  -webkit-animation-delay: 10700ms;
+          animation-delay: 10700ms; }
 
 .c__bubble__bd {
   background: url("../img/bubble-bd.png");
   left: 1732px;
   bottom: 4px;
-  -webkit-animation-delay: 14000ms;
-          animation-delay: 14000ms; }
+  -webkit-animation-delay: 12500ms;
+          animation-delay: 12500ms; }
 
 /*=== 2012 ===*/
 @-webkit-keyframes bounce12 {
@@ -7151,8 +7099,8 @@ html.js .loader {
           animation-name: bounce12;
   opacity: 0;
   bottom: 50px;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
@@ -7165,23 +7113,23 @@ html.js .loader {
           animation-name: travel12;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__move-wrap--12 {
   left: 112px;
   bottom: 47px;
   -webkit-animation: screenMove12 15000ms linear forwards;
           animation: screenMove12 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ground--12 {
   background: url("../img/ground-04.png");
   -webkit-animation: groundMove12 15000ms linear forwards;
           animation: groundMove12 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__city__london {
   background: url("../img/City_london.png") repeat-x;
@@ -7199,8 +7147,8 @@ html.js .loader {
 .c__teleport__1--12 {
   bottom: 47px;
   left: -53px;
-  -webkit-animation-delay: 2150ms;
-          animation-delay: 2150ms; }
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms; }
 
 .c__bush__1--12 {
   left: 0;
@@ -7214,22 +7162,22 @@ html.js .loader {
 .c__bonus__korus {
   left: 220px;
   bottom: 254px;
-  -webkit-animation-delay: 4100ms;
-          animation-delay: 4100ms; }
+  -webkit-animation-delay: 2600ms;
+          animation-delay: 2600ms; }
 
 .c__bubble__london {
   background: url("../img/bubble-london.png");
   left: 51px;
   bottom: 300px;
-  -webkit-animation-delay: 5300ms;
-          animation-delay: 5300ms; }
+  -webkit-animation-delay: 3800ms;
+          animation-delay: 3800ms; }
 
 .c__bubble__azure {
   background: url("../img/bubble-azure.png");
   left: 1201px;
   bottom: 4px;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms; }
+  -webkit-animation-delay: 8900ms;
+          animation-delay: 8900ms; }
 
 .c__logo__korus {
   background: url("../img/2012_Korus.png");
@@ -7237,8 +7185,8 @@ html.js .loader {
   height: 21px;
   left: 200px;
   bottom: 304px;
-  -webkit-animation-delay: 4100ms;
-          animation-delay: 4100ms; }
+  -webkit-animation-delay: 2600ms;
+          animation-delay: 2600ms; }
 
 .c__brick__2--12 {
   left: 236px;
@@ -7274,8 +7222,8 @@ html.js .loader {
 .c__bonus__bubbles {
   bottom: 252px;
   left: 861px;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms; }
+  -webkit-animation-delay: 7400ms;
+          animation-delay: 7400ms; }
 
 .c__logo__bubbles {
   background: url("../img/bubbles.png");
@@ -7283,8 +7231,8 @@ html.js .loader {
   height: 55px;
   bottom: 302px;
   left: 861px;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms; }
+  -webkit-animation-delay: 7400ms;
+          animation-delay: 7400ms; }
 
 .c__tube-bott__2--12 {
   left: 1038px;
@@ -7303,8 +7251,8 @@ html.js .loader {
 .c__bonus__bio {
   left: 1340px;
   bottom: 353px;
-  -webkit-animation-delay: 14300ms;
-          animation-delay: 14300ms; }
+  -webkit-animation-delay: 12800ms;
+          animation-delay: 12800ms; }
 
 .c__logo__bio {
   background: url("../img/2012_Biociences.png");
@@ -7312,14 +7260,14 @@ html.js .loader {
   height: 27px;
   bottom: 353px;
   left: 1301px;
-  -webkit-animation-delay: 14300ms;
-          animation-delay: 14300ms; }
+  -webkit-animation-delay: 12800ms;
+          animation-delay: 12800ms; }
 
 .c__bonus__krok {
   left: 1591px;
   bottom: 103px;
-  -webkit-animation-delay: 11900ms;
-          animation-delay: 11900ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__logo__krok {
   background: url("../img/2012_Krok.png");
@@ -7327,8 +7275,8 @@ html.js .loader {
   height: 31px;
   left: 1580px;
   bottom: 153px;
-  -webkit-animation-delay: 11900ms;
-          animation-delay: 11900ms; }
+  -webkit-animation-delay: 10400ms;
+          animation-delay: 10400ms; }
 
 .c__brick__3--12 {
   left: 1637px;
@@ -7338,8 +7286,8 @@ html.js .loader {
 .c__teleport__2--12 {
   left: 1897px;
   bottom: 4px;
-  -webkit-animation-delay: 16400ms;
-          animation-delay: 16400ms; }
+  -webkit-animation-delay: 14900ms;
+          animation-delay: 14900ms; }
 
 /*=== 2013 ===*/
 @-webkit-keyframes bounce13 {
@@ -8508,8 +8456,8 @@ html.js .loader {
           animation-name: bounce13;
   opacity: 0;
   bottom: 50px;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 15000ms;
@@ -8524,8 +8472,8 @@ html.js .loader {
           animation-name: travel13;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ground--13 {
   background: url("../img/ground-13.png");
@@ -8533,16 +8481,16 @@ html.js .loader {
   background-attachment: fixed;
   -webkit-animation: groundMove13 15000ms linear forwards;
           animation: groundMove13 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__move-wrap--13 {
   left: 109px;
   bottom: 47px;
   -webkit-animation: screenMove13 15000ms linear forwards;
           animation: screenMove13 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__bush__1--13 {
   left: 0;
@@ -8573,8 +8521,8 @@ html.js .loader {
 .c__bonus__telecom {
   left: 1177px;
   bottom: 320px;
-  -webkit-animation-delay: 8300ms;
-          animation-delay: 8300ms; }
+  -webkit-animation-delay: 6800ms;
+          animation-delay: 6800ms; }
 
 .c__logo__rostel {
   background: url("../img/2013_rostel.png");
@@ -8582,8 +8530,8 @@ html.js .loader {
   height: 39px;
   left: 1150px;
   bottom: 366px;
-  -webkit-animation-delay: 8300ms;
-          animation-delay: 8300ms; }
+  -webkit-animation-delay: 6800ms;
+          animation-delay: 6800ms; }
 
 .c__top-ground__2--13 {
   width: 206px;
@@ -8598,8 +8546,8 @@ html.js .loader {
 .c__bonus__pochta {
   bottom: 353px;
   left: 1725px;
-  -webkit-animation-delay: 10700ms;
-          animation-delay: 10700ms; }
+  -webkit-animation-delay: 9200ms;
+          animation-delay: 9200ms; }
 
 .c__logo__pochta {
   background: url("../img/2013_pochta.png");
@@ -8607,8 +8555,8 @@ html.js .loader {
   height: 44px;
   left: 1701px;
   bottom: 373px;
-  -webkit-animation-delay: 10700ms;
-          animation-delay: 10700ms; }
+  -webkit-animation-delay: 9200ms;
+          animation-delay: 9200ms; }
 
 .c__year__2013 {
   background: url("../img/2013.png");
@@ -8619,14 +8567,14 @@ html.js .loader {
 .c__teleport__1--13 {
   bottom: 47px;
   left: -50px;
-  -webkit-animation-delay: 2150ms;
-          animation-delay: 2150ms; }
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms; }
 
 .c__teleport__2--13 {
   bottom: 4px;
   left: 2101px;
-  -webkit-animation-delay: 12800ms;
-          animation-delay: 12800ms; }
+  -webkit-animation-delay: 11300ms;
+          animation-delay: 11300ms; }
 
 /*=== 2015 ===*/
 @-webkit-keyframes bounce15 {
@@ -9681,16 +9629,16 @@ html.js .loader {
           animation-name: travel15;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__ball--15 {
   -webkit-animation-name: bounce15;
           animation-name: bounce15;
   opacity: 0;
   bottom: 50px;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 15000ms;
@@ -9704,16 +9652,16 @@ html.js .loader {
   background: url("../img/ground-04.png");
   -webkit-animation: groundMove15 15000ms linear forwards;
           animation: groundMove15 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__move-wrap--15 {
   left: 112px;
   bottom: 47px;
   -webkit-animation: screenMove15 15000ms linear forwards;
           animation: screenMove15 15000ms linear forwards;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms; }
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
 
 .c__year__2015 {
   background: url("../img/2015.png");
@@ -9740,20 +9688,20 @@ html.js .loader {
 .c__bonus__bday {
   left: 938px;
   bottom: 154px;
-  -webkit-animation-delay: 7700ms;
-          animation-delay: 7700ms; }
+  -webkit-animation-delay: 6200ms;
+          animation-delay: 6200ms; }
 
 .c__teleport__1--15 {
   bottom: 47px;
   left: -50px;
-  -webkit-animation-delay: 2150ms;
-          animation-delay: 2150ms; }
+  -webkit-animation-delay: 650ms;
+          animation-delay: 650ms; }
 
 .c__teleport__2--15 {
   bottom: 4px;
   left: 1075px;
-  -webkit-animation-delay: 13400ms;
-          animation-delay: 13400ms; }
+  -webkit-animation-delay: 11900ms;
+          animation-delay: 11900ms; }
 
 .c__logo__bday {
   background: url("../img/logo-bday.png");
@@ -9761,8 +9709,8 @@ html.js .loader {
   height: 77px;
   left: 925px;
   bottom: 204px;
-  -webkit-animation-delay: 7700ms;
-          animation-delay: 7700ms; }
+  -webkit-animation-delay: 6200ms;
+          animation-delay: 6200ms; }
 
 [class*='balloon'] {
   background: url("../img/baloon.png");
@@ -9772,8 +9720,8 @@ html.js .loader {
   position: absolute;
   -webkit-animation: bonusAnim 4s ease forwards;
           animation: bonusAnim 4s ease forwards;
-  -webkit-animation-delay: 8300ms;
-          animation-delay: 8300ms; }
+  -webkit-animation-delay: 6800ms;
+          animation-delay: 6800ms; }
 
 .balloon__1--15 {
   left: 820px;
@@ -9849,8 +9797,8 @@ html.js .loader {
           animation-duration: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms; }
+  -webkit-animation-delay: 7400ms;
+          animation-delay: 7400ms; }
 
 @-webkit-keyframes zoomIn {
   0% {
