@@ -196,6 +196,7 @@ $dur15: 15000ms;
   position: absolute;
   bottom: 0;
   z-index: 1;
+  transform: translatez(0);
 }
 [class*='c__bush']{
   background: url('../img/bush.png');

@@ -186,7 +186,10 @@ html.js .loader {
   height: 78px;
   position: absolute;
   bottom: 0;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-transform: translatez(0);
+      -ms-transform: translatez(0);
+          transform: translatez(0); }
 
 [class*='c__bush'] {
   background: url("../img/bush.png");
