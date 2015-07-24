@@ -25,6 +25,8 @@ $browser-context: 16;
 
 /*== Main styles ==*/
 
+
+
 $delay: 500ms;
 $dur00: 15000ms;
 $dur04: 15000ms;
@@ -50,6 +52,13 @@ $dur15: 15000ms;
   display: block;
 }
 
+.sprite {
+    display: inline-block;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('../img/sprites.png');
+}
+
 [class*='c__stage'] {
   height: 560px;
   width: 100%;
@@ -70,9 +79,9 @@ $dur15: 15000ms;
   transform: translatez(0);
 }
 [class*='c__bush']{
-  background: url('../img/bush.png');
-  height: 68px;
-  width: 205px;
+width: 205px;
+    height: 70px;
+    background-position: -992px -875px;
   z-index: 10;
   bottom:47px;
   position: absolute;
@@ -86,16 +95,16 @@ $dur15: 15000ms;
 }
 
 [class*='c__ball']{
-  background: url('../img/ball.png');
-  height:46px;
-  width: 46px;
+width: 46px;
+    height: 46px;
+    background-position: -1762px -374px;
   position: absolute;
   z-index:20;
 }
 [class*='c__tube']{
-  background: url('../img/tube_top.png');
   width: 100px;
-  height: 76px;
+    height: 76px;
+    background-position: -1584px -693px;
   position: absolute;
   bottom:47px;
   z-index: 10;
@@ -108,9 +117,9 @@ $dur15: 15000ms;
    animation: bonusAnim 2s ease forwards;
 }
 [class*='c__bonus']{
-  background: url('../img/bonus.jpg');
   width: 46px;
-  height: 46px;
+    height: 46px;
+    background-position: -1233px -963px;
   position: absolute;
    animation: bonus 2s ease forwards;
 }
@@ -137,9 +146,9 @@ $dur15: 15000ms;
 
 [class*='c__teleport']{
   position: absolute;
-  background: url('../img/teleport.png');
   width: 150px;
-  height: 123px;
+    height: 123px;
+    background-position: -195px -809px;
   z-index: 99999;
     animation: teleport 2s ease forwards;
 }
@@ -162,9 +171,9 @@ $dur15: 15000ms;
   z-index: -3;
 }
 [class*='c__bridge']{
-  background: url('../img/bridje.png');
-  width: 123px;
-  height: 26px;
+width: 123px;
+    height: 26px;
+    background-position: -551px -979px;
   position: absolute;
 }
 
@@ -182,27 +191,27 @@ animation-timing-function: linear;
   position: relative;
 }
 .c__sun{
-  background: url('../img/sun.png');
-  width:589px ;
-  height: 589px;
+width: 589px;
+    height: 589px;
+    background-position: -2px -2px;
   position: absolute;
   top: -294px;
   z-index: -1;
 }
 
 @keyframes bonus{
-  0%,1%{ background: url('../img/bonus.jpg'); }
+  0%,1%{ background-position: -1233px -963px; }
   5%{ transform: translateY(-10px); }
   10%{ transform: translateY(0px); }
-  20% { background: url('../img/bonus_empty.jpg'); }
-  30% {background: url('../img/bonus_empty.jpg');}
-  40% {background: url('../img/bonus_empty.jpg');}
-  50% {background: url('../img/bonus_empty.jpg');}
-  60% {background: url('../img/bonus_empty.jpg');}
-  70% {background: url('../img/bonus_empty.jpg');}
-  80% {background: url('../img/bonus_empty.jpg');}
-  90% {background: url('../img/bonus_empty.jpg');}
- 100% {background: url('../img/bonus_empty.jpg');}
+  20% {background-position: -1281px -963px; }
+  30% {background-position: -1281px -963px;}
+  40% {background-position: -1281px -963px;}
+  50% {background-position: -1281px -963px;}
+  60% {background-position: -1281px -963px;}
+  70% {background-position: -1281px -963px;}
+  80% {background-position: -1281px -963px;}
+  90% {background-position: -1281px -963px;}
+ 100% {background-position: -1281px -963px;}
 }
 
 @keyframes bonusAnim{
@@ -299,7 +308,7 @@ animation-timing-function: linear;
   width: 100%;
   height: 100%;
   z-index: 99999;
-  background: url('../img/BG_Score.png')repeat-x;
+  background: url('../img/stats-bg.jpg') repeat-x;
   & ul{
     margin: 0;
     padding: 0;
@@ -317,98 +326,164 @@ animation-timing-function: linear;
 [class*='c_stats__wrap']{
   width: 1084px;
   height: 560px;
-  margin: 45px auto;
+  margin: 0 auto;
   opacity:0;
   animation-name: fadeIn;
   animation-fill-mode: forwards;
   animation-duration: 2s;
+  // border: 1px solid red;
 }
-.c_stats__wrap1{animation-delay: $delay+$dur00+2s;}
+.c_stats__wrap1{animation-delay: $delay+$dur00+2;}//$delay+$dur00+2
 .c_stats__wrap2{animation-delay: $delay+$dur04+2s;}
 .c_stats__wrap3{animation-delay: $delay+$dur08+2s;}
 .c_stats__wrap4{animation-delay: $delay+$dur10+2s;}
-.c_stats__wrap5{animation-delay: $delay+$dur12+2s;;}
+.c_stats__wrap5{animation-delay: $delay+$dur12+2s;}
 .c_stats__wrap6{animation-delay: $delay+$dur13+2s;}
 .c_stats__wrap7{animation-delay: $delay+$dur15+2s;}
-.c_head__container,
-.c_company__container,
-.c_clients__container
-{
+
+.c_stats__header{
+  position: relative;
+  margin-top: 53px;
+  margin-bottom: 100px;
   @include clearfix();
-  margin-bottom: 45px;
 }
-.c_head__stats{
-  font-size: 43px;
-  font-weight: 300;
-  color: #00afec;
-  text-shadow: 0 0 0.2em #00afec;
+.c_stats__mid{
+  @include clearfix();
+}
+
+.c_stats__year-result{
+  font-weight: 600;
+  font-size: 20px;
+  color: #24355a;
   float: left;
 }
-.c_head__btn-next{
-  float: left;
+.c_stats__year-result--top{
   display: block;
-  margin-left: 574px;
-  height: 54px;
-  width: 175px;
-  background: transparent;
+  margin-bottom: -50px;
+}
+.c_stats__year-result--mid{
+  display: block;
+  font-size: 50px;
+}
+.c_stats__year-result--bottom{
+  display: block;
+  margin-top: -50px;
+}
+.c_stats__employees{
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  margin-left: 85px;
+}
+.users-stats {
+    width: 88px;
+    height: 84px;
+    background-position: -1494px -691px;
+}
+.c_stats__employees--count{
+  color: #78bb32;
+  float: right;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-right: 25px;
+}
+.c_stats__employees--top{margin-left: 23px;}
+.sun-stats {
+  position: absolute;
+left: -72px;
+  top: -51px;
+    width: 251px;
+    height: 219px;
+    background-position: -992px -654px;
+     z-index: -150;
+}
+.c_stats__clients{
+  float: left;
+  width: 351px;
+  position: relative;
+  padding-left: 47px;
+  & .sprite{
+    margin-right: 48px;
+  }
+}
+.c_clients__head,
+.c_tech__head{
+  margin-bottom: 40px;
+  color: #24355a;
+}
+.extra-bold{
+  font-weight: 800;
+  font-size: 20px;
+}
+.clients-stats {
+  position: absolute;
+  top: -83px;
+  left: -25px;
+    width: 152px;
+    height: 131px;
+    background-position: -1245px -654px;
+}
+.dataart-stat {
+    width: 144px;
+    height: 35px;
+    background-position: -1245px -841px;
+}
+.Soft {
+    width: 73px;
+    height: 49px;
+    background-position: -1769px -2px;
+}
+.c_stats__tech{
+  width: 497px;
+  float: left;
+  position: relative;
+  margin-left: 140px;
+  & .sprite{
+    margin-right: 48px;
+  }
+}
+
+.tech-stats {
+    width: 191px;
+    height: 168px;
+    background-position: -2px -809px;
+    position: absolute;
+  top: -120px;
+  left: -63px;
+}
+
+.SQL-stat {
+    width: 126px;
+    height: 26px;
+    background-position: -1584px -771px;
+    margin-bottom: 19px;
+}
+.java-stat {
+    width: 31px;
+    height: 59px;
+    background-position: -1200px -963px;
+}
+.separate-stats {
+  margin: 0 auto;
+    width: 1084px;
+    height: 2px;
+    background-position: -593px -2px
+}
+.c_stats__btn-next{
   border: none;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 2px #00afec;
-  color: #00afec;
-  cursor: pointer;
-  z-index: 9999;
-  &:hover,
-  &:active,
-  &:focus{
-    background: #00afec;
-    color: #fff;
+  background: #61ab49;
+  display: block;
+  margin: 30px auto;
+  width: 250px;
+  height: 65px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 3px;
+  &:hover{
     cursor: pointer;
   }
 }
-.c_company__stats,
-.c_clients__stats,
-.c_tech__stats{
-  font-size: 17px;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 13px;
-  text-shadow: 0 0 0.1em #fff;
-}
-.c_tech__stats{
-  color: #00afec;
-}
-.c_company__item,
-.c_clients__item,
-.c_tech__item{
-  display: inline-block;
-  width: 210px;
-  text-align: center;
-  color: #fff;
-  font-weight: 300;
-  font-size: 17px;
-  &:first-child{
-    text-align: left;
-    margin-left:15px;
-  }
-}
-.c_company__item:first-child{
-  text-align: center;
-}
-
-.c_company__item--bold{
-  font-weight: 700;
-  font-size: 28px;
-  display: block;
-}
-.c_head__stats--bold{
-  font-weight: 800;
-
-}
-.c_company__stats{
-  margin-bottom: 13px;
-}
-.c_company__item{text-align: center;}
-
 @import "_start.scss";
 @import "_screen1.scss";
 @import "_screen2.scss";

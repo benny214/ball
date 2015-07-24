@@ -263,9 +263,8 @@
   bottom: 47px;
 }
 .c__year__2004{
-  background: url('../img/2004.png');
-  height: 214px;
   width: 598px;
+  background-position: -593px -6px;
   top: 210px;
   left: 264px;
   z-index: -1;
@@ -297,9 +296,9 @@
   animation-delay: $delay+$dur04*18/100;
 }
 .c__logo__sync{
-  background: url('../img/2004_syncr.png');
   width: 95px;
-  height: 25px;
+    height: 25px;
+    background-position: -1399px -786px;
   left: 243px;
   bottom: 103+50px;
   animation-delay: $delay+$dur04*18/100;
@@ -315,7 +314,8 @@
   left: 701px;
 }
 .c__bubble__net{
-  background: url('../img/bubble-net.png');
+
+    background-position: -1589px -931px;
   bottom: 299+7px;
   left: 807px;
   z-index: 5;
@@ -333,9 +333,9 @@
   animation-delay: $delay+$dur04*66/100;
 }
 .c__logo__imag{
-  background: url('../img/2004_imag.png');
   width: 106px;
-  height: 15px;
+    height: 15px;
+    background-position: -551px -1007px;
   left: 1146px;
   bottom: 50+104px;
   animation-delay: $delay+$dur04*66/100;

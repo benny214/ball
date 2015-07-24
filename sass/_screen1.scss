@@ -257,9 +257,8 @@
 }
 
 .c__year__2000{
-  background: url('../img/year.png');
-  height: 214px;
-  width: 555px;
+  width: 510px;
+  background-position: -593px -222px;
   top: 210px;
   left: 264px;
   z-index: -10;
@@ -285,7 +284,7 @@
 }
 
 .c__bubble__java{
-  background: url('../img/bubble-java.png');
+  background-position: -1483px -853px;
   left: 12px;
   bottom: 78px;
   animation-delay: $delay+$dur00*18/100;
@@ -302,9 +301,9 @@
   bottom: 102px;
 }
 .c__logo__rd{
-  background: url('../img/2000_Soft.png');
   width: 73px;
-  height: 49px;
+    height: 49px;
+    background-position: -1769px -2px;
   left:570px;
   bottom: 102+52px;
   animation-delay: $delay+$dur00*32/100;
@@ -324,15 +323,16 @@
 
 }
 .c__logo__data{
-  background: url('../img/2000_dataart.png');
   width: 73px;
-  height: 18px;
+    height: 18px;
+    background-position: -1769px -53px;
   bottom: 279+30+50px;
   left: 1085px;
   animation-delay: $delay+$dur00*56/100;
 }
 .c__bubble__sql{
-  background: url('../img/bubble-sql.png');
+
+  background-position: -1513px -931px;
   left: 1106+321px;
   bottom:0;
   animation-delay: $delay+$dur00*66/100;

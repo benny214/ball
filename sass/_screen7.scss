@@ -244,8 +244,8 @@
 	 animation-delay: $delay;
 }
 .c__year__2015{
-	background: url('../img/2015.png');
 	width: 535px;
+    background-position: -1167px -438px;
 	left: 60*4px;
 	top: 60*4px;
 }
@@ -281,17 +281,17 @@
 	animation-delay: $delay+$dur15*76/100;
 }
 .c__logo__bday{
-	background: url('../img/logo-bday.png');
 	width: 74px;
-	height: 77px;
+    height: 77px;
+    background-position: -1718px -438px;
 	left: 925px;
 	bottom: 154+50px;
 	animation-delay: $delay+$dur15*38/100;
 }
 [class*='balloon']{
-	background: url('../img/baloon.png');
 	width: 88px;
-	height: 104px;
+    height: 104px;
+    background-position: -347px -837px;
 	opacity: 0;
 	position: absolute;
 	animation: bonusAnim 4s ease forwards;
@@ -360,9 +360,9 @@ left: 740+30+60+60+120+120+60px;
 	bottom: 90+40px;
 }
 .c__bday--big{
-	background: url('../img/bday-big.png');//18
 	width: 395px;
-	height: 301px;
+    height: 301px;
+    background-position: -595px -654px;
 	position: absolute;
 	left: 740px;
 	bottom: 90px;

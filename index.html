@@ -16,7 +16,6 @@
     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -40,16 +39,16 @@
             <div class="c__sky--00"></div>
             <div class="c__game-wrap">
 
-                <div class="c__sun"></div>
-                <div class="c__year__2000"></div>
+                <div class="sprite c__sun"></div>
+                <div class=" sprite c__year__2000"></div>
                 <div class="c__move-wrap--start">
-                    <div class="c__bush__1--start"></div>
-                    <div class="c__bush__2--start"></div>
-                    <div class="c__tube--start"></div>
-                    <div class="c__bonus__start"></div>
+                    <div class="sprite c__bush__1--start"></div>
+                    <div class="sprite c__bush__2--start"></div>
+                    <div class="sprite c__tube--start"></div>
+                    <div class="sprite c__bonus__start"></div>
                     <div class="c__brick--start"></div>
                     <div class="c__top-ground--start"></div>
-                    <div class="c__bonus__start-2"></div>
+                    <div class="sprite c__bonus__start-2"></div>
                 </div>
             </div>
         </div>
@@ -63,76 +62,70 @@
             <div class="c__game-wrap">
 
 
-                <div class="c__sun"></div>
-                <div class="c__year__2000"></div>
+                <div class="sprite c__sun"></div>
+                <div class="sprite c__year__2000"></div>
 
                 <div class="c__traveler--00">
-                	<div class="c__ball--00"></div>
+                	<div class="sprite c__ball--00"></div>
                 </div>
 
                 <div class="c__move-wrap--00">
-                	<div class="c__bush__1--00"></div>
-                	<div class="c__bush__2--00"></div>
-                	<div class="c__bush__3--00"></div>
-                	<div class="c__tube--00"></div>
-                	<div class="c__bubble__java"></div>
-                	<div class="c__bonus__rd"></div>
-                	<div class="c__logo__rd"></div>
+                	<div class="sprite c__bush__1--00"></div>
+                	<div class="sprite c__bush__2--00"></div>
+                	<div class="sprite c__bush__3--00"></div>
+                	<div class="sprite c__tube--00"></div>
+                	<div class="sprite c__bubble__java"></div>
+                	<div class="sprite c__bonus__rd"></div>
+                	<div class="sprite c__logo__rd"></div>
                 	<div class="c__brick--00"></div>
                 	<div class="c__top-ground--00"></div>
-                	<div class="c__bonus__data"></div>
-                	<div class="c__logo__data"></div>
-                	<div class="c__bubble__sql"></div>
-                	<div class="c__teleport--00"></div>
+                	<div class="sprite c__bonus__data"></div>
+                	<div class="sprite c__logo__data"></div>
+                	<div class="sprite c__bubble__sql"></div>
+                	<div class="sprite c__teleport--00"></div>
                 </div>
             </div>
             
         </div>
         <div class="c_stats1">
             <div class="c_stats__wrap1">
-                <div class="c_head__container">
-                    <h2 class="c_head__stats">Итоги <span class="c_head__stats--bold">2000</span> года</h2>
-                    <button class="c_head__btn-next" id="c_stage-wrap2">Следующий год</button>
+                <div class="c_stats__header">
+                    <div class="c_stats__year-result">
+                        <span class="sprite sun-stats"></span>
+                        <span class="c_stats__year-result--top">Итоги</span><br>
+                        <span class="c_stats__year-result--mid">2000</span><br>
+                        <span class="c_stats__year-result--bottom">года</span>
+                    </div>
+                    <div class="c_stats__employees">
+                        <span class="c_stats__employees--head">Учредители</span><br>
+                        <span class="sprite users-stats"></span> 
+                        <span class="c_stats__employees--count">2</span>
+                    </div>
                 </div>
-                <div class="c_company__container">
-                    <h3 class="c_company__stats">Компания</h3>
-                    <ul class="c_company__list">
-                        <li class="c_company__item">
-                            <span class="c_company__item--bold">2</span> учредителя
-                        </li>
-                        <li class="c_company__item"></li>
-                        <li class="c_company__item"></li>
-                        <li class="c_company__item"></li>
-                        <li class="c_company__item"></li>
-                    </ul>
+                <div class="c_stats__mid">
+                    <div class="c_stats__clients">
+                            <div class="c_clients__head">
+                                <span class="sprite clients-stats"></span>
+                                <span class="extra-bold">+15</span> новых клиентов
+                            </div>
+                            <div class="c_clients__container">
+                                <div class="sprite dataart-stat"></div>
+                                <div class="sprite  Soft"></div>
+                            </div>
+                        </div>
+                    <div class="c_stats__tech">
+                            <div class="c_tech__head">
+                            <span class="sprite  tech-stats"></span>
+                                Проекты на технологиях
+                            </div>
+                            <div class="c_tech__container">
+                                <div class="sprite SQL-stat"></div>
+                                <div class="sprite java-stat"></div>
+                            </div>
+                        </div>
                 </div>
-                <div class="c_clients__container">
-                    <h3 class="c_clients__stats">Клиенты</h3>
-                    <ul class="c_clients__list">
-                        <li class="c_clients__item">
-                            <img src="img/Logos/2000_dataart.png" alt=""></li>
-                        <li class="c_clients__item">
-                            <img src="img/Logos/2000_Soft.png" alt="">
-                        </li>
-                    </ul>
-                </div>
-                <div class="c_tech__container">
-                    <h3 class="c_tech__stats">Технологии</h3>
-                    <ul class="c_tech__list">
-                        <li class="c_tech__item"><img src="img/Logos/2000_java.png" alt=""></li> 
-								
-                        <li class="c_tech__item"> <img src="img/Logos/2000_SQL.png" alt=""></li>
-                        
-								
-                        <li class="c_tech__item"></li>
-                         
-								
-                        <li class="c_tech__item"></li>
-                         
-								
-                        <li class="c_tech__item"></li>
-                    </ul>
-                </div>
+                <div class="sprite  separate-stats"></div>
+                <button class="c_stats__btn-next" id="c_stage-wrap3">Следующий уровень</button>
             </div>
         </div>
     </div>
@@ -148,29 +141,29 @@
 
 
                 <div class="c__traveler--04">
-                	<div class="c__ball--04"></div>
+                	<div class="sprite c__ball--04"></div>
                 </div>
 
 
-                <div class="c__sun"></div>
-                <div class="c__teleport__1--04"></div>
-                <div class="c__year__2004"></div>
+                <div class="sprite c__sun"></div>
+                <div class="sprite c__teleport__1--04"></div>
+                <div class="sprite c__year__2004"></div>
 
                 <div class="c__move-wrap--04">
-                	<div class="c__bush__1--04"></div>
-                	<div class="c__bush__2--04"></div>
-                	<div class="c__bush__3--04"></div>
-                	<div class="c__bush__4--04"></div>
-                	<div class="c__bonus__sync"></div>
-                	<div class="c__logo__sync"></div>
+                	<div class="sprite c__bush__1--04"></div>
+                	<div class="sprite c__bush__2--04"></div>
+                	<div class="sprite c__bush__3--04"></div>
+                	<div class="sprite c__bush__4--04"></div>
+                	<div class="sprite c__bonus__sync"></div>
+                	<div class="sprite c__logo__sync"></div>
                 	<div class="c__brick-steel--04"></div>
                 	<div class="c__top-ground--04"></div>
-                	<div class="c__bubble__net"></div>
+                	<div class="sprite c__bubble__net"></div>
                 	<div class="c__brick__1--04"></div>
-                	<div class="c__bonus__imag"></div>
-                	<div class="c__logo__imag"></div>
+                	<div class="sprite c__bonus__imag"></div>
+                	<div class="sprite c__logo__imag"></div>
                 	<div class="c__brick__2--04"></div>
-                	<div class="c__teleport__2--04"></div>
+                	<div class="sprite c__teleport__2--04"></div>
                 </div>
 
             </div>
@@ -233,38 +226,38 @@
 
 
 
-                <div class="c__teleport__1--08"></div>
-                <div class="c__sun"></div>
-                <div class="c__year__2008"></div>
+                <div class="sprite c__teleport__1--08"></div>
+                <div class="sprite c__sun"></div>
+                <div class="sprite c__year__2008"></div>
 
                 <div class="c__traveler--08">
-                	<div class="c__ball--08"></div>
+                	<div class="sprite c__ball--08"></div>
                 </div>
                 <div class="c__move-wrap--08">
-                <div class="c__bush__1--08"></div>
-                <div class="c__bush__2--08"></div>
-                <div class="c__bush__3--08"></div>
-                <div class="c__bush__3--08"></div>
-                <div class="c__bush__4--08"></div>
-                <div class="c__bubble__share"></div>
-                <div class="c__bonus__fei"></div>
-                <div class="c__logo__fei"></div>
+                <div class="sprite c__bush__1--08"></div>
+                <div class="sprite c__bush__2--08"></div>
+                <div class="sprite c__bush__3--08"></div>
+                <div class="sprite c__bush__3--08"></div>
+                <div class="sprite c__bush__4--08"></div>
+                <div class="sprite c__bubble__share"></div>
+                <div class="sprite c__bonus__fei"></div>
+                <div class="sprite c__logo__fei"></div>
                 <div class="c__brick-steel__1--08"></div>
                 <div class="c__brick__1--08"></div>
                 <div class="c__brick-steel__2--08"></div>
-                <div class="c__bubble__crm"></div>
-                <div class="c__bonus__conti"></div>
-                <div class="c__logo__conti"></div>
+                <div class="sprite c__bubble__crm"></div>
+                <div class="sprite c__bonus__conti"></div>
+                <div class="sprite c__logo__conti"></div>
                 <div class="c__brick__2--08"></div>
                 <div class="c__brick-steel__3--08"></div>
-                <div class="c__bubble__qt"></div>
-                <div class="c__bonus__nv"></div>
-                <div class="c__logo__nv"></div>
+                <div class="sprite c__bubble__qt"></div>
+                <div class="sprite c__bonus__nv"></div>
+                <div class="sprite c__logo__nv"></div>
                 <div class="c__brick__3--08"></div>
                 <div class="c__top-ground--08"></div>
-                <div class="c__bubble__prize"></div>
-                <div class="c__bubble__ccc"></div>
-                <div class="c__teleport__2--08"></div>
+                <div class="sprite c__bubble__prize"></div>
+                <div class="sprite c__bubble__ccc"></div>
+                <div class="sprite c__teleport__2--08"></div>
                 </div>
             </div>
             
@@ -334,45 +327,45 @@
 
 
 
-                <div class="c__sun"></div>
-                <div class="c__year__2010"></div>
+                <div class="sprite c__sun"></div>
+                <div class="sprite c__year__2010"></div>
 
                 <div class="c__traveler--10">
-                	<div class="c__ball--10"></div>
+                	<div class="sprite c__ball--10"></div>
                 </div>
 
                  <div class="sides"></div>
 
                 <div class="c__move-wrap--10">
-                    <div class="c__teleport__1--10"></div>
-                    <div class="c__bush__1--10"></div>
-                    <div class="c__bubble__php"></div>
-                    <div class="c__bonus__thomson"></div>
-                    <div class="c__logo__thomson"></div>
+                    <div class="sprite c__teleport__1--10"></div>
+                    <div class="sprite c__bush__1--10"></div>
+                    <div class="sprite c__bubble__php"></div>
+                    <div class="sprite c__bonus__thomson"></div>
+                    <div class="sprite c__logo__thomson"></div>
                     <div class="c__brick__1--10"></div>
                     <div class="c__tube-bott__1--10"></div>
-                    <div class="c__tube__1--10"></div>
-                    <div class="c__bubble__ruby"></div>
-                    <div class="c__bubble__partner"></div>
+                    <div class="sprite c__tube__1--10"></div>
+                    <div class="sprite c__bubble__ruby"></div>
+                    <div class="sprite c__bubble__partner"></div>
                     <div class="c__top-ground__1--10"></div>
                     <div class="c__brick__2--10"></div>
-                    <div class="c__bonus__it"></div>
-                    <div class="c__logo__it"></div>
+                    <div class="sprite c__bonus__it"></div>
+                    <div class="sprite c__logo__it"></div>
                     <div class="c__brick__3--10"></div>
-                    <div class="c__bush__2--10"></div>
-                    <div class="c__bubble__gold"></div>
-                    <div class="c__bush__3--10"></div>
+                    <div class="sprite c__bush__2--10"></div>
+                    <div class="sprite c__bubble__gold"></div>
+                    <div class="sprite c__bush__3--10"></div>
                     <div class="c__top-ground__2--10"></div>
                     <div class="c__tube-bott__2--10"></div>
-                    <div class="c__tube__2--10"></div>
-                    <div class="c__bubble__ios"></div>
-                    <div class="c__bonus__pfrf"></div>
-                    <div class="c__logo__pfrf"></div>
-                    <div class="c__bubble__android"></div>
-                    <div class="c__bubble__nvidia"></div>
+                    <div class="sprite c__tube__2--10"></div>
+                    <div class="sprite c__bubble__ios"></div>
+                    <div class="sprite c__bonus__pfrf"></div>
+                    <div class="sprite c__logo__pfrf"></div>
+                    <div class="sprite c__bubble__android"></div>
+                    <div class="sprite c__bubble__nvidia"></div>
                     <div class="c__top-ground__3--10"></div>
-                    <div class="c__bubble__bd"></div>
-                    <div class="c__teleport__2--10"></div>
+                    <div class="sprite c__bubble__bd"></div>
+                    <div class="sprite c__teleport__2--10"></div>
                 </div>
             </div>
             
@@ -453,39 +446,39 @@
 
 
 
-                <div class="c__sun"></div>
-                <div class="c__year__2012"></div>
+                <div class="sprite c__sun"></div>
+                <div class="sprite c__year__2012"></div>
 
                 <div class="c__traveler--12">
-                	<div class="c__ball--12"></div>
+                	<div class="sprite c__ball--12"></div>
                 </div>
 
-                <div class="c__teleport__1--12"></div>
+                <div class="sprite c__teleport__1--12"></div>
                 <div class="c__move-wrap--12">
-                    <div class="c__bush__1--12"></div>
+                    <div class="sprite c__bush__1--12"></div>
                     <div class="c__tube-bott__1--12"></div>
-                    <div class="c__tube__1--12"></div>
+                    <div class="sprite c__tube__1--12"></div>
                     <div class="c__brick__1--12"></div>
                     <div class="c__brick__2--12"></div>
-                    <div class="c__bonus__korus"></div>
-                    <div class="c__logo__korus"></div>
-                    <div class="c__bubble__london"></div>
-                    <div class="c__bush__2--12"></div>
+                    <div class="sprite c__bonus__korus"></div>
+                    <div class="sprite c__logo__korus"></div>
+                    <div class="sprite c__bubble__london"></div>
+                    <div class="sprite c__bush__2--12"></div>
                     <div class="c__top-ground__1--12"></div>
                     <div class="c__tube-bott__2--12"></div>
-                    <div class="c__tube__2--12"></div>
-                    <div class="c__bonus__bubbles"></div>
-                    <div class="c__logo__bubbles"></div>
-                    <div class="c__bubble__azure"></div>
-                    <div class="c__bush__3--12"></div>
+                    <div class="sprite c__tube__2--12"></div>
+                    <div class="sprite c__bonus__bubbles"></div>
+                    <div class="sprite c__logo__bubbles"></div>
+                    <div class="sprite c__bubble__azure"></div>
+                    <div class="sprite c__bush__3--12"></div>
                     <div class="c__brick-steel--12"></div>
-                    <div class="c__bonus__bio"></div>
-                    <div class="c__logo__bio"></div>
-                    <div class="c__bush__4--12"></div>
-                    <div class="c__bonus__krok"></div>
-                    <div class="c__logo__krok"></div>
+                    <div class="sprite c__bonus__bio"></div>
+                    <div class="sprite c__logo__bio"></div>
+                    <div class="sprite c__bush__4--12"></div>
+                    <div class="sprite c__bonus__krok"></div>
+                    <div class="sprite c__logo__krok"></div>
                     <div class="c__brick__3--12"></div>
-                    <div class="c__teleport__2--12"></div>
+                    <div class="sprite c__teleport__2--12"></div>
                 </div>
             </div>
             
@@ -542,29 +535,29 @@
 
 
 
-                <div class="c__sun"></div>
-                <div class="c__year__2013"></div>
-                <div class="c__teleport__1--13"></div>
+                <div class="sprite c__sun"></div>
+                <div class="sprite c__year__2013"></div>
+                <div class="sprite c__teleport__1--13"></div>
 
                 <div class="c__traveler--13">
-                	<div class="c__ball--13"></div>
+                	<div class="sprite c__ball--13"></div>
                 </div>
 
                 <div class="c__move-wrap--13">
-                    <div class="c__bush__1--13"></div>
-                    <div class="c__bridge__1--13"></div>
+                    <div class="sprite c__bush__1--13"></div>
+                    <div class="sprite c__bridge__1--13"></div>
                     <div class="c__top-ground__1--13"></div>
-                    <div class="c__bubble__man"></div>
-                    <div class="c__tube__1--13"></div>
-                    <div class="c__bridge__2--13 "></div>
+                    <div class="sprite c__bubble__man"></div>
+                    <div class="sprite c__tube__1--13"></div>
+                    <div class="sprite c__bridge__2--13 "></div>
                     <div class="c__brick-steel--13"></div>
-                    <div class="c__bonus__telecom"></div>
-                    <div class="c__logo__rostel"></div>
+                    <div class="sprite c__bonus__telecom"></div>
+                    <div class="sprite c__logo__rostel"></div>
                     <div class="c__top-ground__2--13"></div>
                     <div class="c__top-ground__3--13"></div>
-                    <div class="c__bonus__pochta"></div>
-                    <div class="c__logo__pochta"></div>
-                    <div class="c__teleport__2--13"></div>
+                    <div class="sprite c__bonus__pochta"></div>
+                    <div class="sprite c__logo__pochta"></div>
+                    <div class="sprite c__teleport__2--13"></div>
                 </div>
             </div>
             
@@ -606,38 +599,38 @@
             <div class="c__city"></div>
             <div class="c__game-wrap">
 
-                <div class="c__sun"></div>
-                <div class="c__year__2015"></div>
-                <div class="c__teleport__1--15"></div>
+                <div class="sprite c__sun"></div>
+                <div class="sprite c__year__2015"></div>
+                <div class="sprite c__teleport__1--15"></div>
 
                 <div class="c__traveler--15">
-                	<div class="c__ball--15"></div>
+                	<div class="sprite c__ball--15"></div>
                 </div>
 
                 <div class="c__move-wrap--15">
-                    <div class="c__bush__1--15"></div>
-                    <div class="c__bush__2--15"></div>
-                    <div class="c__bush__3--15"></div>
-                    <div class="c__bush__4--15"></div>
-                    <div class="c__bonus__bday"></div>
-                    <div class="c__logo__bday"></div>
-                    <div class="balloon__1--15"></div>
-                    <div class="balloon__2--15"></div>
-                    <div class="balloon__3--15"></div>
-                    <div class="balloon__4--15"></div>
-                    <div class="balloon__5--15"></div>
-                    <div class="balloon__6--15"></div>
-                    <div class="balloon__7--15"></div>
-                    <div class="balloon__8--15"></div>
-                    <div class="balloon__9--15"></div>
-                    <div class="balloon__10--15"></div>
-                    <div class="balloon__11--15"></div>
-                    <div class="balloon__12--15"></div>
-                    <div class="balloon__13--15"></div>
-                    <div class="balloon__14--15"></div>
-                    <div class="balloon__15--15"></div>
-                    <div class="c__bday--big"></div>
-                    <div class="c__teleport__2--15"></div>
+                    <div class="sprite c__bush__1--15"></div>
+                    <div class="sprite c__bush__2--15"></div>
+                    <div class="sprite c__bush__3--15"></div>
+                    <div class="sprite c__bush__4--15"></div>
+                    <div class="sprite c__bonus__bday"></div>
+                    <div class="sprite c__logo__bday"></div>
+                    <div class="sprite balloon__1--15"></div>
+                    <div class="sprite balloon__2--15"></div>
+                    <div class="sprite balloon__3--15"></div>
+                    <div class="sprite balloon__4--15"></div>
+                    <div class="sprite balloon__5--15"></div>
+                    <div class="sprite balloon__6--15"></div>
+                    <div class="sprite balloon__7--15"></div>
+                    <div class="sprite balloon__8--15"></div>
+                    <div class="sprite balloon__9--15"></div>
+                    <div class="sprite balloon__10--15"></div>
+                    <div class="sprite balloon__11--15"></div>
+                    <div class="sprite balloon__12--15"></div>
+                    <div class="sprite balloon__13--15"></div>
+                    <div class="sprite balloon__14--15"></div>
+                    <div class="sprite balloon__15--15"></div>
+                    <div class="sprite c__bday--big"></div>
+                    <div class="sprite c__teleport__2--15"></div>
                 </div>
             </div>
             

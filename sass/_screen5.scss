@@ -254,8 +254,8 @@
 	bottom: 47px;
 }
 .c__year__2012{
-	background: url('../img/2012.png');
 	width: 570px;
+    background-position: -1190px -222px;
 	top: 110px;
 	left: 264px;
 }
@@ -280,21 +280,21 @@
 	animation-delay: $delay+$dur12*14/100;
 }
 .c__bubble__london{
-	background: url('../img/bubble-london.png');
+	background-position: -1559px -855px;
 	left: 51px;
 	bottom: 254+46px;
 	animation-delay: $delay+$dur12*22/100;
 }
 .c__bubble__azure{
-	background: url('../img/bubble-azure.png');
+	background-position: -1686px -693px;
 	left: 1141+60px;
 	bottom: 4px;
 	animation-delay: $delay+$dur12*56/100;
 }
 .c__logo__korus{
-	background: url('../img/2012_Korus.png');
-	width:105px;
-	height:21px;
+	width: 105px;
+    height: 21px;
+    background-position: -1355px -883px;
 	left: 169+31px;
 	bottom: 254+50px;
 	animation-delay: $delay+$dur12*14/100;
@@ -336,7 +336,9 @@
 	animation-delay: $delay+$dur12*46/100;
 }
 .c__logo__bubbles{
-	background: url('../img/bubbles.png');
+	width: 57px;
+    height: 55px;
+    background-position: -288px -934px;
 	width: 57px;
 	height: 55px;
 	bottom: 252+50px;
@@ -363,9 +365,9 @@
 	animation-delay: $delay+$dur12*82/100;
 }
 .c__logo__bio{
-	background: url('../img/2012_Biociences.png');
 	width: 105px;
-	height: 27px;
+    height: 27px;
+    background-position: -1572px -826px;
 	bottom: 403-50px;
 	left: 1266+35px;
 	animation-delay: $delay+$dur12*82/100;
@@ -376,9 +378,9 @@
 	animation-delay: $delay+$dur12*66/100;
 }
 .c__logo__krok{
-	background: url('../img/2012_Krok.png');
 	width: 105px;
-	height: 31px;
+    height: 31px;
+    background-position: -288px -991px;
 	left: 780+800px;
 	bottom: 103+50px;
 	animation-delay: $delay+$dur12*66/100;

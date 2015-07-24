@@ -286,9 +286,9 @@
 	animation-delay: $delay+$dur13*42/100;
 }
 .c__logo__rostel{
-	background: url('../img/2013_rostel.png');
 	width: 90px;
-	height: 39px;
+    height: 39px;
+    background-position: -791px -983px;
 	left: 1150px;
 	bottom: 370+46-50px;
 	animation-delay: $delay+$dur13*42/100;
@@ -309,16 +309,16 @@
 	animation-delay: $delay+$dur13*58/100;
 }
 .c__logo__pochta{
-	background: url('../img/2013_pochta.png');
 	width: 90px;
-	height: 44px;
+    height: 44px;
+    background-position: -1727px -646px;
 	left: 481+1220px;
 	bottom: 403-50+20px;
 	animation-delay: $delay+$dur13*58/100;
 }
 .c__year__2013{
-	background: url('../img/2013.png');
 	width: 570px;
+    background-position: -595px -438px;
 	left: 60*4px;
 	top: 60*3px;
 }
