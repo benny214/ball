@@ -27,7 +27,7 @@ $browser-context: 16;
 
 
 
-$delay: 500ms;
+$delay: 1ms;
 $dur00: 15000ms;
 $dur04: 15000ms;
 $dur08: 15000ms;
@@ -330,11 +330,11 @@ width: 589px;
   opacity:0;
   animation-name: fadeIn;
   animation-fill-mode: forwards;
-  animation-duration: 2s;
-  // border: 1px solid red;
+  animation-duration: 1ms;//2s
+  border: 1px solid red;
 }
-.c_stats__wrap1{animation-delay: $delay+$dur00+2;}//$delay+$dur00+2
-.c_stats__wrap2{animation-delay: $delay+$dur04+2s;}
+.c_stats__wrap1{animation-delay: $delay+$dur00+2;}
+.c_stats__wrap2{animation-delay: $delay;}//+$dur04+2s
 .c_stats__wrap3{animation-delay: $delay+$dur08+2s;}
 .c_stats__wrap4{animation-delay: $delay+$dur10+2s;}
 .c_stats__wrap5{animation-delay: $delay+$dur12+2s;}
@@ -400,9 +400,8 @@ left: -72px;
 }
 .c_stats__clients{
   float: left;
-  width: 351px;
+  width: 400px;
   position: relative;
-  padding-left: 47px;
   & .sprite{
     margin-right: 48px;
   }
@@ -411,6 +410,7 @@ left: -72px;
 .c_tech__head{
   margin-bottom: 40px;
   color: #24355a;
+  padding-left: 47px;
 }
 .extra-bold{
   font-weight: 800;
@@ -483,6 +483,22 @@ left: -72px;
   &:hover{
     cursor: pointer;
   }
+}
+
+.imag-stat {
+    width: 156px;
+    height: 23px;
+    background-position: -992px -947px;
+}
+.syncr-stat {
+    width: 139px;
+    height: 37px;
+    background-position: -1586px -654px;
+}
+.net-stat {
+    width: 90px;
+    height: 23px;
+    background-position: -1345px -935px;
 }
 @import "_start.scss";
 @import "_screen1.scss";

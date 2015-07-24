@@ -478,8 +478,8 @@
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms;
+  -webkit-animation-delay: 15001ms;
+          animation-delay: 15001ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -490,8 +490,8 @@
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms;
+  -webkit-animation-delay: 15001ms;
+          animation-delay: 15001ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -502,8 +502,8 @@
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms;
+  -webkit-animation-delay: 15001ms;
+          animation-delay: 15001ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -514,8 +514,8 @@
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms;
+  -webkit-animation-delay: 15001ms;
+          animation-delay: 15001ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -526,8 +526,8 @@
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms;
+  -webkit-animation-delay: 15001ms;
+          animation-delay: 15001ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -538,8 +538,8 @@
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms;
+  -webkit-animation-delay: 15001ms;
+          animation-delay: 15001ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -550,8 +550,8 @@
   opacity: 0;
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
-  -webkit-animation-delay: 15500ms;
-          animation-delay: 15500ms;
+  -webkit-animation-delay: 15001ms;
+          animation-delay: 15001ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-duration: 2s;
@@ -627,43 +627,44 @@
           animation-name: fadeIn;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1ms;
+          animation-duration: 1ms;
+  border: 1px solid red;
 }
 
 .c_stats__wrap1 {
-  -webkit-animation-delay: 15502ms;
-          animation-delay: 15502ms;
+  -webkit-animation-delay: 15003ms;
+          animation-delay: 15003ms;
 }
 
 .c_stats__wrap2 {
-  -webkit-animation-delay: 17500ms;
-          animation-delay: 17500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c_stats__wrap3 {
-  -webkit-animation-delay: 17500ms;
-          animation-delay: 17500ms;
+  -webkit-animation-delay: 17001ms;
+          animation-delay: 17001ms;
 }
 
 .c_stats__wrap4 {
-  -webkit-animation-delay: 17500ms;
-          animation-delay: 17500ms;
+  -webkit-animation-delay: 17001ms;
+          animation-delay: 17001ms;
 }
 
 .c_stats__wrap5 {
-  -webkit-animation-delay: 17500ms;
-          animation-delay: 17500ms;
+  -webkit-animation-delay: 17001ms;
+          animation-delay: 17001ms;
 }
 
 .c_stats__wrap6 {
-  -webkit-animation-delay: 17500ms;
-          animation-delay: 17500ms;
+  -webkit-animation-delay: 17001ms;
+          animation-delay: 17001ms;
 }
 
 .c_stats__wrap7 {
-  -webkit-animation-delay: 17500ms;
-          animation-delay: 17500ms;
+  -webkit-animation-delay: 17001ms;
+          animation-delay: 17001ms;
 }
 
 .c_stats__header {
@@ -752,9 +753,8 @@
 
 .c_stats__clients {
   float: left;
-  width: 351px;
+  width: 400px;
   position: relative;
-  padding-left: 47px;
 }
 
 .c_stats__clients .sprite {
@@ -765,6 +765,7 @@
 .c_tech__head {
   margin-bottom: 40px;
   color: #24355a;
+  padding-left: 47px;
 }
 
 .extra-bold {
@@ -847,6 +848,24 @@
 
 .c_stats__btn-next:hover {
   cursor: pointer;
+}
+
+.imag-stat {
+  width: 156px;
+  height: 23px;
+  background-position: -992px -947px;
+}
+
+.syncr-stat {
+  width: 139px;
+  height: 37px;
+  background-position: -1586px -654px;
+}
+
+.net-stat {
+  width: 90px;
+  height: 23px;
+  background-position: -1345px -935px;
 }
 
 .c__move-wrap--start {
@@ -2522,8 +2541,8 @@
           animation-name: travel00;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ball--00 {
@@ -2532,8 +2551,8 @@
           animation-name: bounce00;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   bottom: 583px;
 }
 
@@ -2542,16 +2561,16 @@
   bottom: 50px;
   -webkit-animation: screenMove00 15000ms linear forwards;
           animation: screenMove00 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ground--00 {
   background: url("../img/ground-00.png");
   -webkit-animation: groundMove00 15000ms linear forwards;
           animation: groundMove00 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   background-position: -827px 0px;
   background-attachment: fixed;
 }
@@ -2597,15 +2616,15 @@
   background-position: -1483px -853px;
   left: 12px;
   bottom: 78px;
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
+  -webkit-animation-delay: 2701ms;
+          animation-delay: 2701ms;
 }
 
 .c__bonus__rd {
   left: 584px;
   bottom: 102px;
-  -webkit-animation-delay: 5300ms;
-          animation-delay: 5300ms;
+  -webkit-animation-delay: 4801ms;
+          animation-delay: 4801ms;
 }
 
 .c__brick--00 {
@@ -2620,8 +2639,8 @@
   background-position: -1769px -2px;
   left: 570px;
   bottom: 154px;
-  -webkit-animation-delay: 5300ms;
-          animation-delay: 5300ms;
+  -webkit-animation-delay: 4801ms;
+          animation-delay: 4801ms;
 }
 
 .c__top-ground--00 {
@@ -2633,8 +2652,8 @@
 .c__bonus__data {
   bottom: 309px;
   left: 1106px;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms;
+  -webkit-animation-delay: 8401ms;
+          animation-delay: 8401ms;
 }
 
 .c__logo__data {
@@ -2643,24 +2662,24 @@
   background-position: -1769px -53px;
   bottom: 359px;
   left: 1085px;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms;
+  -webkit-animation-delay: 8401ms;
+          animation-delay: 8401ms;
 }
 
 .c__bubble__sql {
   background-position: -1513px -931px;
   left: 1427px;
   bottom: 0;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms;
+  -webkit-animation-delay: 9901ms;
+          animation-delay: 9901ms;
 }
 
 .c__teleport--00 {
   left: 1720px;
   bottom: 0;
   opacity: 0;
-  -webkit-animation-delay: 12800ms;
-          animation-delay: 12800ms;
+  -webkit-animation-delay: 12301ms;
+          animation-delay: 12301ms;
 }
 
 /*== 2004 ==*/
@@ -4226,8 +4245,8 @@
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__traveler--04 {
@@ -4235,8 +4254,8 @@
           animation-name: travel04;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__move-wrap--04 {
@@ -4244,24 +4263,24 @@
   bottom: 50px;
   -webkit-animation: screenMove04 15000ms linear forwards;
           animation: screenMove04 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ground__04 {
   background: url("../img/ground-04.png");
   -webkit-animation: groundMove04 15000ms linear forwards;
           animation: groundMove04 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__teleport__1--04 {
   opacity: 1;
   bottom: 47px;
   left: -45px;
-  -webkit-animation-delay: 650ms;
-          animation-delay: 650ms;
+  -webkit-animation-delay: 151ms;
+          animation-delay: 151ms;
 }
 
 .c__city {
@@ -4308,8 +4327,8 @@
 .c__bonus__sync {
   left: 269px;
   bottom: 103px;
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
+  -webkit-animation-delay: 2701ms;
+          animation-delay: 2701ms;
 }
 
 .c__logo__sync {
@@ -4318,8 +4337,8 @@
   background-position: -1399px -786px;
   left: 243px;
   bottom: 153px;
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
+  -webkit-animation-delay: 2701ms;
+          animation-delay: 2701ms;
 }
 
 .c__brick-steel--04 {
@@ -4339,8 +4358,8 @@
   bottom: 306px;
   left: 807px;
   z-index: 5;
-  -webkit-animation-delay: 8300ms;
-          animation-delay: 8300ms;
+  -webkit-animation-delay: 7801ms;
+          animation-delay: 7801ms;
 }
 
 .c__brick__1--04 {
@@ -4352,8 +4371,8 @@
 .c__bonus__imag {
   left: 1174px;
   bottom: 104px;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms;
+  -webkit-animation-delay: 9901ms;
+          animation-delay: 9901ms;
 }
 
 .c__logo__imag {
@@ -4362,8 +4381,8 @@
   background-position: -551px -1007px;
   left: 1146px;
   bottom: 154px;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms;
+  -webkit-animation-delay: 9901ms;
+          animation-delay: 9901ms;
 }
 
 .c__brick__2--04 {
@@ -4376,8 +4395,8 @@
   left: 1430px;
   bottom: 0;
   opacity: 1;
-  -webkit-animation-delay: 12200ms;
-          animation-delay: 12200ms;
+  -webkit-animation-delay: 11701ms;
+          animation-delay: 11701ms;
 }
 
 /*== 2008 ==*/
@@ -5937,8 +5956,8 @@
   bottom: 50px;
   -webkit-animation-name: bounce08;
           animation-name: bounce08;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
@@ -5950,8 +5969,8 @@
           animation-name: travel08;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ground__08 {
@@ -5959,8 +5978,8 @@
   background-attachment: fixed;
   -webkit-animation: groundMove08 15000ms linear forwards;
           animation: groundMove08 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__move-wrap--08 {
@@ -5968,8 +5987,8 @@
   bottom: 50px;
   -webkit-animation: screenMove08 15000ms linear forwards;
           animation: screenMove08 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__year__2008 {
@@ -6004,8 +6023,8 @@
   opacity: 1;
   bottom: 50px;
   left: -45px;
-  -webkit-animation-delay: 650ms;
-          animation-delay: 650ms;
+  -webkit-animation-delay: 151ms;
+          animation-delay: 151ms;
 }
 
 .c__bubble__share {
@@ -6013,15 +6032,15 @@
   left: 319px;
   bottom: 0px;
   z-index: 5;
-  -webkit-animation-delay: 3500ms;
-          animation-delay: 3500ms;
+  -webkit-animation-delay: 3001ms;
+          animation-delay: 3001ms;
 }
 
 .c__bonus__fei {
   left: 529px;
   bottom: 103px;
-  -webkit-animation-delay: 4400ms;
-          animation-delay: 4400ms;
+  -webkit-animation-delay: 3901ms;
+          animation-delay: 3901ms;
 }
 
 .c__logo__fei {
@@ -6030,16 +6049,16 @@
   background-position: -507px -913px;
   left: 516px;
   bottom: 153px;
-  -webkit-animation-delay: 4400ms;
-          animation-delay: 4400ms;
+  -webkit-animation-delay: 3901ms;
+          animation-delay: 3901ms;
 }
 
 .c__bubble__crm {
   background-position: -399px -948px;
   left: 862px;
   bottom: 149px;
-  -webkit-animation-delay: 6500ms;
-          animation-delay: 6500ms;
+  -webkit-animation-delay: 6001ms;
+          animation-delay: 6001ms;
 }
 
 .c__brick-steel__1--08 {
@@ -6063,8 +6082,8 @@
 .c__bonus__conti {
   left: 1417px;
   bottom: 103px;
-  -webkit-animation-delay: 14600ms;
-          animation-delay: 14600ms;
+  -webkit-animation-delay: 14101ms;
+          animation-delay: 14101ms;
 }
 
 .c__logo__conti {
@@ -6073,8 +6092,8 @@
   background-position: -1199px -878px;
   left: 1364px;
   bottom: 153px;
-  -webkit-animation-delay: 14600ms;
-          animation-delay: 14600ms;
+  -webkit-animation-delay: 14101ms;
+          animation-delay: 14101ms;
 }
 
 .c__brick__2--08 {
@@ -6093,15 +6112,15 @@
   background-position: -1711px -844px;
   left: 1585px;
   bottom: 149px;
-  -webkit-animation-delay: 11900ms;
-          animation-delay: 11900ms;
+  -webkit-animation-delay: 11401ms;
+          animation-delay: 11401ms;
 }
 
 .c__bonus__nv {
   bottom: 252px;
   left: 1013px;
-  -webkit-animation-delay: 7400ms;
-          animation-delay: 7400ms;
+  -webkit-animation-delay: 6901ms;
+          animation-delay: 6901ms;
 }
 
 .c__logo__nv {
@@ -6110,8 +6129,8 @@
   background-position: -1769px -156px;
   left: 1005px;
   bottom: 302px;
-  -webkit-animation-delay: 7400ms;
-          animation-delay: 7400ms;
+  -webkit-animation-delay: 6901ms;
+          animation-delay: 6901ms;
 }
 
 .c__brick__3--08 {
@@ -6132,8 +6151,8 @@
   left: 1440px;
   bottom: 302px;
   z-index: 15;
-  -webkit-animation-delay: 11300ms;
-          animation-delay: 11300ms;
+  -webkit-animation-delay: 10801ms;
+          animation-delay: 10801ms;
 }
 
 .c__bubble__ccc {
@@ -6141,16 +6160,16 @@
   left: 1253px;
   bottom: 0;
   z-index: 10;
-  -webkit-animation-delay: 13700ms;
-          animation-delay: 13700ms;
+  -webkit-animation-delay: 13201ms;
+          animation-delay: 13201ms;
 }
 
 .c__teleport__2--08 {
   left: 1654px;
   bottom: 0px;
   opacity: 1;
-  -webkit-animation-delay: 15200ms;
-          animation-delay: 15200ms;
+  -webkit-animation-delay: 14701ms;
+          animation-delay: 14701ms;
 }
 
 /*=== 2010 ===*/
@@ -7718,8 +7737,8 @@
   bottom: 50px;
   -webkit-animation-name: bounce10;
           animation-name: bounce10;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
@@ -7731,8 +7750,8 @@
           animation-name: travel10;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ground--10 {
@@ -7740,8 +7759,8 @@
   background-attachment: fixed;
   -webkit-animation: groundMove10 15000ms linear forwards;
           animation: groundMove10 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__move-wrap--10 {
@@ -7749,8 +7768,8 @@
   left: 148px;
   -webkit-animation: screenMove10 15000ms linear forwards;
           animation: screenMove10 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__year__2010 {
@@ -7763,15 +7782,15 @@
 .c__teleport__1--10 {
   bottom: 4px;
   left: -200px;
-  -webkit-animation-delay: 650ms;
-          animation-delay: 650ms;
+  -webkit-animation-delay: 151ms;
+          animation-delay: 151ms;
 }
 
 .c__teleport__2--10 {
   bottom: 4px;
   left: 1977px;
-  -webkit-animation-delay: 14000ms;
-          animation-delay: 14000ms;
+  -webkit-animation-delay: 13501ms;
+          animation-delay: 13501ms;
 }
 
 .c__bush__1--10 {
@@ -7797,8 +7816,8 @@
 .c__bonus__thomson {
   left: 231px;
   bottom: 108px;
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
+  -webkit-animation-delay: 2701ms;
+          animation-delay: 2701ms;
 }
 
 .c__logo__thomson {
@@ -7807,8 +7826,8 @@
   background-position: -1572px -799px;
   left: 198px;
   bottom: 158px;
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
+  -webkit-animation-delay: 2701ms;
+          animation-delay: 2701ms;
 }
 
 .c__brick__1--10 {
@@ -7832,32 +7851,32 @@
   background-position: -1762px -298px;
   bottom: 4px;
   left: 236px;
-  -webkit-animation-delay: 2900ms;
-          animation-delay: 2900ms;
+  -webkit-animation-delay: 2401ms;
+          animation-delay: 2401ms;
 }
 
 .c__bubble__partner {
   background-position: -1762px -222px;
   bottom: 154px;
   left: 595px;
-  -webkit-animation-delay: 5900ms;
-          animation-delay: 5900ms;
+  -webkit-animation-delay: 5401ms;
+          animation-delay: 5401ms;
 }
 
 .c__bubble__ruby {
   background-position: -1711px -920px;
   left: 453px;
   bottom: 224px;
-  -webkit-animation-delay: 5300ms;
-          animation-delay: 5300ms;
+  -webkit-animation-delay: 4801ms;
+          animation-delay: 4801ms;
 }
 
 .c__bubble__gold {
   background-position: -475px -948px;
   bottom: 4px;
   left: 1056px;
-  -webkit-animation-delay: 7700ms;
-          animation-delay: 7700ms;
+  -webkit-animation-delay: 7201ms;
+          animation-delay: 7201ms;
 }
 
 .c__top-ground__1--10 {
@@ -7875,8 +7894,8 @@
 .c__bonus__it {
   bottom: 347px;
   left: 819px;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms;
+  -webkit-animation-delay: 6301ms;
+          animation-delay: 6301ms;
 }
 
 .c__logo__it {
@@ -7885,8 +7904,8 @@
   background-position: -1329px -981px;
   bottom: 400px;
   left: 819px;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms;
+  -webkit-animation-delay: 6301ms;
+          animation-delay: 6301ms;
 }
 
 .c__brick__3--10 {
@@ -7915,8 +7934,8 @@
 .c__bonus__pfrf {
   left: 1273px;
   bottom: 334px;
-  -webkit-animation-delay: 9200ms;
-          animation-delay: 9200ms;
+  -webkit-animation-delay: 8701ms;
+          animation-delay: 8701ms;
 }
 
 .c__logo__pfrf {
@@ -7925,16 +7944,16 @@
   background-position: -1199px -936px;
   left: 1260px;
   bottom: 394px;
-  -webkit-animation-delay: 9200ms;
-          animation-delay: 9200ms;
+  -webkit-animation-delay: 8701ms;
+          animation-delay: 8701ms;
 }
 
 .c__bubble__ios {
   background-position: -1496px -777px;
   left: 1358px;
   bottom: 155px;
-  -webkit-animation-delay: 9500ms;
-          animation-delay: 9500ms;
+  -webkit-animation-delay: 9001ms;
+          animation-delay: 9001ms;
 }
 
 .c__top-ground__3--10 {
@@ -7947,24 +7966,24 @@
   background-position: -1718px -517px;
   left: 1562px;
   bottom: 261px;
-  -webkit-animation-delay: 10100ms;
-          animation-delay: 10100ms;
+  -webkit-animation-delay: 9601ms;
+          animation-delay: 9601ms;
 }
 
 .c__bubble__nvidia {
   background-position: -1635px -855px;
   left: 1667px;
   bottom: 261px;
-  -webkit-animation-delay: 10700ms;
-          animation-delay: 10700ms;
+  -webkit-animation-delay: 10201ms;
+          animation-delay: 10201ms;
 }
 
 .c__bubble__bd {
   background-position: -1762px -692px;
   left: 1732px;
   bottom: 4px;
-  -webkit-animation-delay: 12500ms;
-          animation-delay: 12500ms;
+  -webkit-animation-delay: 12001ms;
+          animation-delay: 12001ms;
 }
 
 /*=== 2012 ===*/
@@ -9528,8 +9547,8 @@
           animation-name: bounce12;
   opacity: 0;
   bottom: 50px;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
   -webkit-animation-fill-mode: forwards;
@@ -9543,8 +9562,8 @@
           animation-name: travel12;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__move-wrap--12 {
@@ -9552,16 +9571,16 @@
   bottom: 47px;
   -webkit-animation: screenMove12 15000ms linear forwards;
           animation: screenMove12 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ground--12 {
   background: url("../img/ground-04.png");
   -webkit-animation: groundMove12 15000ms linear forwards;
           animation: groundMove12 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__city__london {
@@ -9582,8 +9601,8 @@
 .c__teleport__1--12 {
   bottom: 47px;
   left: -53px;
-  -webkit-animation-delay: 650ms;
-          animation-delay: 650ms;
+  -webkit-animation-delay: 151ms;
+          animation-delay: 151ms;
 }
 
 .c__bush__1--12 {
@@ -9600,24 +9619,24 @@
 .c__bonus__korus {
   left: 220px;
   bottom: 254px;
-  -webkit-animation-delay: 2600ms;
-          animation-delay: 2600ms;
+  -webkit-animation-delay: 2101ms;
+          animation-delay: 2101ms;
 }
 
 .c__bubble__london {
   background-position: -1559px -855px;
   left: 51px;
   bottom: 300px;
-  -webkit-animation-delay: 3800ms;
-          animation-delay: 3800ms;
+  -webkit-animation-delay: 3301ms;
+          animation-delay: 3301ms;
 }
 
 .c__bubble__azure {
   background-position: -1686px -693px;
   left: 1201px;
   bottom: 4px;
-  -webkit-animation-delay: 8900ms;
-          animation-delay: 8900ms;
+  -webkit-animation-delay: 8401ms;
+          animation-delay: 8401ms;
 }
 
 .c__logo__korus {
@@ -9626,8 +9645,8 @@
   background-position: -1355px -883px;
   left: 200px;
   bottom: 304px;
-  -webkit-animation-delay: 2600ms;
-          animation-delay: 2600ms;
+  -webkit-animation-delay: 2101ms;
+          animation-delay: 2101ms;
 }
 
 .c__brick__2--12 {
@@ -9671,8 +9690,8 @@
 .c__bonus__bubbles {
   bottom: 252px;
   left: 861px;
-  -webkit-animation-delay: 7400ms;
-          animation-delay: 7400ms;
+  -webkit-animation-delay: 6901ms;
+          animation-delay: 6901ms;
 }
 
 .c__logo__bubbles {
@@ -9683,8 +9702,8 @@
   height: 55px;
   bottom: 302px;
   left: 861px;
-  -webkit-animation-delay: 7400ms;
-          animation-delay: 7400ms;
+  -webkit-animation-delay: 6901ms;
+          animation-delay: 6901ms;
 }
 
 .c__tube-bott__2--12 {
@@ -9707,8 +9726,8 @@
 .c__bonus__bio {
   left: 1340px;
   bottom: 353px;
-  -webkit-animation-delay: 12800ms;
-          animation-delay: 12800ms;
+  -webkit-animation-delay: 12301ms;
+          animation-delay: 12301ms;
 }
 
 .c__logo__bio {
@@ -9717,15 +9736,15 @@
   background-position: -1572px -826px;
   bottom: 353px;
   left: 1301px;
-  -webkit-animation-delay: 12800ms;
-          animation-delay: 12800ms;
+  -webkit-animation-delay: 12301ms;
+          animation-delay: 12301ms;
 }
 
 .c__bonus__krok {
   left: 1591px;
   bottom: 103px;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms;
+  -webkit-animation-delay: 9901ms;
+          animation-delay: 9901ms;
 }
 
 .c__logo__krok {
@@ -9734,8 +9753,8 @@
   background-position: -288px -991px;
   left: 1580px;
   bottom: 153px;
-  -webkit-animation-delay: 10400ms;
-          animation-delay: 10400ms;
+  -webkit-animation-delay: 9901ms;
+          animation-delay: 9901ms;
 }
 
 .c__brick__3--12 {
@@ -9747,8 +9766,8 @@
 .c__teleport__2--12 {
   left: 1897px;
   bottom: 4px;
-  -webkit-animation-delay: 14900ms;
-          animation-delay: 14900ms;
+  -webkit-animation-delay: 14401ms;
+          animation-delay: 14401ms;
 }
 
 /*=== 2013 ===*/
@@ -11334,8 +11353,8 @@
           animation-name: bounce13;
   opacity: 0;
   bottom: 50px;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 15000ms;
@@ -11351,8 +11370,8 @@
           animation-name: travel13;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ground--13 {
@@ -11361,8 +11380,8 @@
   background-attachment: fixed;
   -webkit-animation: groundMove13 15000ms linear forwards;
           animation: groundMove13 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__move-wrap--13 {
@@ -11370,8 +11389,8 @@
   bottom: 47px;
   -webkit-animation: screenMove13 15000ms linear forwards;
           animation: screenMove13 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__bush__1--13 {
@@ -11409,8 +11428,8 @@
 .c__bonus__telecom {
   left: 1177px;
   bottom: 320px;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms;
+  -webkit-animation-delay: 6301ms;
+          animation-delay: 6301ms;
 }
 
 .c__logo__rostel {
@@ -11419,8 +11438,8 @@
   background-position: -791px -983px;
   left: 1150px;
   bottom: 366px;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms;
+  -webkit-animation-delay: 6301ms;
+          animation-delay: 6301ms;
 }
 
 .c__top-ground__2--13 {
@@ -11438,8 +11457,8 @@
 .c__bonus__pochta {
   bottom: 353px;
   left: 1725px;
-  -webkit-animation-delay: 9200ms;
-          animation-delay: 9200ms;
+  -webkit-animation-delay: 8701ms;
+          animation-delay: 8701ms;
 }
 
 .c__logo__pochta {
@@ -11448,8 +11467,8 @@
   background-position: -1727px -646px;
   left: 1701px;
   bottom: 373px;
-  -webkit-animation-delay: 9200ms;
-          animation-delay: 9200ms;
+  -webkit-animation-delay: 8701ms;
+          animation-delay: 8701ms;
 }
 
 .c__year__2013 {
@@ -11462,15 +11481,15 @@
 .c__teleport__1--13 {
   bottom: 47px;
   left: -50px;
-  -webkit-animation-delay: 650ms;
-          animation-delay: 650ms;
+  -webkit-animation-delay: 151ms;
+          animation-delay: 151ms;
 }
 
 .c__teleport__2--13 {
   bottom: 4px;
   left: 2101px;
-  -webkit-animation-delay: 11300ms;
-          animation-delay: 11300ms;
+  -webkit-animation-delay: 10801ms;
+          animation-delay: 10801ms;
 }
 
 /*=== 2015 ===*/
@@ -12942,8 +12961,8 @@
           animation-name: travel15;
   -webkit-animation-duration: 15000ms;
           animation-duration: 15000ms;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__ball--15 {
@@ -12951,8 +12970,8 @@
           animation-name: bounce15;
   opacity: 0;
   bottom: 50px;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
   -webkit-animation-direction: normal;
           animation-direction: normal;
   -webkit-animation-duration: 15000ms;
@@ -12967,8 +12986,8 @@
   background: url("../img/ground-04.png");
   -webkit-animation: groundMove15 15000ms linear forwards;
           animation: groundMove15 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__move-wrap--15 {
@@ -12976,8 +12995,8 @@
   bottom: 47px;
   -webkit-animation: screenMove15 15000ms linear forwards;
           animation: screenMove15 15000ms linear forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
+  -webkit-animation-delay: 1ms;
+          animation-delay: 1ms;
 }
 
 .c__year__2015 {
@@ -13010,22 +13029,22 @@
 .c__bonus__bday {
   left: 938px;
   bottom: 154px;
-  -webkit-animation-delay: 6200ms;
-          animation-delay: 6200ms;
+  -webkit-animation-delay: 5701ms;
+          animation-delay: 5701ms;
 }
 
 .c__teleport__1--15 {
   bottom: 47px;
   left: -50px;
-  -webkit-animation-delay: 650ms;
-          animation-delay: 650ms;
+  -webkit-animation-delay: 151ms;
+          animation-delay: 151ms;
 }
 
 .c__teleport__2--15 {
   bottom: 4px;
   left: 1075px;
-  -webkit-animation-delay: 11900ms;
-          animation-delay: 11900ms;
+  -webkit-animation-delay: 11401ms;
+          animation-delay: 11401ms;
 }
 
 .c__logo__bday {
@@ -13034,8 +13053,8 @@
   background-position: -1718px -438px;
   left: 925px;
   bottom: 204px;
-  -webkit-animation-delay: 6200ms;
-          animation-delay: 6200ms;
+  -webkit-animation-delay: 5701ms;
+          animation-delay: 5701ms;
 }
 
 [class*='balloon'] {
@@ -13046,8 +13065,8 @@
   position: absolute;
   -webkit-animation: bonusAnim 4s ease forwards;
           animation: bonusAnim 4s ease forwards;
-  -webkit-animation-delay: 6800ms;
-          animation-delay: 6800ms;
+  -webkit-animation-delay: 6301ms;
+          animation-delay: 6301ms;
 }
 
 .balloon__1--15 {
@@ -13139,8 +13158,8 @@
           animation-duration: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 7400ms;
-          animation-delay: 7400ms;
+  -webkit-animation-delay: 6901ms;
+          animation-delay: 6901ms;
 }
 
 @-webkit-keyframes zoomIn {
