@@ -6,7 +6,7 @@
 .c__ground--start {
     background: url('../img/ground-00.png');
     background-position: -827px 0px;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .c__hello__wrap {
@@ -87,11 +87,6 @@
     left: 1067px;
     bottom: 170px;
 }
-// .c__sec-ground--start{
-//     background: url('../img/ground-00.png');
-//     background-position: -827px 0px;
-//     z-index: 150;
-// }
 
 .c__bonus__start-2 {
     bottom: 279+30px;
