@@ -693,7 +693,7 @@
 
 .c__year__2015 {
     width: 535px;
-    background-position: -1167px -438px;
+    background-position: -595px -394px;
     left: 60*4px;
     top: 60*4px;
 }
@@ -739,109 +739,98 @@
 .c__logo__bday {
     width: 74px;
     height: 77px;
-    background-position: -1718px -438px;
+    background-position: -256px -178px;
     left: 925px;
     bottom: 154+50px;
     animation-delay: $delay+$dur15*38/100;
 }
 
-[class*='balloon'] {
-    width: 88px;
-    height: 104px;
-    background-position: -347px -837px;
-    opacity: 0;
-    position: absolute;
-    animation: bonusAnim 4s ease forwards;
-    animation-delay: $delay+$dur15*42/100;
-}
 
 .balloon__1--15 {
-    left: 820px;
-    bottom: 40px;
+    width: 634px;
+    height: 413px;
+    background-position: -904px -831px;
+    position: absolute;
+    bottom: 52px;
+    left: 621px;
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 4500ms;
+    animation-fill-mode: forwards;
+    animation-delay: $delay+$dur15*42/100;
+
+}
+
+.ribbons--15 {
+    width: 938px;
+    height: 533px;
+    background-position: -2px -1246px;
+    position: absolute;
+    bottom: 6px;
+    left: 606px;
+    z-index: 2;
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 4500ms;
+    animation-fill-mode: forwards;
+    animation-delay: $delay+$dur15*42/100;
+
 }
 
 .balloon__2--15 {
-    left: 740px;
-    bottom: 90+40px;
+   width: 356px;
+    height: 323px;
+    background-position: -546px -831px;
+    position: absolute;
+    bottom: 6px;
+    left: 606px;
+    z-index: 1;
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 4500ms;
+    animation-fill-mode: forwards;
+    animation-delay: $delay+$dur15*42/100;
+
 }
 
-.balloon__3--15 {
-    left: 740+90px;
-    bottom: 90+40+60px;
-}
 
-.balloon__4--15 {
-    left: 740+90+60+60+60px;
-    bottom: 40px;
-}
-
-.balloon__5--15 {
-    left: 740+90+60+60+60+60px;
-    bottom: 40+90px;
-}
-
-.balloon__6--15 {
-    left: 740+90+60+60+60+60+90px;
-    bottom: 40+90-60px;
-}
-
-.balloon__7--15 {
-    left: 740px;
-    bottom: 90-60px;
-}
-
-.balloon__8--15 {
-    left: 740+90+60+60+60+60+20px;
-    bottom: 90-50px;
-}
-
-.balloon__9--15 {
-    left: 740+90+60+60+60+60-60px;
-    bottom: 90+50+60px;
-}
-
-.balloon__10--15 {
-    left: 740+30px;
-    bottom: 90+40+120px;
-}
-
-.balloon__11--15 {
-    left: 740+90+60+60+60+90-10px;
-    bottom: 90+50+60+60px;
-}
-
-.balloon__12--15 {
-    left: 740+30+60+60px;
-    bottom: 90+40+120px;
-}
-
-.balloon__13--15 {
-    left: 740+30+60+60+120+60px;
-    bottom: 90+40+120-40px;
-}
-
-.balloon__14--15 {
-    left: 740+30+60+60+120-120-60px;
-    bottom: 90+40px;
-}
-
-.balloon__15--15 {
-    left: 740+30+60+60+120+120+60px;
-    bottom: 90+40px;
-}
 
 .c__bday--big {
-    width: 395px;
+     width: 395px;
     height: 301px;
-    background-position: -595px -654px;
+    background-position: -149px -831px;
     position: absolute;
     left: 740px;
     bottom: 90px;
+    z-index: 5;
     opacity: 0;
     animation-name: zoomIn;
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-delay: $delay+$dur15*46/100;
+}
+@keyframes bounceIn {
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  33% { 
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  66% { 
+    opacity: 1;
+    transform: scale3d(.9, .9, .9);
+  }
+
+
+  100% {
+    opacity: 0;
+    transform: scale3d(.9, .9,.9);
+  }
 }
 
 @keyframes zoomIn {
@@ -862,3 +851,5 @@
         opacity: 0;
     }
 }
+
+
