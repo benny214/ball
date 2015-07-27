@@ -6,7 +6,7 @@
 .c__ground--start {
     background: url('../img/ground-00.png');
     background-position: -827px 0px;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .c__hello__wrap {
@@ -50,15 +50,6 @@
     z-index: -2;
 }
 
-.c__year__2000 {
-    background: url('../img/year.png');
-    height: 214px;
-    width: 555px;
-    top: 210px;
-    left: 264px;
-    z-index: -10;
-}
-
 .c__bush__1--start {
     left: -322-250px;
     bottom: 0;
@@ -96,6 +87,11 @@
     left: 1067px;
     bottom: 170px;
 }
+// .c__sec-ground--start{
+//     background: url('../img/ground-00.png');
+//     background-position: -827px 0px;
+//     z-index: 150;
+// }
 
 .c__bonus__start-2 {
     bottom: 279+30px;

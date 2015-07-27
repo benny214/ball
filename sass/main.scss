@@ -864,6 +864,9 @@ $dur15: 15000ms;
     & .c_stats__reward--left {
         margin-top: 30px;
     }
+    & .c_clients__head{
+        margin-bottom: 21px;
+    }
 }
 
 .London-stat {
@@ -909,6 +912,9 @@ $dur15: 15000ms;
     & .ios-stat {
         margin-bottom: 0;
     }
+    & .ruby-stat{
+        margin-top: 0;
+    }
 }
 
 .c_stats3 {
@@ -917,6 +923,33 @@ $dur15: 15000ms;
     }
 }
 
+.c_stats1{
+    & .c_stats__header{
+            margin-bottom: 116px;
+    }
+}
+.c_stats2{
+    & .c_stats__header{
+            margin-bottom: 116px;
+    }
+    & .net-stat{
+            margin-bottom: 20px;
+    }
+}
+.c_stats4{
+    & .android-stat{
+            margin-left: -40px;
+    }
+    & .php-stat{
+        margin-bottom: 16px;
+    }
+    & .ios-stat{
+            margin-bottom: 24px;
+    }
+    & .nvidia-stat{
+        margin-bottom: 20px;
+    }
+}
 @import "_start.scss";
 @import "_screen1.scss";
 @import "_screen2.scss";
