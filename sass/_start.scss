@@ -1,17 +1,16 @@
 .c__move-wrap--start {
     left: 322px;
-    bottom: 50px;
+    bottom: 49px;
 }
 
 .c__ground--start {
-    background: url('../img/ground-00.png');
-    background-position: -827px 0px;
-    background-attachment: fixed;
+    width: 100%;
 }
-.c__ground--start-2{
-    background: url('../img/ground-00.png');
-    background-position: -1078px;
+.c__sea--start{
+    width: 111px;
+    left: 322px;
 }
+
 
 .c__hello__wrap {
     width: 1084px;
