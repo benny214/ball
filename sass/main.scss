@@ -25,13 +25,13 @@ $browser-context: 16;
 /*== Main styles ==*/
 
 $delay: 1ms;
-$dur00: 15000ms;
-$dur04: 15000ms;
-$dur08: 15000ms;
-$dur10: 15000ms;
-$dur12: 15000ms;
-$dur13: 15000ms;
-$dur15: 15000ms;
+$dur00: 40000ms;
+$dur04: 40000ms;
+$dur08: 40000ms;
+$dur10: 40000ms;
+$dur12: 40000ms;
+$dur13: 40000ms;
+$dur15: 40000ms;
 .c_stage-wrap-start,
 .c_stage-wrap1,
 .c_stage-wrap2,
@@ -1105,5 +1105,5 @@ $dur15: 15000ms;
     }
 }
 .c_tech__head{
-    padding-left: 24px;
+        padding-left: 24px;
 }
