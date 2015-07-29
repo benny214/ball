@@ -1,4 +1,14 @@
 /*== 2008 ==*/
+.c__ball--08{
+  will-change: bottom;
+}
+.c__traveler--08{
+  will-change: left;
+}
+.c__move-wrap--08,
+.c__ground--08{
+  will-change: transform;
+}
 
 @keyframes bounce08 {
     0% {

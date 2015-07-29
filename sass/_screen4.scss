@@ -1,4 +1,15 @@
 /*=== 2010 ===*/
+.c__ball--10{
+  will-change: bottom;
+}
+.c__traveler--10{
+  will-change: left;
+}
+.c__move-wrap--10,
+.c__ground--10{
+  will-change: transform;
+}
+
 
 @keyframes bounce10 {
     0% {

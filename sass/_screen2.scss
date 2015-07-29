@@ -1,6 +1,18 @@
 
 /*== 2004 ==*/
 
+.c__ball--04{
+  will-change: bottom;
+}
+.c__traveler--04{
+  will-change: left;
+}
+.c__move-wrap--04,
+.c__ground--04{
+  will-change: transform;
+}
+
+
 @keyframes bounce04{
 0%  { bottom:50px; opacity:0; }
 2%  { bottom:50px; opacity:0.5; }

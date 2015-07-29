@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$dur00".
-        on line 171 of _screen1.scss
+Error: Undefined variable: "$dur04".
+        on line 177 of _screen2.scss
 
-166: 
-167: }
-168: 
-169: .c__traveler--00{
-170:   animation-name: travel00;
-171:   animation-duration: $dur00;
-172:   animation-delay: $delay;
-173: }
-174: 
-175: .c__ball--00{
-176:   opacity:1;
+172:   left: 0;
+173:   opacity:0;
+174:   bottom: 50px;
+175:   animation-name: bounce04;
+176:   animation-direction: normal;
+177:   animation-duration: $dur04;
+178:   animation-fill-mode: forwards;
+179:   animation-delay: $delay;
+180: }
+181: 
+182: .c__traveler--04{
 
 Backtrace:
-_screen1.scss:171
+_screen2.scss:177
 C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dur00\".\A         on line 171 of _screen1.scss\A \A 166: \A 167: }\A 168: \A 169: .c__traveler--00{\A 170:   animation-name: travel00;\A 171:   animation-duration: $dur00;\A 172:   animation-delay: $delay;\A 173: }\A 174: \A 175: .c__ball--00{\A 176:   opacity:1;"; }
+  content: "Error: Undefined variable: \"$dur04\".\A         on line 177 of _screen2.scss\A \A 172:   left: 0;\A 173:   opacity:0;\A 174:   bottom: 50px;\A 175:   animation-name: bounce04;\A 176:   animation-direction: normal;\A 177:   animation-duration: $dur04;\A 178:   animation-fill-mode: forwards;\A 179:   animation-delay: $delay;\A 180: }\A 181: \A 182: .c__traveler--04{"; }

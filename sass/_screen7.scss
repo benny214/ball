@@ -1,5 +1,16 @@
 /*=== 2015 ===*/
 
+.c__ball--15{
+  will-change: bottom;
+}
+.c__traveler--15{
+  will-change: left;
+}
+.c__move-wrap--15,
+.c__ground--15{
+  will-change: transform;
+}
+
 @keyframes bounce15 {
     0% {
         bottom: 50px;
@@ -721,7 +732,7 @@
     animation-name: zoomIn;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-delay: $delay+$dur15*46/100;
+    animation-delay:$dur15*82/100;
 }
 .c__social-head{
     color: #78bb32;

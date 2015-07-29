@@ -1,5 +1,17 @@
 /*=== 2012 ===*/
 
+.c__ball--12{
+  will-change: bottom;
+}
+.c__traveler--12{
+  will-change: left;
+}
+.c__move-wrap--12,
+.c__ground--12{
+  will-change: transform;
+}
+
+
 @keyframes bounce12 {
     0% {
         bottom: 50px;

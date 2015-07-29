@@ -1,4 +1,15 @@
 /*== 2000 ==*/
+.c__ball--00{
+  will-change: bottom;
+}
+.c__traveler--00{
+  will-change: left;
+}
+.c__move-wrap--00,
+.c__ground--00{
+  will-change: transform;
+}
+
 
 @keyframes bounce00 { 
 0%  { bottom: 583px; }
@@ -164,6 +175,8 @@
 
 
 }
+
+
 
 .c__traveler--00{
   animation-name: travel00;
